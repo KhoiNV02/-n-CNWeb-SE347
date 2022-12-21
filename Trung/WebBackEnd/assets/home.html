@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý du lịch</title>
+    <link rel="icon" type="image/x-icon" href="../images/home/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav class="left-navigation expand">
+            <a href="home.html" class="logo">
+                
+            </a>
+            <a href="home.html" class="nav-item active">
+                <i class='bx bxs-dashboard' ></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="category">
+                <p>Manage</p>
+                <div class="catagory-separator"></div>
+            </div>
+            <a href="home/customer.html" class="nav-item">
+                <i class='bx bxs-user'></i>
+                <span>Customer</span>
+            </a>
+            <a href="home/travel.html" class="nav-item">
+                <i class='bx bx-bus' ></i>
+                <span>Travel Tour</span>
+            </a>
+            <a href="home/news.html" class="nav-item">
+                <i class='bx bx-news' ></i>
+                <span>News</span>
+            </a>
+            <a href="home/discount.html" class="nav-item">
+                <i class='bx bxs-discount' ></i>
+                <span>Discount</span>
+            </a>
+            <div class="category">
+                <p>Report</span>
+            </div>
+            <a href="home/sales.html" class="nav-item break">
+                <i class='bx bx-cart-alt' ></i>
+                <span>Sales</span>
+            </a>
+            <a href="home/traffic.html" class="nav-item">
+                <i class='bx bx-traffic-cone' ></i>
+                <span>Traffic</span>
+            </a>
+        </nav>
+        <div class="content-reponsive">
+            Content Reponsive
+        </div>
+        <div class="container">
+            <div class="top-bar">
+                <div class="topbar-left">
+                    <div class="nav-opener">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <div class="search-box">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="messages">
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    <div class="notify">
+                        <i class='bx bx-bell' ></i>
+                    </div>
+                    <div class="user-info">
+                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        class="user-avatar">
+                        <div class="info-content">
+                            <p class="user-name">Meow</p>
+                            <p class="user-position">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <!-- <header>
+                    <h2>Meow</h2>
+                    <div class="input-field">
+                        <input type="text" name="meow" id="meow" class="text-input" required="required">
+                        <span class="text-input-title" for="meow">Du lịch</span>
+                    </div>
+                </header> -->
+                <div class="statics">
+                    <div class="summarycard">
+                        <div class="wrapper">
+                            <div class="card-content">
+                                <p class="card-title">
+                                    Total Visits
+                                </p>
+                                <p class="value">
+                                    582,436 <span><i class='bx bxs-user'></i></span>
+                                </p>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/854/854929.png" alt="">
+                        </div>
+                        <p class="compare">
+                            <span class="color-increase">
+                                4.68%
+                            </span>
+                            Since last month
+                        </p>
+                    </div>
+                    <div class="summarycard">
+                        <div class="wrapper">
+                            <div class="card-content">
+                                <p class="card-title">
+                                    Total Pages Views
+                                </p>
+                                <p class="value">
+                                    743,568 <span><i class='bx bxs-user'></i></span>
+                                </p>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="">
+                        </div>
+                        <p class="compare">
+                            <span class="color-decrease">
+                                7.53%
+                            </span>
+                            Since last month
+                        </p>
+                    </div>
+                    <div class="summarycard">
+                        <div class="wrapper">
+                            <div class="card-content">
+                                <p class="card-title">
+                                    Unique Visitor
+                                </p>
+                                <p class="value">
+                                    212,348 <span><i class='bx bxs-user'></i></span>
+                                </p>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3494/3494277.png" alt="">
+                        </div>
+                        <p class="compare">
+                            <span class="color-increase">
+                                1.04%
+                            </span>
+                            Since last month
+                        </p>
+                    </div>
+                    <div class="summarycard">
+                        <div class="wrapper">
+                            <div class="card-content">
+                                <p class="card-title">
+                                    Total Visits
+                                </p>
+                                <p class="value">
+                                    582,436 <span><i class='bx bxs-user'></i></span>
+                                </p>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/854/854929.png" alt="">
+                        </div>
+                        <p class="compare">
+                            <span class="color-increase">
+                                4.68%
+                            </span>
+                            Since last month
+                        </p>
+                    </div>
+                </div>
+                <div class="chart-analyze">
+                    
+                    <div class="chart-bar">
+                        <h2 class="chart-header">Top 8 visited countries</h2>
+                        <canvas id="barChart" style="max-width: 600px; min-width:600px; display:block; position:static"></canvas>
+                    </div>
+                    <div class="chart-pie">
+                        <canvas id="pieChart" style="max-width: 100%; min-width:300px; height:80%; min-height: 300px; display:block; position:static"></canvas>
+                        <h2 class="chart-header">Devices Analyze</h2>
+                    </div>
+
+                    <script>
+                        const labels = ["Thailand", "Vietnamese", "American", "France", "Philippines", "Japan", "Korean", "Indonesia"];
+                        const data = {
+                            labels: labels,
+                            datasets: [{
+                              label: 'Top 8 visit countries',
+                              data: [65, 100, 80, 72, 56, 55, 70, 85],
+                              backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(255, 159, 64, 0.2)',
+                                'rgba(255, 205, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(201, 203, 207, 0.2)',
+                                'rgba(255, 203, 207, 0.2)',
+                              ],
+                              borderColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(255, 159, 64)',
+                                'rgb(255, 205, 86)',
+                                'rgb(75, 192, 192)',
+                                'rgb(54, 162, 235)',
+                                'rgb(153, 102, 255)',
+                                'rgb(201, 203, 207)'
+                              ],
+                              borderWidth: 1
+                            }]
+                          };
+                        
+                        new Chart("barChart", {
+                            type: 'bar',
+                            data: data,
+                            options: {
+                                scales: {
+                                    xAxes: [{
+                                        gridLines: {
+                                            display:false
+                                        }
+                                    }],
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        },
+                                        gridLines: {
+                                            display:false
+                                        }
+                                    }]
+                                }
+                              },
+                        });
+                    </script>
+                    <script>
+                        const data_pie = {
+                            labels: [
+                                'Desktops',
+                                'Laptops',
+                                'Tablets',
+                                'Other'
+                            ],
+                            datasets: [{
+                                label: 'Devices Accessed',
+                                data: [300, 280, 100, 50],
+                                backgroundColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(54, 162, 235)',
+                                'rgb(255, 205, 86)'
+                                ],
+                                hoverOffset: 4
+                            }]
+                        };
+                        new Chart("pieChart", {
+                            type: 'doughnut',
+                            data: data_pie,
+                        });
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function(){
+            var navExpandState = true;
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(navExpandState){
+                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    navExpandState = false;
+                }
+                else{
+                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    navExpandState = true;
+                }
+            });
+            // Expanding navigation when hover
+            $(".left-navigation").hover(function(){
+                if(!navExpandState){
+                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                }
+            });
+            $(".left-navigation").mouseleave(function(){
+                if(!navExpandState){
+                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                }
+            });
+            // Expand Search Box Animation
+            $(".search-box").click(function(){
+                $(this).animate({
+                    marginLeft: '4px'
+                }, 300);
+                $('#search-txt-box').animate({
+                    marginLeft: '20px',
+                    opacity: 1,
+                    width: 220,
+                }, 300);
+                $('#search-txt-box').focus();
+            });
+            $(".messages i, .notify i").click(function (){
+                $(this).css({
+                    "color": "rgba(174,120,197)",
+                    "background-color": "rgba(0, 0, 0, 0.05)"
+                });
+            });
+            $(".content-reponsive")[0].innerHTML = $(".content")[0].innerHTML;
+        });
+    </script>
+</body>
+</html>

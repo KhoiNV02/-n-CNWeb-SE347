@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý du lịch</title>
+    <link rel="stylesheet" href="../../styles/home.css">
+    <link rel="stylesheet" href="../../styles/customer.css">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav class="left-navigation expand">
+            <a href="../home.html" class="logo">
+                
+            </a>
+            <a href="../home.html" class="nav-item">
+                <i class='bx bxs-dashboard' ></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="category">
+                <p>Manage</p>
+                <div class="catagory-separator"></div>
+            </div>
+            <a href="customer.html" class="nav-item active">
+                <i class='bx bxs-user'></i>
+                <span>Customer</span>
+            </a>
+            <a href="travel.html" class="nav-item">
+                <i class='bx bx-bus' ></i>
+                <span>Travel Tour</span>
+            </a>
+            <a href="news.html" class="nav-item">
+                <i class='bx bx-news' ></i>
+                <span>News</span>
+            </a>
+            <a href="discount.html" class="nav-item">
+                <i class='bx bxs-discount' ></i>
+                <span>Discount</span>
+            </a>
+            <div class="category">
+                <p>Report</span>
+            </div>
+            <a href="sales.html" class="nav-item break">
+                <i class='bx bx-cart-alt' ></i>
+                <span>Sales</span>
+            </a>
+            <a href="traffic.html" class="nav-item">
+                <i class='bx bx-traffic-cone' ></i>
+                <span>Traffic</span>
+            </a>
+        </nav>
+        <div class="content-reponsive">
+            Content Reponsive
+        </div>
+        <div class="container">
+            <div class="top-bar">
+                <div class="topbar-left">
+                    <div class="nav-opener">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <div class="search-box">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="messages">
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    <div class="notify">
+                        <i class='bx bx-bell' ></i>
+                    </div>
+                    <div class="user-info">
+                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        class="user-avatar">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <header>
+                    <h2>User Manage</h2>
+                    <input onclick="openForm()" type="button" value="Add User" id="add-user-btn">
+                </header>
+                <div class="user-list">
+                    <div class="title-wrapper">
+                        <h3 class="user-list-title">User List</h3>
+                        <div class="user-search">
+                            <input type="text" id="search-user-txt" placeholder="Search content here...">
+                            <input type="button" value="Search" id="search-user-btn">
+                        </div>
+                    </div>
+                    
+                    <table>
+                        <tr class="table-header">
+                            <th>Id</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Country</th>
+                            <th>Join date</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>user1</td>
+                            <td>John</td>
+                            <td>john123@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>America</td>
+                            <td>22/10/2021</td>
+                            <td><span class="active">Active</span></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="add-new-user-form">
+                    <div class="main-form">
+                        <h2 class="form-header">Add New User</h2>
+                        <div class="form-content">
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Username</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Firstname</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Lastname</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Address</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Phone Number</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Password</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Email</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Role</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <input onclick="AddUser()" type="button" value="Add" id="add-user-btn">
+                            <input onclick="CancelAdd()" type="button" value="Cancel" id="cancel-add-user-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function openForm(){
+            var form = $('.add-new-user-form')[0];
+            form.style.display = "block";
+        }
+        function AddUser(){
+            alert("Add new user successfully!");
+            var form = $('.add-new-user-form')[0];
+            form.style.display = "none";
+        }function CancelAdd(){
+            var form = $('.add-new-user-form')[0];
+            form.style.display = "none";
+        }
+        $(document).ready(function(){
+            var navExpandState = true;
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(navExpandState){
+                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    navExpandState = false;
+                }
+                else{
+                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    navExpandState = true;
+                }
+            });
+            // Expanding navigation when hover
+            $(".left-navigation").hover(function(){
+                if(!navExpandState){
+                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                }
+            });
+            $(".left-navigation").mouseleave(function(){
+                if(!navExpandState){
+                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                }
+            });
+            // Expand Search Box Animation
+            $(".search-box").click(function(){
+                $(this).animate({
+                    marginLeft: '4px'
+                }, 300);
+                $('#search-txt-box').animate({
+                    marginLeft: '20px',
+                    opacity: 1,
+                    width: 220,
+                }, 300);
+                $('#search-txt-box').focus();
+            });
+            $(".messages i, .notify i").click(function (){
+                $(this).css({
+                    "color": "rgba(174,120,197)",
+                    "background-color": "rgba(0, 0, 0, 0.05)"
+                });
+            });
+        });
+    </script>
+</body>
+</html>
