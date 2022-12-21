@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý du lịch</title>
+    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
     <link rel="stylesheet" href="../../styles/home.css">
+    <link rel="stylesheet" href="../../styles/customer.css">
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -78,7 +80,7 @@
                         <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
                         class="user-avatar">
                         <div class="info-content">
-                            <p class="user-name">Meow</p>
+                            <p class="user-name">Trung</p>
                             <p class="user-position">Admin</p>
                         </div>
                     </div>
@@ -86,17 +88,196 @@
             </div>
             <div class="content">
                 <header>
-                    <h2>Meow</h2>
-                    <div class="input-field">
-                        <input type="text" name="meow" id="meow" class="text-input" required="required">
-                        <span class="text-input-title" for="meow">Du lịch</span>
-                    </div>
+                    <h3>Manage > Travel</h3>
+                    <input onclick="openForm()" type="button" value="Add Trip" id="add-user-btn">
+                    <i class='bx bx-trip' ></i>
                 </header>
-                
+                <div class="user-list">
+                    <div class="title-wrapper">
+                        <h3 class="user-list-title">Trips List</h3>
+                        <div class="user-search">
+                            <input type="text" id="search-user-txt" placeholder="Search content here...">
+                            <input type="button" value="Search" id="search-user-btn">
+                        </div>
+                    </div>
+                    
+                    <table>
+                        <tr class="table-header">
+                            <th>Trip Id</th>
+                            <th>Title</th>
+                            <th>Duration</th>
+                            <th>Contact Phone</th>
+                            
+                            <th>Date Start</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>31/12/2022</td>
+                            <td><span class="active">Not Start</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>31/12/2022</td>
+                            <td><span class="active">Not Start</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>18/10/2022</td>
+                            <td><span class="inactive">Ended</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>31/12/2022</td>
+                            <td><span class="active">Not Start</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>18/10/2022</td>
+                            <td><span class="inactive">Ended</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>18/10/2022</td>
+                            <td><span class="inactive">Ended</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>31/12/2022</td>
+                            <td><span class="active">Not Start</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>trip1</td>
+                            <td>4-days tour in Japan</td>
+                            <td>4 days</td>
+                            <td>0123456789</td>
+                            
+                            <td>31/12/2022</td>
+                            <td><span class="active">Not Start</span></td>
+                            <td>
+                                <i class='bx bxs-edit-alt edit'></i>
+                                <i class='bx bxs-trash remove'></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="center">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-new-user-form">
+                    <div class="main-form">
+                        <h2 class="form-header">Add New Trip</h2>
+                        <div class="form-content">
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Trip Id</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Title</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Start Date</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Duration</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Contact Number</span>
+                            </div>
+                            <input type="file" id="img" name="img" accept="image/*" class="browse_img">
+                        </div>
+                        <div class="control-group">
+                            <input onclick="AddUser()" type="button" value="Add" id="add-user-btn" style="width: 100px">
+                            <input onclick="CancelAdd()" type="button" value="Cancel" id="cancel-add-user-btn">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <script>
+        function openForm(){
+            var form = $('.add-new-user-form')[0];
+            form.style.display = "block";
+        }
+        function AddUser(){
+            alert("Add new user successfully!");
+            var form = $('.add-new-user-form')[0];
+            form.style.display = "none";
+        }function CancelAdd(){
+            var form = $('.add-new-user-form')[0];
+            form.style.display = "none";
+        }
         $(document).ready(function(){
             var navExpandState = true;
             //Expand/Collapse navigation animation

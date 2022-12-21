@@ -3,7 +3,13 @@
     height: 100%;
 }
 
+.content .header-title{
+    color: rgb(108, 108, 108);
+    cursor: pointer;
+}
+
 .statics{
+    margin-top: 40px;
     display: flex;
     height: fit-content;
     justify-content: space-around;
@@ -112,27 +118,53 @@
 
 .chart-analyze{
     margin-top: 40px;
-    display: flex;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 12px;
-    padding-top: 16px;
+    box-shadow: 0px 0px 8px rgb(0, 0, 139, 0.2);
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
-    justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.chart-analyze .chart-header{
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600;
+.chart-line{
+    width: 600px;
 }
 
-.chart-analyze .chart-pie .chart-header{
-    margin-top: 10px;
+.chart-line .chart-header{
+    padding-left: 30px;
+    width: 100%;
 }
 
+.chart-polar{
+    margin-top: 20px;
+}
 
+.chart-month ul{
+    list-style-type: none;
+    
+}
+
+.chart-analyze .detail{
+    display: flex;
+}
+
+.chart-month{
+    width: 340px;
+}
+
+.chart-month li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.chart-month a{
+    text-decoration: none;
+}
+
+.chart-month li a.active{
+    border-bottom: 1px solid #551A8B;
+}
