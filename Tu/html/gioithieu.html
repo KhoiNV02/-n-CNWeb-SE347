@@ -1,1 +1,107 @@
-giới thiệu
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dream Holiday</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../Assets/logo/favicon-16x16.png" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar-header">
+            <div id="header-container">
+                <div class="left">
+                    <img id="ilogo" src="../Assets/logo/logo-tách nền.png" alt="img logo" />
+                    <p id="plogo"><span>D</span>REAM <span>H</span>OLIDAY</p>
+                </div>
+                <div class="center">
+                    <div class="top_search">
+                        <input class="search" id="search_input" placeholder="Bạn muốn tìm gì">
+                        <button id="btnsearch"><i class="fa fa-search"></i></button>
+
+                    </div>
+                    <button id="btnmoon"><i class="fas fa-moon"></i></i></button>
+                </div>
+
+                <div class="right">
+                    <img src="../Assets/Images/profile.png" alt="Avatar">
+                   
+                    <p class="name"> Triệu Tuấn Tú</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-nav" id="main_nav">
+            <a href="../index.html">Trang chủ</a>
+            <a href="dichvu.html">Dịch vụ</a>
+            <a href="sotay.html">Sổ tay du lịch</a>
+            <a href="gioithieu.html"  class="active">Giới thiệu</a>
+            <a href="phanhoi.html  ">Phản hồi</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("main_nav");
+                if (x.className === "main-nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "main-nav";
+                }
+            }
+        </script>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Các tours</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Trạng thái đặt tour</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li>Email: dreamholiday@gmail.com</li>
+                        <li>HOt Line: XX-XX-XX-XX</li>
+                        <li>SĐT: 0393xxx9xx</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Lên đầu trang">△</button>
+</body>
+<script src="js/main.js"></script>
+
+</html>

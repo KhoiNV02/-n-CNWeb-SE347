@@ -1,0 +1,12 @@
+.visa-card
+{
+    max-width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.visa-card img
+{
+    max-width: 100%;
+    height: 250px;
+}

@@ -2,10 +2,19 @@
 <html>
 
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Dream Holiday</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/tour-card.css">
+    <link rel="stylesheet" href="css/popular-location.css">
+    <link rel="stylesheet" href="css/visa-card.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../Assets/logo/favicon-16x16.png" />
+
 </head>
 
 <body>
@@ -13,16 +22,21 @@
         <div class="navbar-header">
             <div id="header-container">
                 <div class="left">
-                    <p id="plogo"><span>T</span>RAVEL</p>
-                    <img id="ilogo" src="../Assets/Images/T.jpg" />
+                    <img id="ilogo" src="../Assets/logo/logo-tách nền.png" alt="img logo" />
+                    <p id="plogo"><span>D</span>REAM <span>H</span>OLIDAY</p>
                 </div>
-                <div class="top_search">
-                    <input class="search" id="search_input" placeholder="Bạn muốn tìm gì">
+                <div class="center">
+                    <div class="top_search">
+                        <input class="search" id="search_input" placeholder="Bạn muốn tìm gì">
+                    </div>
                     <button id="btnsearch"><i class="fa fa-search"></i></button>
                     <button id="btnmoon"><i class="fas fa-moon"></i></i></button>
+
                 </div>
+
                 <div class="right">
                     <img src="../Assets/Images/profile.png" alt="Avatar">
+                    
                     <p class="name"> Triệu Tuấn Tú</p>
                 </div>
             </div>
@@ -40,6 +54,1289 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <h1>Các ưu đãi mới nhất</h1>
+        <div class="special-offer">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2022/12/3/anh-dai-dien--1670028517450565765122.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../Tu/acseets/img/giangsinh.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../Tu/acseets/img/tet.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../Tu/acseets/img/valentine.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../Tu/acseets/img/womenday.jpeg" />
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {                   
+                        breakpoints:{
+                            480:{slidesPerView: 1,
+                                spaceBetween: 30,},
+                            960:{slidesPerView: 2,
+                            spaceBetween: 30,},
+                            1024:{slidesPerView: 3,
+                            spaceBetween: 30,},
+                            1240:{slidesPerView: 4,
+                            spaceBetween: 30,}
+                        },
+                        slidesPerGroup: 1,
+                        loop: true,
+                        loopFillGroupWithBlank: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+        <h1>Các tour hot nhất</h1>
+        <div class="hot-tours">
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+            <div class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </div>
+
+        </div>
+        <h1>Các tour khác </h1>
+        <div class="tours-section">
+            
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+            <div class="tour-card-hori image-item">
+                <div class="tour-image">
+                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <p class="location-text">Gần đất xa trời</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Một đi không trở lại
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                            </svg>
+                            <span>Cả đời</span>
+                        </p>
+                        <p class="vehicles">
+                            Hai cẳng
+                        </p>
+                        <p class="start-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                            </svg>
+                            <span>22/12/2022</span>
+                        </p>
+                        <p class="booking-count">
+                            <span>999 lượt đặt</span>
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">100.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1<sup>đ</sup></p>
+                        <p class="price">99.999 <sup>đ</sup></p>
+                    </div>
+                </div>
+                <div class="tour-detail-btn">
+                    <a href=''>Chi tiết tour</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Một số điểm đến được ưu chuộng </h1>
+        <div class="popular-location">
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Cung điện mùa đông </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Địa điểm nổi tiếng tại Nga. Từng là nơi ở của các Nga hoàng
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            <div class="property-card">
+                <a href="#">
+                    <div class="property-image">
+                        <img src="../Tu/acseets/img/nga.jpg" />
+                        <div class="property-image-title">
+                            <h5> Card Title </h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="property-description">
+
+                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <h1>Dịch vụ visa</h1>
+        <div class="visa-popular">
+            <div class="visa-card">
+                <a href="#">
+                    <img src="../Tu/acseets/img/thap-eiffel.png" />
+                    <h5>Phap</h5>
+                </a>
+            </div>
+            <div class="visa-card">
+                <a href="#">
+                    <img src="../Tu/acseets/img/thap-eiffel.png" />
+                    <h5>Phap</h5>
+                </a>
+            </div>
+            <div class="visa-card">
+                <a href="#">
+                    <img src="../Tu/acseets/img/thap-eiffel.png" />
+                    <h5>Phap</h5>
+                </a>
+            </div>
+            <div class="visa-card">
+                <a href="#">
+                    <img src="../Tu/acseets/img/thap-eiffel.png" />
+                    <h5>Phap</h5>
+                </a>
+            </div>
+            <div class="visa-card">
+                <a href="#">
+                    <img src="../Tu/acseets/img/thap-eiffel.png" />
+                    <h5>Phap</h5>
+                </a>
+            </div>
+            <div class="visa-card">
+                <a href="#">
+                    <img src="../Tu/acseets/img/thap-eiffel.png" />
+                    <h5>Phap</h5>
+                </a>
+            </div>
+        </div>
         <script>
             function myFunction() {
                 var x = document.getElementById("main_nav");
@@ -51,64 +1348,44 @@
             }
         </script>
     </main>
-    <footer>
-        <div class="div-f-1">
-            <div>
-                <p>Liên hệ với chúng tôi</p>
-                <p>Trụ sở : XXX-XXX-XXX</br>
-                    Chi nhánh : XXX-XXX-XXX</br>
-                    SĐT : 087516546</br>
-                    Hotline : 190000xx</br>
-                    Email : SVCPR@gmail.com</br>
-                </p>
-                <p>Mạng xã hội</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Các tours</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Trạng thái đặt tour</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li>Email: dreamholiday@gmail.com</li>
+                        <li>HOt Line: XX-XX-XX-XX</li>
+                        <li>SĐT: 0393xxx9xx</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-        <div class="div-f-2">
-          <div>
-            <p>Góc khách hàng</p>
-            <a>
-                Chính sách đặt tour
-            </a>
-            <a>
-                Chính sách bảo mật
-            </a>
-            <a>
-                Câu hỏi thường gặp
-            </a>
-            <a>
-                Các sản phẩm
-            </a>
-          </div>
-        </div>
-
-        <div class="div-f-3">
-        <div>
-            <p>Góp ý</p>
-            <form id="waterform" method="post">
-
-                <div class="formgroup" id="name-form">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" />
-                </div>
-
-                <div class="formgroup" id="email-form">
-                    <label for="email">Your e-mail*</label>
-                    <input type="email" id="email" name="email" />
-                </div>
-
-                <div class="formgroup" id="message-form">
-                    <label for="message">Your message</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-
-                <input id="submit" type="submit" value="Send your message!" />
-            </form>
-        </div>
-        </div>
-        
     </footer>
     <button onclick="topFunction()" id="myBtn" title="Lên đầu trang">△</button>
 </body>
