@@ -1,0 +1,13 @@
+
+h1::after p{
+    padding-left: 30px;
+}
+.visa-popular,.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+.see-more
+{
+    text-align: right;
+}

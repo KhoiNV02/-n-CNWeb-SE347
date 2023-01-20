@@ -1,0 +1,23 @@
+.member-card, .member-card *
+{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+
+}
+.member-card
+{
+    width: 250px;
+    height: 400px;
+    border: 1px solid rgb(38, 0, 255) ;
+    padding: 4px;
+}
+.member-card img
+{
+    width: 50%;
+    border-radius: 50%;
+    border: 1px black solid;
+}

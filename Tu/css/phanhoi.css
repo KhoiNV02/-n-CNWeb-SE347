@@ -1,0 +1,74 @@
+.office-info {
+    margin: 15px 45px;
+}
+
+.office-info a {
+    color: #4ca8fd;
+}
+
+form {
+    background-color: #bbdcfc;
+    margin: auto;
+}
+
+.send-message {
+    display: grid;
+}
+
+.send-message textarea,
+.send-message input {
+    border: none;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 50%;
+    min-width: 350px;
+}
+input 
+{
+    padding: 10px;
+    height: 30px;
+}
+textarea {
+    padding: 10px;
+    height: 150px;
+}
+
+#submit
+{
+    margin: 15px auto;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #0084ff;
+    border: rgb(255, 255, 255) solid 1px;
+}
+.collapsible {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    border: #555 solid 1px;
+    font-weight: bolder;
+}
+
+.active,
+.collapsible:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.content {
+    padding: 5px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+        text-indent: 25px;
+}
+.content p
+{
+    background-color: white;
+
+}

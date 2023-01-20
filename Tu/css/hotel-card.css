@@ -1,0 +1,32 @@
+.hotel-card{
+    max-width: 375px;
+    height: 370px;
+    display: grid;
+    grid-template-rows: 250px auto;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    margin: auto;
+}
+
+.hotel-card .hotel-image img{
+    max-height: 250px;
+    max-width: 375px;
+    width: 100%;
+}
+.hotel-card .hotel-info{
+    display: grid;
+    grid-template-rows: 20px 20px 20px;
+    gap: 3px;
+}
+.hotel-location
+{
+    color: #4ca8fd;
+}
+
+.hotel-card:hover
+{
+    transform: scale(1.02);
+}

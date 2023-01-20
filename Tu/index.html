@@ -3,7 +3,7 @@
 
 <head>
     <title>Dream Holiday</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/swiper.css">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../Assets/logo/favicon-16x16.png" />
-
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -24,19 +24,10 @@
                 <div class="left">
                     <img id="ilogo" src="../Assets/logo/logo-tách nền.png" alt="img logo" />
                     <p id="plogo"><span>D</span>REAM <span>H</span>OLIDAY</p>
-                </div>
-                <div class="center">
-                    <div class="top_search">
-                        <input class="search" id="search_input" placeholder="Bạn muốn tìm gì">
-                    </div>
-                    <button id="btnsearch"><i class="fa fa-search"></i></button>
-                    <button id="btnmoon"><i class="fas fa-moon"></i></i></button>
-
-                </div>
-
+                </div>            
                 <div class="right">
-                    <img src="../Assets/Images/profile.png" alt="Avatar">
-                    
+                    <button id="btnmoon"><i class="fas fa-moon"></i></i></button>
+                    <img src="/Tu/acseets/img/profile.png" alt="Avatar">
                     <p class="name"> Triệu Tuấn Tú</p>
                 </div>
             </div>
@@ -54,12 +45,16 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        <h1>Các ưu đãi mới nhất</h1>
+        <article>
+            <a href="html/listuudai.html">
+            <h1>Các ưu đãi mới nhất</h1>
+        </a>
         <div class="special-offer">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2022/12/3/anh-dai-dien--1670028517450565765122.jpg" />
+                        <img
+                            src="../Tu/acseets/img/qatar.jpg" />
                     </div>
                     <div class="swiper-slide">
                         <img src="../Tu/acseets/img/giangsinh.jpg" />
@@ -73,7 +68,7 @@
                     <div class="swiper-slide">
                         <img src="../Tu/acseets/img/womenday.jpeg" />
                     </div>
-                    
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -82,16 +77,24 @@
 
                 <!-- Initialize Swiper -->
                 <script>
-                    var swiper = new Swiper(".mySwiper", {                   
-                        breakpoints:{
-                            480:{slidesPerView: 1,
-                                spaceBetween: 30,},
-                            960:{slidesPerView: 2,
-                            spaceBetween: 30,},
-                            1024:{slidesPerView: 3,
-                            spaceBetween: 30,},
-                            1240:{slidesPerView: 4,
-                            spaceBetween: 30,}
+                    var swiper = new Swiper(".mySwiper", {
+                        breakpoints: {
+                            480: {
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                            },
+                            960: {
+                                slidesPerView: 2,
+                                spaceBetween: 30,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            },
+                            1240: {
+                                slidesPerView: 4,
+                                spaceBetween: 30,
+                            }
                         },
                         slidesPerGroup: 1,
                         loop: true,
@@ -108,1235 +111,793 @@
                 </script>
             </div>
         </div>
-        <h1>Các tour hot nhất</h1>
-        <div class="hot-tours">
-            <div class="tour-card image-item">
+        </article>
+        
+       <article>
+        <a>
+            <h1>Các tour hot nhất</h1>
+        </a>
+        <ul class="hot-tours">
+           
+            <li class="tour-card image-item">
                 <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img src="../Tu/acseets/img/tuong-nu-than-tu-do.jpg" alt="test" />
                     <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
                     <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">New York - Hoa Kỳ</p>
                     </div>
                 </div>
                 <div class="tour-info">
                     <div class="tour-name">
                         <p>
-                            Một đi không trở lại
+                            Khám phá tượng nữ thần tự do
                         </p>
                     </div>
                     <div class="tour-other-info">
                         <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>5 ngày</span>
                         </p>
                         <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
+                            <i class="fa fa-calendar-days"></i>
+                            <span>02/02/2023</span>
                         </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
 
-            <div class="tour-card image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
                         </p>
                     </div>
                     <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
+                        <p class="old-price">12.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate"> - 2.000.001<sup>đ</sup></p>
+                        <p class="price">9.999.999 <sup>đ</sup></p>
                     </div>
                 </div>
                 <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
-            <div class="tour-card image-item">
+            </li>
+            <li class="tour-card image-item">
                 <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
+                    <img src="../Tu/acseets/img/thap-eiffel.png" alt="test" />
                     <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
-                    <p class="special-note">Bãi biển hoàng hôn cực vip</p>
                     <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Paris - Pháp</p>
                     </div>
                 </div>
                 <div class="tour-info">
                     <div class="tour-name">
                         <p>
-                            Một đi không trở lại
+                            Tháp Eiffel - Sông Seine
                         </p>
                     </div>
                     <div class="tour-other-info">
                         <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
                         </p>
                         <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
                         </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
+
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
                         </p>
                     </div>
                     <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
                     </div>
                 </div>
                 <a id="tour-detail" href=''>Chi tiết tour →</a>
-            </div>
+            </li>
+            <li class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="../Tu/acseets/img/hoa-anh-dao-nhat.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Hakone - Nhật Bản</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Nhật Bản mùa hoa anh đào
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
+                        </p>
+                        <p class="start-date">
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
+                        </p>
 
-        </div>
-        <h1>Các tour khác </h1>
-        <div class="tours-section">
-            
-            <div class="tour-card-hori image-item">
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+            <li class="tour-card image-item">
                 <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
+                    <img src="../Tu/acseets/img/nui-phu-si.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
                     <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Honshu - Nhật Bản</p>
                     </div>
                 </div>
                 <div class="tour-info">
                     <div class="tour-name">
                         <p>
-                            Một đi không trở lại
+                            Núi Phú Sĩ - đỉnh núi cao nhất Nhật Bản
                         </p>
                     </div>
                     <div class="tour-other-info">
                         <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
                         </p>
                         <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
                         </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-            <div class="tour-card-hori image-item">
-                <div class="tour-image">
-                    <img src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt="test" />
-                    
-                    <div class="location">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
-                        </svg>
-                        <p class="location-text">Gần đất xa trời</p>
-                    </div>
-                </div>
-                <div class="tour-info">
-                    <div class="tour-name">
-                        <p>
-                            Một đi không trở lại
-                        </p>
-                    </div>
-                    <div class="tour-other-info">
-                        <p class="duration">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM288 437v11H96V437c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
-                            </svg>
-                            <span>Cả đời</span>
-                        </p>
-                        <p class="vehicles">
-                            Hai cẳng
-                        </p>
-                        <p class="start-date">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-                            </svg>
-                            <span>22/12/2022</span>
-                        </p>
-                        <p class="booking-count">
-                            <span>999 lượt đặt</span>
-                        </p>
-                    </div>
-                    <div class="tour-prices">
-                        <p class="old-price">100.000 <sup>đ</sup></p>
-                        <p class="price-differentiate">-1<sup>đ</sup></p>
-                        <p class="price">99.999 <sup>đ</sup></p>
-                    </div>
-                </div>
-                <div class="tour-detail-btn">
-                    <a href=''>Chi tiết tour</a>
-                </div>
-            </div>
-        </div>
 
-        <h1>Một số điểm đến được ưu chuộng </h1>
-        <div class="popular-location">
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Cung điện mùa đông </h5>
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+            <li class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="../Tu/acseets/img/van-ly-truong-thanh.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Hà Bắc - Trung Quốc</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Đoạn trường thành tại Kim Sơn Lĩnh
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>4 ngày </span>
+                        </p>
+                        <p class="start-date">
+                            <i class="fa fa-calendar-days"></i>
+                            <span>04/02/2023</span>
+                        </p>
+
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+            <li class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="../Tu/acseets/img/tu-cam-thanh.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Bắc Kinh - Trung Quốc</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Tham quan Tử Cấm Thành (Cố Cung)
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
+                        </p>
+                        <p class="start-date">
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
+                        </p>
+
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+            <li class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="../Tu/acseets/img/vien-chan-lao.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Viêng Chăn - Lào</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Chùa tại thủ đô Viêng Chăn
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
+                        </p>
+                        <p class="start-date">
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
+                        </p>
+
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+            <li class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="../Tu/acseets/img/Đền_Taj_Mahal.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Agra - Ấn Độ</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Kì quan thế giới - Đền Taj Mahal
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
+                        </p>
+                        <p class="start-date">
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
+                        </p>
+
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+            <li class="tour-card image-item">
+                <div class="tour-image">
+                    <img src="../Tu/acseets/img/thanh-duong.jpg" alt="test" />
+                    <img class="hot_tags" src="../Tu/acseets/img/hot_tags.png">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="location-text">Thành Vantican</p>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <div class="tour-name">
+                        <p>
+                            Vương cung thánh đường Thánh Phêrô
+                        </p>
+                    </div>
+                    <div class="tour-other-info">
+                        <p class="duration">
+                            <i class="fa-sharp fa-solid fa-hourglass"></i>
+                            <span>7 ngày </span>
+                        </p>
+                        <p class="start-date">
+                            <i class="fa fa-calendar-days"></i>
+                            <span>03/02/2023</span>
+                        </p>
+
+                        <p><i class="fa fa-gift"></i>
+                            Vé máy bay + Visa
+                        </p>
+                    </div>
+                    <div class="tour-prices">
+                        <p class="old-price">10.000.000 <sup>đ</sup></p>
+                        <p class="price-differentiate">-1.100.000<sup>đ</sup></p>
+                        <p class="price">8.900.000 <sup>đ</sup></p>
+                    </div>
+                </div>
+                
+                <a id="tour-detail" href=''>Chi tiết tour →</a>
+            </li>
+        </ul>
+       </article>
+        <article>
+            <a>
+                <h1>Các tour khác </h1>
+            </a>
+            <ul class="tours-section">
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/hawai'i.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Quần đảo Hawai'i - Hoa Kỳ</p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Địa điểm nổi tiếng tại Nga. Từng là nơi ở của các Nga hoàng
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Hawai thiên đường nhiệt đới
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>10 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/kenya.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Kenya </p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Vườn quốc gia Nairobi
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>10 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/las-vegas.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Las Vegas - Hoa Kỳ </p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Khu vui chơi đẳng cấp quốc thế Las-Vegas
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>10 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/pisa.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Tuscany - Ý</p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Tháp nghiêng Pisa tại Ý 
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>10 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            <div class="property-card">
-                <a href="#">
-                    <div class="property-image">
-                        <img src="../Tu/acseets/img/nga.jpg" />
-                        <div class="property-image-title">
-                            <h5> Card Title </h5>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/Sydney.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Sydney - Úc</p>
                         </div>
                     </div>
-                </a>
-                <div class="property-description">
-
-                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-
-        <h1>Dịch vụ visa</h1>
-        <div class="visa-popular">
-            <div class="visa-card">
-                <a href="#">
-                    <img src="../Tu/acseets/img/thap-eiffel.png" />
-                    <h5>Phap</h5>
-                </a>
-            </div>
-            <div class="visa-card">
-                <a href="#">
-                    <img src="../Tu/acseets/img/thap-eiffel.png" />
-                    <h5>Phap</h5>
-                </a>
-            </div>
-            <div class="visa-card">
-                <a href="#">
-                    <img src="../Tu/acseets/img/thap-eiffel.png" />
-                    <h5>Phap</h5>
-                </a>
-            </div>
-            <div class="visa-card">
-                <a href="#">
-                    <img src="../Tu/acseets/img/thap-eiffel.png" />
-                    <h5>Phap</h5>
-                </a>
-            </div>
-            <div class="visa-card">
-                <a href="#">
-                    <img src="../Tu/acseets/img/thap-eiffel.png" />
-                    <h5>Phap</h5>
-                </a>
-            </div>
-            <div class="visa-card">
-                <a href="#">
-                    <img src="../Tu/acseets/img/thap-eiffel.png" />
-                    <h5>Phap</h5>
-                </a>
-            </div>
-        </div>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Nhà hát Opera Sydney
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>6 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
+                        </div>
+                    </div>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/ho-trai-tim.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Al Qudra Oasis - Dubai</p>
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Hồ nước hình trái tim   
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>6 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
+                        </div>
+                    </div>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/ho-trai-tim.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Al Qudra Oasis - Dubai</p>
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Hồ nước hình trái tim   
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>6 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
+                        </div>
+                    </div>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+                <li class="tour-card-hori image-item">
+                    <div class="tour-image">
+                        <img src="../Tu/acseets/img/khalifa.jpg" alt="test" />
+    
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location-text">Downtown Dubai - Dubai</p>
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-name">
+                            <p>
+                                Tòa nhà chọc trời Burj Khalifa   
+                            </p>
+                        </div>
+                        <div class="tour-other-info">
+                            <p class="duration">
+                                <i class="fa-sharp fa-solid fa-hourglass"></i>
+                                <span>6 ngày</span>
+                            </p>
+                            <p class="start-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>22/12/2022</span>
+                            </p>
+                            <p><i class="fa fa-gift"></i>
+                                Vé máy bay + Visa
+                            </p>
+                        </div>
+                        <div class="tour-prices">
+                            <p class="old-price">100.000 <sup>đ</sup></p>
+                            <p class="price-differentiate">-1<sup>đ</sup></p>
+                            <p class="price">99.999 <sup>đ</sup></p>
+                        </div>
+                    </div>
+                    <div class="tour-detail-btn">
+                        <a id="tour-detail" href=''>Chi tiết tour →</a>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <a>
+                <h1>Một số điểm đến được ưu chuộng khác </h1>
+            </a>
+            <ul class="popular-location">
+               
+                <li class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <img src="../Tu/acseets/img/verona.jpg" />
+                            <div class="property-image-title">
+                                <h5> Verona </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+    
+                        <p>Verona là bối cảnh trong truyện Romeo và Juliet của Shakespeare và một khung cảnh lãng mạn tuyệt đẹp cho những du khách muốn tiết kiệm. 
+                        </p>
+                    </div>
+                </li>
+                <li class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <img src="../Tu/acseets/img/Symi.jpg" />
+                            <div class="property-image-title">
+                                <h5> Symi </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+    
+                        <p>Nếu bạn là người thích sự rung cảm nhẹ nhàng, Symi là nơi nghỉ ngơi hoàn hảo trên đảo. Symi, Hy Lạp có 8 bãi biển cát trắng khác nhau và hàng loạt vịnh nhỏ để khám phá.
+                        </p>
+                    </div>
+                </li>
+                <li class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <img src="../Tu/acseets/img/Istanbul.jpg" />
+                            <div class="property-image-title">
+                                <h5> Istanbul </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+    
+                        <p>Istanbul – thành phố với vẻ đẹp cổ kính được gọi là thủ đô văn hóa châu Âu.Chỉ riêng Istanbul đã chiếm đến 15 triệu lượt khách thăm quan khi đến Thổ Nhĩ Kì.
+                        </p>
+                    </div>
+                </li>
+                <li class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <img src="../Tu/acseets/img/dai-loan.jpg" />
+                            <div class="property-image-title">
+                                <h5>Đài Loan</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+    
+                        <p>Đài Loan có một di sản về văn hóa và tinh thần vô cùng phong phú, ẩm thực tuyệt vời, những suối nước nóng đẳng cấp thế giới, cảnh đẹp đáng kinh ngạc.
+                        </p>
+                    </div>
+                </li>
+                <li class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <img src="../Tu/acseets/img/Merlion.jpg" />
+                            <div class="property-image-title">
+                                <h5> Công viên Merlion </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+    
+                        <p>Tượng sư tử biển Merlion đặt tại công viên Merlion đã thu hút đông đảo khách du lịch Singapore tới đây tham quan và chụp ảnh. Đây cũng chính là địa điểm du lịch Singapore miễn phí vé vào cửa hot nhất được nhiều du khách ghé thăm.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <a>
+                <h1>Dịch vụ visa</h1>
+            </a>
+            <ul class="visa-popular">
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../Tu/acseets/img/co-phap.png" />
+                        <h5>Pháp</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../Tu/acseets/img/co-han-quoc.png" />
+                        <h5>Hàn Quốc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../Tu/acseets/img/co-nhat-ban.png" />
+                        <h5>Nhật Bản</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../Tu/acseets/img/Co-Trung-Quoc.jpg" />
+                        <h5>Trung Quốc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../Tu/acseets/img/co-nga.png" />
+                        <h5>Nga</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../Tu/acseets/img/co-y.png" />
+                        <h5>Ý</h5>
+                    </a>
+                </li>
+            </ul>
+        </article>
         <script>
             function myFunction() {
                 var x = document.getElementById("main_nav");
@@ -1371,7 +932,7 @@
                     <h4>Liên hệ</h4>
                     <ul>
                         <li>Email: dreamholiday@gmail.com</li>
-                        <li>HOt Line: XX-XX-XX-XX</li>
+                        <li>HOT Line: XX-XX-XX-XX</li>
                         <li>SĐT: 0393xxx9xx</li>
                     </ul>
                 </div>
