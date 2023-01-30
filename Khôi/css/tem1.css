@@ -1,71 +1,265 @@
-/* CSS Document */
 *
 {
-	padding: 0;
-	margin: 0;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+:root
+{
+	--Text-color1:black;
+	--Text-color2:#ca7650;
+	--Font-title:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 html
 {
-	font-family:Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	
 }
-#header 
+#header
 {
-/*	background: url("../../Assets/Images/fasfasf.PNG");*/
-/*
-background: rgb(255,220,162);
-background: linear-gradient(187deg, rgba(255,220,162,1) 52%, rgba(255,220,162,1) 77%);
-*/
-	position: fixed;
-	width: 100%;
+position: absolute;
+	left:0;
+	right:0;
+	z-index: 3;
+}
+#icon-social
+{
+	width:10%; 
+	float: left;
+	padding-top: 20px;
+padding-left: 20px;
 }
 #nav
 {
-	 text-align: center;
-	border-radius: 90px;
-}
- #nav li
-{
-	padding-top: 30px;
+	width: 80%;
+display: inline-block;
+	padding-top: 15px;
 	text-align: center;
+}
+#nav li 
+{
 	display: inline-block;
-	padding-left: 20px;
-	padding-bottom: 10px;
-
-}
- #nav li a
-{
-	
-	text-decoration: none;
-	color:ghostwhite;
-	font-weight: 570;
-	font-size: 18px;
 	
 }
-#header #IconSocialMedia
+#nav li a
 {
-	float:left;
-	padding-left: 40px;
-	position: absolute;
-}
-#header #IconSocialMedia i
-{
-	line-height: 110.44px;
-	padding-left: 10px;
-	
-}
-#header #logo
-{ 
-	text-align: center;
-	padding-top: 10px;
+	color: var(--Text-color1);
+		text-decoration: none;
+padding-left: 20px;
+	font-size: 1.4rem;
+	font-style:oblique;
+	font:bold;
 }
 #banner
-{ 
-text-align: center;
+{
+	text-align: center;
 }
-#banner h1
-{ font-size: 38px;
+#logo, #slogan, #search
+{
 	position: absolute;
-left:0;
+	z-index: 2;
+	left:0;
 	right: 0;
+	margin-top: 50px;
+	
+}
+#slogan
+{
 	margin-top: 200px;
+	line-height: 50px;
+	font-style: italic;
+	font-family: var(--Font-title);
+}
+#banner #image
+{
+	position: relative;
+	z-index: 1;
+}
+.slo1
+{
+	color: var(--Text-color1);
+	
+}
+.slo2
+{
+	color: var(--Text-color2);
+}
+#slogan h1
+{
+	font-size: 2.8rem;
+}
+#slogan h2
+{
+	font-size: 1.9rem;
+	padding-left: 90px;
+}
+#search
+{
+	margin-top:550px;
+	left:0;
+	right: 0;
+	justify-content: space-between;
+	background-color: rgba(221,221,221,0.5);
+	padding: 12px;
+	border-radius: 5px;
+	width: 80%;
+	position: absolute;
+	margin-left: 170px;
+	text-align: center;
+	
+}
+#search h1
+{
+	font-size: 1.5rem;
+	padding-bottom: 5px;
+	color: var(--Text-color1);
+}
+.where
+{
+		float:left;
+	height: 50px;
+	background-color: white;
+	width: 24%;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	position: relative;
+	margin-left: 35px;
+}
+.where input
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline:none;
+	padding-left: 32px;
+	border-radius: 5px;
+	padding-left: 35px;
+	font-size:1.2rem;
+}
+.where i
+{
+	position: absolute;
+	margin-right: 12px;
+	z-index: 1;
+	margin-left: 12px;
+}
+.where:last-child
+{
+	width:130px;
+}
+.where:last-child button
+{	font-size:1.2rem;
+	height: 100%;
+	width: 100%;
+	color:var(--Text-color2);
+	background-color: white;
+	border:none;
+	cursor:pointer;
+	border-radius: 10px;
+	margin-left: 10px;
+	
+}
+.where:last-child button:hover
+{
+	background-color: aliceblue;
+}
+.autobox
+{
+	position: absolute;
+	top:100%;
+	background-color: white;
+	width:100%;
+	overflow-y: auto;
+	background-color: rgba(221,221,221,0.5);
+	text-align: left;
+}
+.autobox li
+{
+	list-style: none;
+	padding: 6px 0 6px 36px;
+	cursor: pointer;
+	color: black;
+	font: bold;
+	font-size: 1.2rem;
+	display: none;
+}
+.autobox li:hover
+{
+	color: white;
+}
+#service
+{
+	margin-top: 40px;
+	position: relative;
+	
+}
+.tittle
+{
+	text-align: center;
+	font-family: var(--Font-title);
+	font-style: italic;
+}
+#service h1
+{
+	font-size: 2.5rem;
+}
+#service h2
+{
+	font-size: 1.5rem;
+}
+.ser 
+{ 
+	width: 24%;
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+.titlemini
+{
+
+	color: var(--Text-color2);
+	font-family: var(--Font-title);
+	
+}
+.descript{
+	font-size: 1.3rem;
+	font-family: var(--Font-title);
+	font:italic;
+	width: 330px;
+}
+.imgser
+{
+		height: 300px;
+}
+.imgser:hover
+{
+transform:  scale(1.3);	
+}
+
+#destination
+{
+	margin-top: 40px;
+	text-align: center;
+	position: relative;	
+}
+.topdestination
+{
+display: inline-block;
+	width: 24%;
+}
+.topdestination:hover
+{
+transform: scale(0.9);
+	opacity: 0.8;	
+}
+.topdestination h2
+{
+	display:none;
+	position: absolute;
+	top:400px;
+	left: 180px;
 }
