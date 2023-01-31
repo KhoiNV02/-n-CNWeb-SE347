@@ -541,6 +541,15 @@ margin-top:-60px;
 {
 	float: left;
 	width: 33.333%;
+text-align: center;
+}
+#tieude h2:first-child
+{
+	text-align: center;
+}
+#lienket
+{
+	text-align: center;
 }
  #soci
 {
