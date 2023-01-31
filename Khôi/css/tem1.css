@@ -6,7 +6,7 @@
 }
 :root
 {
-	--Text-color1:black;
+	--Text-color1:Black;
 	--Text-color2:#ca7650;
 	--Font-title:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
@@ -16,6 +16,7 @@ html
 	font-family: Arial, Helvetica, sans-serif;
 	
 }
+
 #header
 {
 position: absolute;
@@ -47,9 +48,44 @@ display: inline-block;
 	color: var(--Text-color1);
 		text-decoration: none;
 padding-left: 20px;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-style:oblique;
-	font:bold;
+	font-style: oblique;
+}
+#telephone img
+{
+float: left;
+	position: absolute;
+
+width: 20%;
+	left:5px;
+	top:-9px;
+	transform: scale(2);
+}
+#telephone p
+{
+	float: left;
+	width:40%;
+	position: absolute;
+	left:50px;
+	color:burlywood;
+	
+}
+#telephone
+{position: absolute;
+right: 20px;
+	top:10px;
+background: white;
+height: 40px;
+	width: 13%;
+	padding-top: 8px;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+#telephone:hover
+{
+	opacity: 0.8;
 }
 #banner
 {
@@ -92,7 +128,7 @@ padding-left: 20px;
 #slogan h2
 {
 	font-size: 1.9rem;
-	padding-left: 90px;
+	
 }
 #search
 {
@@ -159,41 +195,21 @@ padding-left: 20px;
 	border:none;
 	cursor:pointer;
 	border-radius: 10px;
-	margin-left: 10px;
 	
+/*	margin-left: 10px;*/
+
 }
 .where:last-child button:hover
 {
-	background-color: aliceblue;
+
+opacity: 0.4;
 }
-.autobox
-{
-	position: absolute;
-	top:100%;
-	background-color: white;
-	width:100%;
-	overflow-y: auto;
-	background-color: rgba(221,221,221,0.5);
-	text-align: left;
-}
-.autobox li
-{
-	list-style: none;
-	padding: 6px 0 6px 36px;
-	cursor: pointer;
-	color: black;
-	font: bold;
-	font-size: 1.2rem;
-	display: none;
-}
-.autobox li:hover
-{
-	color: white;
-}
+
 #service
 {
 	margin-top: 40px;
 	position: relative;
+/*	left: 20px;*/
 	
 }
 .tittle
@@ -214,8 +230,7 @@ padding-left: 20px;
 { 
 	width: 24%;
 	display: inline-block;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 40px;
 
 }
 .titlemini
@@ -234,7 +249,9 @@ padding-left: 20px;
 .imgser
 {
 		height: 300px;
+	
 }
+
 .imgser:hover
 {
 transform:  scale(1.3);	
@@ -262,4 +279,299 @@ transform: scale(0.9);
 	position: absolute;
 	top:400px;
 	left: 180px;
+}
+.mySlider {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+ 
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  
+  user-select: none;
+	text-align: justify-all;
+top: 322px;
+	z-index: 4;height: 45px;
+	line-height: 15px;
+}
+.prev
+{
+border-radius: 15px 0px 0px 15px;	
+	
+}
+.next
+{
+border-radius: 0px 15px 15px 0px;	right: 0;
+	
+}
+
+ .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+	
+	
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+	z-index: 4;
+	top: 273px;
+	position:relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.customersay
+{
+position: relative;	
+	
+width: 100%;
+	border-radius: 100px;
+	
+}
+.cusImage
+{
+	position: absolute;
+	width: 30%;
+}
+.whattheysay
+{
+	position: absolute;
+	left: 380px;
+	top:130px;
+	width: 60%;
+	font-style: italic;
+	font-size:1.3rem; 
+}
+.vitri
+{
+	position: absolute;
+	left:780px;
+	top:190px;
+	width: 190px;
+	text-decoration: underline;
+}
+.ha1
+{
+	display: block;
+}
+.Space
+{
+	background: rgb(215,143,17);
+background: linear-gradient(163deg, rgba(215,143,17,0.7736344537815126) 32%, rgba(252,171,142,0.8548669467787114) 66%);
+	position: relative;
+	top:300px; 
+	height: 45px;
+	z-index: 3;
+	border-radius: 30px;
+}
+#aboutus
+{
+	margin-top: 350px;
+	position: relative;
+}
+#aboutus>h1
+{
+	position: absolute;
+	text-align: center;
+	left:0;
+	right: 0;
+	top:30px;
+}
+#imgteam
+{
+	top:-50px;
+/*	left:-50px;*/
+	width: 20%;
+float: left;
+}
+#contents
+{
+	width: 70%;
+margin-left:10%;
+	float: left;
+	padding-left: 300px;
+}
+.content
+{
+
+	position: relative;
+	padding-bottom: 150px;
+}
+.content img
+{
+	position: absolute;
+	top: 100px;
+	left:-100px;
+}
+.content h2
+{
+	position: absolute;
+	top: 150px;
+
+}
+.content p
+{
+	position: absolute;
+	top:180px;
+	width: 88%;
+	margin-left: 15px;
+}
+/*
+.content
+{ 
+	width: 60%;
+
+	left:700px;
+}
+.content img
+{
+
+	left:-50px;
+	top:-40px;
+}
+.content p
+{
+	
+	left:55px;
+	top:40px;
+	width:66%;
+	font-size: 1.1rem;
+	font-style:normal;
+}
+.content h2
+{
+	position: absolute;
+	left:50px;
+	top:10px;
+	font-size: 1.2rem;
+}
+#contents
+{
+	z-index: 3;
+}*/
+
+#contact>h1
+{
+position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+margin-top:-60px;
+}
+#contact iframe 
+{
+	margin-top: 0;
+	padding-top: 0;
+}
+#contentcontact
+{
+	color: white;
+	margin-top: 0px;
+	background-color: var(--Text-color2);
+	position: relative;
+	height: 230px;
+}
+#tieude h2
+{
+	float: left;
+	width: 33.333%;
+}
+ #soci
+{
+	float: left;
+	width: 33.3333%;
+	text-align: left;
+margin-top: 25px;
+	padding-left: 120px;
+	
+}
+
+#dienthoai
+{float: left;
+	width: 33.3333%;
+margin-top: 25px;
+}
+#QuickLink
+{float: left;
+	width: 33.3333%;
+	margin-top: 25px;
+}
+#dienthoai img
+{ 
+/*	margin-top: 20px;*/
+	
+	padding: 0;
+	position: relative;
+}
+#lienket a
+{
+	text-decoration: none;
+	color:papayawhip;
+	cursor:pointer;
 }
