@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="../Assets/logo/favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/png" href="../../Assets/logo/favicon-16x16.png" />
 
 </head>
 
@@ -44,65 +44,79 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        <h1>Visa</h1>
-        <p>Chọn quốc gia muốn làm visa để xem chi tiết.</br> (Chỉ hỗ trợ visa loại ngắn
-            hạn)</p>
-        <ul class="visa-popular">
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-phap.png" />
-                    <h5>Pháp</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-han-quoc.png" />
-                    <h5>Hàn Quốc</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-nhat-ban.png" />
-                    <h5>Nhật Bản</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-my.png" />
-                    <h5>Mỹ</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-uc.png" />
-                    <h5>Úc</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-singapore.png" />
-                    <h5>Singapore</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/Co-Trung-Quoc.jpg" />
-                    <h5>Trung Quốc</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-nga.png" />
-                    <h5>Nga</h5>
-                </a>
-            </li>
-            <li class="visa-card">
-                <a href="#">
-                    <img src="../../Tu/acseets/img/co-y.png" />
-                    <h5>Ý</h5>
-                </a>
-            </li>
-        </ul>
+        <article>
+            <h1>Visa</h1>
+            <p>Chọn quốc gia muốn làm visa để xem chi tiết.</br> (Chỉ hỗ trợ visa loại ngắn
+                hạn)</p>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Nước muốn tìm ..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul id="visa-popular">
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-phap.png" />
+                        <h5>Pháp</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-han-quoc.png" />
+                        <h5>Hàn Quốc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-nhat-ban.png" />
+                        <h5>Nhật Bản</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-my.png" />
+                        <h5>Mỹ</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-uc.png" />
+                        <h5>Úc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-singapore.png" />
+                        <h5>Singapore</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/Co-Trung-Quoc.jpg" />
+                        <h5>Trung Quốc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-nga.png" />
+                        <h5>Nga</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-y.png" />
+                        <h5>Ý</h5>
+                    </a>
+                </li>
+            </ul>
+            <button id="morevisa" name="seemore" onclick="loadmorevisa()">Visa khác</button>
+            <script>
+                function loadmorevisa() {
+                    document.getElementById("visa-popular").insertAdjacentHTML('beforeend', ' <li class="visa-card"><a href="#"><img src="../../Tu/acseets/img/co-phap.png" /><h5>Pháp</h5></a></li><li class="visa-card"><a href="#"><img src="../../Tu/acseets/img/co-han-quoc.png" /><h5>Hàn Quốc</h5></a></li><li class="visa-card"><a href="#"><img src="../../Tu/acseets/img/co-nhat-ban.png" /><h5>Nhật Bản</h5></a></li>');
+                }
+            </script>
+        </article>
 
 
         <h1>Khách sạn</h1>

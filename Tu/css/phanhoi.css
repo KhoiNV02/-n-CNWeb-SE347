@@ -35,6 +35,10 @@ textarea {
 
 #submit
 {
+    height: 50px; 
+    width: 10%;
+    min-width: max-content;
+    margin-left: 45%;
     margin: 15px auto;
     color: #ffffff;
     font-size: large;
