@@ -6,7 +6,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 right-0 left-0 flex items-center justify-between h-[60px] bg-white shadow">
+    <div className="fixed top-0 right-0 left-0 flex items-center justify-between h-[60px] bg-white shadow z-999">
       <div className="flex items-center justify-center w-[300px] h-full text-[28px] font-semibold text-white bg-[#ff5e14]">
         Dream Holidays
       </div>
