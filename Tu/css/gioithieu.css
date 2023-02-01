@@ -1,25 +1,33 @@
-
-h2 p
-{
-    padding:100px;
+h2 p {
+    padding: 100px;
 }
-.company-img
-{
+
+.company-img {
     float: left;
     width: 35%;
     margin: 7px;
 }
-#history p, #result p
-{
+
+#history p,
+#result p {
     text-indent: 30px;
 }
-.list, .list-partner
-{
+
+.list,
+.list-partner {
     display: flex;
     flex-wrap: wrap;
     gap: 0px 5px;
 }
-.list-partner img{
+
+.list-partner img {
     width: 250px;
     margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .company-img {
+        display: block;
+        width: 96%;
+    }
 }

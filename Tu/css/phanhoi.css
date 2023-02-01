@@ -21,21 +21,21 @@ form {
     border-radius: 5px;
     margin: 5px auto;
     width: 50%;
-    min-width: 350px;
+    min-width: 320px;
 }
-input 
-{
+
+input {
     padding: 10px;
     height: 30px;
 }
+
 textarea {
     padding: 10px;
     height: 150px;
 }
 
-#submit
-{
-    height: 50px; 
+#submit {
+    height: 50px;
     width: 10%;
     min-width: max-content;
     margin-left: 45%;
@@ -46,6 +46,7 @@ textarea {
     background-color: #0084ff;
     border: rgb(255, 255, 255) solid 1px;
 }
+
 .collapsible {
     background-color: white;
     color: rgb(0, 0, 0);
@@ -69,10 +70,10 @@ textarea {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-        text-indent: 25px;
+    text-indent: 25px;
 }
-.content p
-{
+
+.content p {
     background-color: white;
 
 }
