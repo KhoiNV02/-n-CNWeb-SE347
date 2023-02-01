@@ -559,11 +559,13 @@ margin-top: 25px;
 }
 #dem
 {
-	height: 355px; color: white; display: none;
+height: 485px;
+	display: none;
 }
 /*responsive*/
 @media (min-width:740px) and (max-width:1023px)
 {
+	
 	#header
 {
 position: absolute;
@@ -629,6 +631,411 @@ background: white;
 	cursor: pointer;
 }
 	
+	
+#search
+{
+	margin-top:550px;
+
+	justify-content: space-between;
+	background-color: rgba(221,221,221,0.5);
+	padding-left:0px;
+	padding-right: 17px;
+	border-radius: 5px;
+	margin-left: 150px;
+	width: 700px;
+	position: absolute;
+	text-align: center;
+		left:0;
+	right: 0;
+	
+}
+#search h1
+{
+	font-size: 1.5rem;
+	padding-bottom: 5px;
+	color: var(--Text-color1);
+}
+.where
+{
+		float:left;
+	height: 50px;
+	background-color: white;
+	width: 20%;
+/*	border-radius: 5px;*/
+	position: relative;
+/*	margin-left: 35px;*/
+}
+.where input
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline:none;
+	border-radius: 5px;
+	font-size:1.2rem;
+}
+.where i
+{
+	position: absolute;
+/*	margin-right: 12px;*/
+	z-index: 1;
+/*	margin-left: 12px;*/
+}
+.where:last-child
+{
+	width:130px;
+	
+}
+.where:last-child button
+{	font-size:1.2rem;
+	height: 100%;
+	width: 100%;
+	color:var(--Text-color2);
+	background-color: white;
+	border:none;
+	cursor:pointer;
+	border-radius: 10px;
+	
+/*	margin-left: 10px;*/
+
+}
+
+	
+	#service
+{
+	margin-top: 40px;
+	position: relative;text-align: center;
+	left: 20px;
+	
+}
+.tittle
+{
+	text-align: center;
+	font-family: var(--Font-title);
+	font-style: italic;
+}
+#service h1
+{
+	font-size: 2rem;
+}
+#service h2
+{
+	font-size: 1rem;
+}
+.ser 
+{ 
+	width: 49%;
+	display: inline-block;
+	padding-left: 40px;
+
+}
+.titlemini
+{
+
+	color: var(--Text-color2);
+	font-family: var(--Font-title);
+	
+}
+.descript{
+	font-size: 1.3rem;
+	font-family: var(--Font-title);
+	font:italic;
+	width: 330px;
+}
+.imgser
+{
+		height: 300px;
+	
+} 
+	
+.topdestination
+{	
+	width: 34%;
+			
+}
+	.lo
+	{
+
+		padding-right: 20px;
+	}
+
+	.whattheysay
+{
+	left: 330px;
+	width: 56%;
+	top:100px;
+}
+	.vitri
+{
+	left:540px;
+	margin-top: 20px;
+}
+	
+	.aboutus
+{
+top:20px;
+	position: relative;
+	text-align: left;
+}
+
+.imgteam
+{
+	
+
+	position: relative;
+	width: 29%;
+	left: 0;
+	margin-left: 0;
+	padding-left: 0;
+	float: left;
+}
+	
+.prev
+	{
+		position: absolute;
+		left: 0;
+	}
+	.aboutus>h1
+{
+	position: absolute;
+	text-align: center;
+	left:0;
+	right: 0;
+	bottom: -50px;
+	
+}	
+.contents
+{
+
+	float: left;
+	position: absolute;
+	left:350px;
+}
+.content
+{	padding-top: 0;
+	position: relative;
+	top:50px;
+	margin-top: 0;
+}
+.content img
+{
+	position: absolute;
+
+	left:-120px;
+	top:-40px;
+}
+.content h2
+{
+	position: absolute;
+	font-size: 1.3rem;
+	left: -20px;
+
+}
+.content p
+{
+	position: absolute;
+	width: 430px;
+	top:60px;
+	margin-left:0px;
+	left: -50px;
+}
+body {
+  padding: 2%;
+  text-align: center;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 350px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  80% {margin-left: -1456px;}
+}
+	#phan1{
+		display: none;
+	}
+	#phan2
+	{
+		display: block;
+	}
+	
+
+#contentcontact
+{
+	color: white;
+	margin-top: 0px;
+	background-color: var(--Text-color2);
+	position: relative;
+	height: 230px;
+}
+#tieude h2
+{
+	float: left;
+	width: 33.333%;
+text-align: center;
+}
+#tieude h2:first-child
+{
+	text-align: center;
+}
+#lienket
+{
+	text-align: center;
+}
+ #soci
+{
+	float: left;
+	width:50.33333%;
+	text-align: left;
+margin-top: 25px;
+	padding-left: 0px;
+	position: absolute;
+	left: 20px;
+	top:30px;
+	}
+#dienthoai
+{float: left;
+	width:200px;
+margin-top: 16px;
+	line-height: 22px;
+	position: relative;
+	left:350px;
+}
+#QuickLink
+{float: left;
+	width: 20px;
+	margin-top: 25px;
+	position: relative;
+	left:450px;
+}
+#dienthoai img
+{ 
+/*	margin-top: 20px;*/
+	
+	padding: 0;
+	position: relative;
+}
+#lienket a
+{
+	text-decoration: none;
+	color:papayawhip;
+	cursor:pointer;
+}
+	#dem
+	{
+		display: block;
+		color: white;
+		
+	}
+	body
+	{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/*telephone samsung*/
+@media (max-width:739px)
+{
+	html
+	{
+		font-size: 120%;
+	}
+#header
+{
+position: absolute;
+	left:0;
+	right:0;
+	z-index: 3;
+}
+#icon-social
+{
+	width:10%; 
+	float: left;
+	padding-top: 40px;
+	display:grid;
+	position: absolute;
+	left: 0px;
+	padding-left: 0;
+	margin-left: 0;
+}
+	#icon-social i
+	{
+		padding-bottom: 10px;
+	}
+#nav
+{
+	width: 400px;
+display: inline-block;
+	padding-top: 0px;
+position: absolute;
+	left: -23px;
+	text-align: center;
+}
+#nav li 
+{
+	display: inline-block;
+	
+}
+#nav li a
+{
+	color: var(--Text-color1);
+		text-decoration: none;
+	font-size: 1rem;
+	font-style:oblique;
+	font-style: oblique;
+	padding-left: 10px;
+}
+#telephone img
+{
+float: left;
+	position: absolute;
+/*	transform: scale(2);*/
+}
+#telephone p
+{
+	float: left;
+	width:100%;
+	position: absolute;
+	color:burlywood;
+	left: 12px;
+	top:12px;
+}
+#telephone
+{position: relative;
+	left:220px;
+	top:30px;
+background: white;
+	width: 150px;
+	padding-top: 8px;
+	border-radius: 15px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+#image
+	{
+		width: 1000px;
+	}
 	
 #search
 {
@@ -941,10 +1348,6 @@ margin-top: 16px;
 }
 	#dem
 	{
-		display: block;
+		display: none;
 	}
-}
-@media (max-width:739px)
-{
-
 }
