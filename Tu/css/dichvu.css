@@ -1,22 +1,23 @@
-
-h1::after p{
+h1::after p {
     padding-left: 30px;
 }
-#visa-popular,.hotels {
+
+#visa-popular,
+.hotels {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 20px;
 }
-.see-more
-{
+
+.see-more {
     text-align: right;
 }
-.search-container
-{
+
+.search-container {
     width: 100%;
 }
-.search-container input
-{
+
+.search-container input {
     height: 50px;
     margin: 5px;
     width: 80%;
@@ -24,14 +25,14 @@ h1::after p{
     padding: 0 7px;
     margin-left: 5%;
 }
-.search-container button
-{
-    height: 50px; 
+
+.search-container button {
+    height: 50px;
     width: 10%;
     max-width: 50px;
 }
-#morevisa
-{ 
+
+#morevisa {
     font-weight: bold;
     height: 40px;
     width: 90%;
