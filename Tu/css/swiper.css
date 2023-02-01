@@ -1,0 +1,11 @@
+.swiper {
+    margin: 5px;
+}
+
+.swiper-slide img {
+    border-radius: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}

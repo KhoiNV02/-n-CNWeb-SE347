@@ -1,0 +1,26 @@
+  #myBtn:hover {
+      background-color: red;
+  }
+  .special-offer img {
+      height: 250px;
+      width: 100%;
+  }
+
+  .hot-tours {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 0;
+  }
+
+  .tours-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 0;
+  }
+
+  .popular-location,
+  .visa-popular {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 20px;
+  }

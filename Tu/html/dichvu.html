@@ -1,1 +1,301 @@
-dịch vụ
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dream Holiday</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dichvu.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/visa-card.css">
+    <link rel="stylesheet" href="../css/hotel-card.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../../Assets/logo/favicon-16x16.png" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar-header">
+            <div id="header-container">
+                <div class="left">
+                    <img id="ilogo" src="../../Assets/logo/logo-tách nền.png" alt="img logo" />
+                    <p id="plogo"><span>D</span>REAM <span>H</span>OLIDAY</p>
+                </div>
+                <div class="right">
+                    <button id="btnmoon"><i class="fas fa-moon"></i></i></button>
+                    <img src="/Tu/acseets/img/profile.png" alt="Avatar">
+                    <p class="name"> Triệu Tuấn Tú</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-nav" id="main_nav">
+            <a href="../index.html">Trang chủ</a>
+            <a href="dichvu.html" class="active">Dịch vụ</a>
+            <a href="sotay.html">Sổ tay du lịch</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="phanhoi.html  ">Phản hồi</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <article>
+            <h1>Visa</h1>
+            <p>Chọn quốc gia muốn làm visa để xem chi tiết.</br> (Chỉ hỗ trợ visa loại ngắn
+                hạn)</p>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Nước muốn tìm ..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul id="visa-popular">
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-phap.png" />
+                        <h5>Pháp</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-han-quoc.png" />
+                        <h5>Hàn Quốc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-nhat-ban.png" />
+                        <h5>Nhật Bản</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-my.png" />
+                        <h5>Mỹ</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-uc.png" />
+                        <h5>Úc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-singapore.png" />
+                        <h5>Singapore</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/Co-Trung-Quoc.jpg" />
+                        <h5>Trung Quốc</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-nga.png" />
+                        <h5>Nga</h5>
+                    </a>
+                </li>
+                <li class="visa-card">
+                    <a href="#">
+                        <img src="../../Tu/acseets/img/co-y.png" />
+                        <h5>Ý</h5>
+                    </a>
+                </li>
+            </ul>
+            <button id="morevisa" name="seemore" onclick="loadmorevisa()">Visa khác</button>
+            <script>
+                function loadmorevisa() {
+                    document.getElementById("visa-popular").insertAdjacentHTML('beforeend', ' <li class="visa-card"><a href="#"><img src="../../Tu/acseets/img/co-phap.png" /><h5>Pháp</h5></a></li><li class="visa-card"><a href="#"><img src="../../Tu/acseets/img/co-han-quoc.png" /><h5>Hàn Quốc</h5></a></li><li class="visa-card"><a href="#"><img src="../../Tu/acseets/img/co-nhat-ban.png" /><h5>Nhật Bản</h5></a></li>');
+                }
+            </script>
+        </article>
+
+
+        <h1>Khách sạn</h1>
+        <div class="hotels">
+
+
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-1.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Marriott International</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Bang Maryland, Hoa Kỳ</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia
+                        deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-2.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Hilton Worldwide</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Virginia, Hoa Kỳ</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-3.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">InterContinental (IHG)</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Denham, Vương quốc Anh</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-4.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Accor</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Paris, Pháp</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-5.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Wyndham</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Bang New Jersey, Hoa Kỳ</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-6.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Choice Hotels International (CHI)</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Bang Maryland, Hoa Kỳ</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-7.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Shanghai Jin Jiang International (SJI)</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Thượng Hải, Trung Quốc</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-8.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Best Western International</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Phoenix, Arizona, USA</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <a href="now" target="_blank">
+                        <img src="../acseets/img/top-10-tap-doan-khach-san-noi-tieng-the-gioi-9.jpg" />
+                    </a>
+                </div>
+                <div class="hotel-info">
+                    <p class="hotel-name">Plateno Hotels</p>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"> </i> Phoenix, Arizona, USA</p>
+                    <p class="hotel-detail"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("main_nav");
+                if (x.className === "main-nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "main-nav";
+                }
+            }
+        </script>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Các tours</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Trạng thái đặt tour</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li>Email: dreamholiday@gmail.com</li>
+                        <li>HOT Line: XX-XX-XX-XX</li>
+                        <li>SĐT: 0393xxx9xx</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Lên đầu trang">△</button>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

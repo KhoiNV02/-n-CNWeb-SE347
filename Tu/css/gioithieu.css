@@ -1,0 +1,25 @@
+
+h2 p
+{
+    padding:100px;
+}
+.company-img
+{
+    float: left;
+    width: 35%;
+    margin: 7px;
+}
+#history p, #result p
+{
+    text-indent: 30px;
+}
+.list, .list-partner
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 5px;
+}
+.list-partner img{
+    width: 250px;
+    margin: 5px 0;
+}
