@@ -495,8 +495,7 @@ position: absolute;
 	left: 0;
 	right: 0;
 	text-align: center;
-
-margin: 600px;
+	margin-top: -60px;
 }
 #contentcontact
 {
@@ -952,15 +951,16 @@ margin-top: 16px;
 		padding: 0;
 		margin: 0;
 	}
+	
+	html
+	{
+		font-size: 110%;
+	}
 }
 
 /*telephone samsung*/
 @media (max-width:739px)
 {
-	html
-	{
-		font-size: 120%;
-	}
 #header
 {
 position: absolute;
