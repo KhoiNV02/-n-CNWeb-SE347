@@ -15,11 +15,44 @@
   }
 }
 
+.services {
+  .item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    // vertical-align: top;
+    .item--blue {
+      transition: transform 0.4s ease;
+    }
+    .item--orange {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: translateY(-100%);
+      transition: transform 0.4s ease;
+    }
+    &:hover {
+      .item--blue {
+        transform: translateY(100%);
+      }
+      .item--orange {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
 .our-packages {
   .content--top {
+    overflow: hidden;
     &:hover .cart--add {
       opacity: 1;
       transition: all 0.2s linear;
+    }
+    &:hover > img {
+      transform: scale(1.1);
+      transition: all 0.25s linear;
     }
   }
 }

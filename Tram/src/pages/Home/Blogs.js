@@ -17,7 +17,7 @@ import "../Home/Home.scss";
 
 const Blogs = () => {
   return (
-    <div className="w-11/12 lg:w-5/6 m-auto py-[40px] blogs rounded-sm">
+    <div className="w-11/12 lg:w-5/6 m-auto py-[40px] blogs">
       <h3 className="text-[#001659] text-[40px] font-[700] mb-5">Blogs</h3>
       <Swiper
         slidesPerView={1}
