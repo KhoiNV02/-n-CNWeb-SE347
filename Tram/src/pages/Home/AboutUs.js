@@ -22,7 +22,9 @@ const AboutUs = () => {
             ever to plan and book your next global travel.
           </div>
           <div className="">
-            <button className="button">Read more</button>
+            <button className="button bg-[#ff5e14] text-white">
+              Read more
+            </button>
           </div>
         </div>
       </div>

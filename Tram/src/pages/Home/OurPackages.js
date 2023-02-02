@@ -184,7 +184,7 @@ const OurPackages = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="button">
+          <button className="button bg-[#ff5e14] text-white">
             View all
             <HiArrowNarrowRight />
           </button>
