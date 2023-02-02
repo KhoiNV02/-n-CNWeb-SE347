@@ -9,7 +9,7 @@ import mapImg from "../assets/map.png";
 const Footer = () => {
   return (
     <div className="bg-[#0a1229]">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-[80px] w-5/6 m-auto gap-[3rem]">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-[80px] w-11/12 lg:w-5/6 m-auto gap-[3rem]">
         <div>
           <h3 className="text-white text-[26px] font-medium">Let's us</h3>
           <p className="text-[#9ca5af] mt-[20px]">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between w-5/6 m-auto">
+      <div className="flex flex-col lg:flex-row gap-5 items-center justify-between w-11/12 lg:w-5/6 m-auto">
         <div className="flex items-center justify-center w-[300px] py-[12px] h-full text-[28px] font-semibold text-white bg-[#ff5e14]">
           Dream Holidays
         </div>

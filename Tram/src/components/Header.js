@@ -10,7 +10,7 @@ const Header = () => {
       <div className="flex items-center justify-center w-[300px] h-full text-[28px] font-semibold text-white bg-[#ff5e14]">
         Dream Holidays
       </div>
-      <div className="flex items-center w-[500px] bg-[#f4f4f4] rounded-[10px] hover:bg-[#e4e6e9]">
+      <div className="hidden lg:flex items-center w-[500px] bg-[#f4f4f4] rounded-[10px] hover:bg-[#e4e6e9]">
         <label className="pl-[12px]">
           <BiSearch className="text-[22px] text-[#65676b] " />
         </label>

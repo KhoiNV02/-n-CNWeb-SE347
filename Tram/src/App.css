@@ -9,3 +9,26 @@
   outline: none;
   border: none;
 }
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  border-radius: 999px;
+  background-color: #ff5e14;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 16px;
+}
+
+.button:hover {
+  transition: all 0.2s linear;
+  letter-spacing: 0.05em;
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  width: 34px;
+  border-radius: 999px;
+  background-color: #ff5e14 !important;
+}
