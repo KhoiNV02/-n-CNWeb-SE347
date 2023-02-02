@@ -43,7 +43,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {toggeMenu ? <Menu /> : <></>}
+      <Menu />
     </div>
   );
 };
