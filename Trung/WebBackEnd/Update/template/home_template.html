@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý du lịch</title>
+    <link rel="stylesheet" href="../styles/home_template.css">
+    <link rel="stylesheet" href="../styles/avatar_popup.css">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/hometemplate.js"></script>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav class="left-navigation expand">
+            <a href="home.html" class="logo">
+                
+            </a>
+            <a href="home/dashboard.html" class="nav-item active">
+                <i class='bx bxs-dashboard' ></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="category">
+                <p>Manage</p>
+                <div class="catagory-separator"></div>
+            </div>
+            <a href="home/customer.html" class="nav-item">
+                <i class='bx bxs-user'></i>
+                <span>Customer</span>
+            </a>
+            <a href="home/travel.html" class="nav-item">
+                <i class='bx bx-bus' ></i>
+                <span>Travel Tour</span>
+            </a>
+            <a href="home/news" class="nav-item">
+                <i class='bx bx-news' ></i>
+                <span>News</span>
+            </a>
+            <a href="home/discount" class="nav-item">
+                <i class='bx bxs-discount' ></i>
+                <span>Discount</span>
+            </a>
+            <div class="category">
+                <p>Report</span>
+            </div>
+            <a href="home/sales" class="nav-item break">
+                <i class='bx bx-cart-alt' ></i>
+                <span>Sales</span>
+            </a>
+            <a href="home/traffic" class="nav-item">
+                <i class='bx bx-traffic-cone' ></i>
+                <span>Traffic</span>
+            </a>
+            <a href="https://genshin.hoyoverse.com/vi/" class="nav-item">
+                <span>Genshin</span>
+            </a>
+        </nav>
+        <div class="content-reponsive">
+            Content Reponsive
+        </div>
+        <div class="container">
+            <div class="top-bar">
+                <div class="topbar-left">
+                    <div class="nav-opener">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder="Type something...">
+                    <div class="search-box">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="messages">
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    <div class="notify" id="notify_opener">
+                        <i class='bx bx-bell' ></i>
+                        <div class="dropdown-notify expand">
+                            <div class="title">
+                                <p class="header">
+                                    Notifications
+                                </p>
+                                <p class="sub-header">You have <span class="num-unread-msg">9</span> unread messages</p>
+                            </div>
+                            <div class="notify-content">
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Meow</p>
+                                        <p class="msg-content">Hello, Meow is cat!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Meow</p>
+                                        <p class="msg-content">Hello, Meow is cat!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Meow</p>
+                                        <p class="msg-content">Hello, Meow is cat!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Meow</p>
+                                        <p class="msg-content">Hello, Meow is cat!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Meow</p>
+                                        <p class="msg-content">Hello, Meow is cat!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Meow</p>
+                                        <p class="msg-content">Hello, Meow is cat!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <img src="../images/home/profile.png" alt=""
+                        class="user-avatar">
+                        <div class="info-content">
+                            <p class="user-name">Meow</p>
+                            <p class="user-position">Admin</p>
+                        </div>
+                        <div class="avatar-popup">
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Setting</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-user' ></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span>Manage</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-log-out' ></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <header>
+                    <h2>Meow</h2>
+                    <div class="input-field">
+                        <input type="text" name="meow" id="meow" class="text-input" required="required">
+                        <span class="text-input-title" for="meow">Du lịch</span>
+                    </div>
+                </header>
+            </div>
+              
+            <div id="chat-circle" class="btn btn-raised">
+                    <div id="chat-overlay"></div>
+                    <i class='bx bx-envelope' ></i>
+            </div>
+              
+            <div class="chat-box">
+            <div class="chat-box-header">
+                Message
+                <span class="chat-box-toggle"><i class='bx bx-x' ></i></span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">
+                <form>
+                <input type="text" id="chat-input" placeholder="Send a message..."/>
+                <button type="submit" class="chat-submit" id="chat-submit"><i class='bx bx-send' ></i></button>
+                </form>      
+            </div>
+            </div>
+              
+            </div>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function(){
+            $('.dropdown-notify.expand').hide();
+            $('.avatar-popup').hide();
+            var navExpandState = true;
+            var notifyExpand = false;
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(navExpandState){
+                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    navExpandState = false;
+                }
+                else{
+                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    navExpandState = true;
+                }
+            });
+            // Expanding navigation when hover
+            $(".left-navigation").hover(function(){
+                if(!navExpandState){
+                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                }
+            });
+            $(".left-navigation").mouseleave(function(){
+                if(!navExpandState){
+                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                }
+            });
+            // Expand Search Box Animation
+            $(".search-box").click(function(){
+                $(this).animate({
+                    marginLeft: '4px'
+                }, 300);
+                $('#search-txt-box').animate({
+                    marginLeft: '20px',
+                    opacity: 1,
+                    width: 220,
+                }, 300);
+                $('#search-txt-box').focus();
+            });
+            $(".messages i").click(function (){
+                $(this).css({
+                    //"color": "rgba(174,120,197)",
+                    //"background-color": "rgba(0, 0, 0, 0.05)"
+                });
+            });
+
+            $("i.bx.bx-bell").click(function(){
+                var options = {};
+                if(!notifyExpand){
+                    $(".notify i").css({
+                        "color": "rgba(174,120,197)",
+                        "background-color": "rgba(0, 0, 0, 0.05)"
+                    });
+                    
+                    if($('.avatar-popup').is(":visible")){
+                        $('.avatar-popup').slideToggle(300);
+                    }
+                    if($('.chat-box').is(":visible")){
+                        $('.chat-box').toggle('scale');
+                        $("#chat-circle").toggle('scale');
+                    }
+
+                    $('.dropdown-notify.expand').show( "fade", 300 );
+                    notifyExpand = true;
+                }
+                else{
+                    $(".notify i").css({
+                        "color": "gray",
+                        "background-color": "white"
+                    });
+                    $('.dropdown-notify.expand').hide( "fade", 300 );
+                    notifyExpand = false;
+                }
+            });
+            $(".user-info").click(function(){
+                if(notifyExpand){
+                    $("i.bx.bx-bell").trigger("click");
+                }
+                $('.avatar-popup').slideToggle(300);
+            });
+        });
+    </script>
+</body>
+</html>
