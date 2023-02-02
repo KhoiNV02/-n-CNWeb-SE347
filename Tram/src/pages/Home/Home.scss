@@ -1,0 +1,8 @@
+.our-packages {
+  .content--top {
+    &:hover .cart--add {
+      opacity: 1;
+      transition: all 0.2s linear;
+    }
+  }
+}

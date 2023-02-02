@@ -7,10 +7,11 @@ import japanImg from "../../assets/Packages/japan.png";
 import parisImg from "../../assets/Packages/paris.png";
 import laosImg from "../../assets/Packages/laos.png";
 import koreanImg from "../../assets/Packages/korean.png";
+import "../Home/Home.scss";
 
 const OurPackages = () => {
   return (
-    <div className="w-5/6 m-auto py-[80px]">
+    <div className="w-5/6 m-auto py-[80px] our-packages">
       <div className="mb-5">
         <h3 className="text-[#001659] text-[40px] font-[700]">Our Packages</h3>
         <p className="text-[#565969] text-lg font-[400]">
@@ -19,12 +20,18 @@ const OurPackages = () => {
       </div>
       <div className="grid grid-cols-3 gap-[30px]">
         <div>
-          <div className="relative h-[250px]">
-            <img src={thailandImg} className="w-full h-full" />
+          <div className="relative h-[250px] content--top">
+            <img
+              src={thailandImg}
+              alt="thailandImg"
+              className="w-full h-full cursor-pointer"
+            />
             <div className="absolute top-[6%] left-[6%] py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#ff5e14]">
               Sale
             </div>
-            {/* <div className="absolute bottom-0 left-0 right-0">Add to cart</div> */}
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ff5e14] text-white py-3 text-center cursor-pointer font-[500] opacity-0 cart--add">
+              Add to cart
+            </div>
           </div>
           <div className="text-[#565969] uppercase text-[13px] font-[600] mt-3">
             Asia
@@ -39,8 +46,12 @@ const OurPackages = () => {
         </div>
 
         <div>
-          <div className="relative h-[250px]">
-            <img src={canadaImg} className="w-full h-full" />
+          <div className="relative h-[250px] content--top">
+            <img
+              src={canadaImg}
+              alt="canadaImg"
+              className="w-full h-full cursor-pointer"
+            />
             <div className="absolute top-[6%] left-[6%] flex gap-2">
               <div className="py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#ff5e14]">
                 Sale
@@ -48,6 +59,9 @@ const OurPackages = () => {
               <div className="py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#09316f]">
                 New
               </div>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ff5e14] text-white py-3 text-center cursor-pointer font-[500] opacity-0 cart--add">
+              Add to cart
             </div>
           </div>
           <div className="text-[#565969] uppercase text-[13px] font-[600] mt-3">
@@ -63,10 +77,17 @@ const OurPackages = () => {
         </div>
 
         <div>
-          <div className="relative h-[250px]">
-            <img src={koreanImg} className="w-full h-full" />
+          <div className="relative h-[250px] content--top">
+            <img
+              src={koreanImg}
+              alt="koreanImg"
+              className="w-full h-full cursor-pointer"
+            />
             <div className="absolute top-[6%] left-[6%] py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#09316f]">
               New
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ff5e14] text-white py-3 text-center cursor-pointer font-[500] opacity-0 cart--add">
+              Add to cart
             </div>
           </div>
           <div className="text-[#565969] uppercase text-[13px] font-[600] mt-3">
@@ -79,8 +100,12 @@ const OurPackages = () => {
         </div>
 
         <div>
-          <div className="relative h-[250px]">
-            <img src={japanImg} className="w-full h-full" />
+          <div className="relative h-[250px] content--top">
+            <img
+              src={japanImg}
+              alt="japanImg"
+              className="w-full h-full cursor-pointer"
+            />
             <div className="absolute top-[6%] left-[6%] flex gap-2">
               <div className="py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#ff5e14]">
                 Sale
@@ -88,6 +113,9 @@ const OurPackages = () => {
               <div className="py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#09316f]">
                 New
               </div>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ff5e14] text-white py-3 text-center cursor-pointer font-[500] opacity-0 cart--add">
+              Add to cart
             </div>
           </div>
           <div className="text-[#565969] uppercase text-[13px] font-[600] mt-3">
@@ -103,10 +131,17 @@ const OurPackages = () => {
         </div>
 
         <div>
-          <div className="relative h-[250px]">
-            <img src={parisImg} className="w-full h-full" />
+          <div className="relative h-[250px] content--top">
+            <img
+              src={parisImg}
+              alt="parisImg"
+              className="w-full h-full cursor-pointer"
+            />
             <div className="absolute top-[6%] left-[6%] py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#09316f]">
               New
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ff5e14] text-white py-3 text-center cursor-pointer font-[500] opacity-0 cart--add">
+              Add to cart
             </div>
           </div>
           <div className="text-[#565969] uppercase text-[13px] font-[600] mt-3">
@@ -119,10 +154,17 @@ const OurPackages = () => {
         </div>
 
         <div>
-          <div className="relative h-[250px]">
-            <img src={laosImg} className="w-full h-full" />
+          <div className="relative h-[250px] content--top">
+            <img
+              src={laosImg}
+              alt="laosImg"
+              className="w-full h-full cursor-pointer"
+            />
             <div className="absolute top-[6%] left-[6%] py-[16px] px-[10px] uppercase text-white font-[500] rounded-sm bg-[#ff5e14]">
               Sale
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ff5e14] text-white py-3 text-center cursor-pointer font-[500] opacity-0 cart--add">
+              Add to cart
             </div>
           </div>
           <div className="text-[#565969] uppercase text-[13px] font-[600] mt-3">
