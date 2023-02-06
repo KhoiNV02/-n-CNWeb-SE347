@@ -20,6 +20,7 @@
     -o-border-radius: 4px;
     cursor:default;
     text-align: left;
+    z-index: 99;
 }
 
 .avatar-popup a{
