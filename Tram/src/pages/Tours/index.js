@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import MainLayout from "./../../layouts/MainLayout";
 
 export const Tours = () => {
   return (
-    <div>Tours</div>
-  )
-}
+    <MainLayout>
+      <div className="h-screen"></div>
+    </MainLayout>
+  );
+};

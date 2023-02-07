@@ -1,17 +1,14 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
   const [toggeMenu, setToggeMenu] = useState(false);
 
   return (
     <React.Fragment>
       <Header />
-      <div>
-        <Outlet />
-      </div>
+      {children}
       <Footer />
     </React.Fragment>
   );

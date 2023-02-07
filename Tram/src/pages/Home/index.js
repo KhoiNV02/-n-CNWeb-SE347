@@ -4,16 +4,19 @@ import Banner from "./Banner";
 import OurPackages from "./OurPackages";
 import Services from "./Services";
 import Blogs from "./Blogs";
+import MainLayout from "./../../layouts/MainLayout";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div>
+    <MainLayout>
       <Banner />
       <AboutUs />
       <Services />
       <OurPackages />
       <Blogs />
-    </div>
+      <Contact />
+    </MainLayout>
   );
 };
 

@@ -1,5 +1,10 @@
 import React from "react";
+import MainLayout from "./../../layouts/MainLayout";
 
 export const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <MainLayout>
+      <div className="h-screen"></div>
+    </MainLayout>
+  );
 };

@@ -10,17 +10,17 @@ const Menu = () => {
           <IoClose />
         </div>
         <div>
-          <Link to={""}>
+          <Link to="/">
             <div className="text-white text-[32px]">Home</div>
           </Link>
-          <Link to={"/tours"}>
+          <Link to="/tours">
             <div className="text-white text-[32px]">Tours</div>
           </Link>
-          <Link to={"blogs"}>
+          <Link to="/blogs">
             <div className="text-white text-[32px]">Blogs</div>
           </Link>
 
-          <Link to={"contact"}>
+          <Link to="/contact">
             <div className="text-white text-[32px]">Contact</div>
           </Link>
         </div>
