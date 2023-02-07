@@ -71,7 +71,7 @@ const Banner = () => {
                 Explore the feature
               </div>
               <h3 className="text-white text-[40px] font-[700] title">
-                Go to Venice
+                Try yours the best
               </h3>
               <div className="text-white max-w-[600px] my-4 detail">
                 Lorem Ipsum is simply dummy text of the printing and typesetting

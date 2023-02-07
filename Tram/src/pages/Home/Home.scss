@@ -27,19 +27,17 @@
     }
   }
   .sub {
-    -webkit-animation: moveUp 0.2s backwards normal ease-out;
-    animation: moveUp 0.2s backwards normal ease-out;
+    display: block;
+    animation: fadeIn 0.2s linear backwards 0.2s;
   }
   .title {
-    -webkit-animation: moveUp 0.3s backwards normal ease-out;
-    animation: moveUp 0.3s backwards normal ease-out;
+    animation: fadeIn 0.2s linear backwards 0.4s;
   }
   .detail {
-    -webkit-animation: moveUp 0.4s backwards normal ease-out;
-    animation: moveUp 0.4s backwards normal ease-out;
+    animation: fadeIn 0.2s linear backwards 0.6s;
   }
   .control {
-    animation: moveUp 0.5s ease-out;
+    animation: fadeIn 0.2s linear backwards 0.8s;
   }
 }
 
@@ -120,11 +118,9 @@
   }
 }
 
-@keyframes moveUp {
+@keyframes fadeIn {
   0% {
     transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
+    opacity: 0;
   }
 }
