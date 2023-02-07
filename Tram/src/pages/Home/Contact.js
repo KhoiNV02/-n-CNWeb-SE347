@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 import contactImg from "../../assets/Contact/contact-us.png";
 
@@ -16,6 +17,7 @@ const Contact = () => {
           <Link to="/contact">
             <button className="button bg-[#ff5e14] text-white z-30">
               Contac us
+              <HiArrowNarrowRight />
             </button>
           </Link>
         </div>

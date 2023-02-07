@@ -8,6 +8,7 @@ import parisImg from "../../assets/Packages/paris.png";
 import laosImg from "../../assets/Packages/laos.png";
 import koreanImg from "../../assets/Packages/korean.png";
 import "../Home/Home.scss";
+import { Link } from "react-router-dom";
 
 const OurPackages = () => {
   return (
@@ -184,10 +185,12 @@ const OurPackages = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="button bg-[#ff5e14] text-white">
-            View all
-            <HiArrowNarrowRight />
-          </button>
+          <Link to="/tours">
+            <button className="button bg-[#ff5e14] text-white">
+              View all
+              <HiArrowNarrowRight />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
