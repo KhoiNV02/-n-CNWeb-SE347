@@ -12,7 +12,7 @@
 }
 html
 {
-	font-size: 100%;
+	font-size: 110%;
 	font-family: Arial, Helvetica, sans-serif;
 	
 }
@@ -30,7 +30,38 @@ position: absolute;
 	float: left;
 	padding-top: 20px;
 padding-left: 20px;
+	cursor: pointer;
+} 
+
+
+.button{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	padding: 10px;
 }
+a.button.five:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	
+	width: 0%;
+	height: 100%;
+	
+	border-bottom: 2px solid black;
+	
+	transition: width 0.3s ease;
+}
+
+a.button.five:hover:after{
+	left: 0;
+	width: 100%;
+	transition: width .3s ease;
+}
+
 #nav
 {
 	width: 80%;
@@ -68,8 +99,7 @@ width: 20%;
 	width:40%;
 	position: absolute;
 	left:50px;
-	color:burlywood;
-	
+	color:burlywood;	
 }
 #telephone
 {position: absolute;
@@ -91,13 +121,14 @@ height: 40px;
 {
 	text-align: center;
 }
+
 #logo, #slogan, #search
 {
 	position: absolute;
 	z-index: 2;
 	left:0;
 	right: 0;
-	margin-top: 50px;
+	margin-top: 55px;
 	
 }
 #slogan
@@ -107,19 +138,23 @@ height: 40px;
 	font-style: italic;
 	font-family: var(--Font-title);
 }
-#banner #image
+ #image
 {
 	position: relative;
 	z-index: 1;
 }
 .slo1
 {
-	color: var(--Text-color1);
+	color: var(--Text-color2);
+	
+	font-size: 3rem;
 	
 }
 .slo2
 {
-	color: var(--Text-color2);
+	color: var(--Text-color1);
+	font-size: 3rem;
+	
 }
 #slogan h1
 {
@@ -249,14 +284,13 @@ opacity: 0.4;
 .imgser
 {
 		height: 300px;
-	
+	cursor: pointer;
 }
 
 .imgser:hover
 {
 transform:  scale(1.3);	
 }
-
 #destination
 {
 	margin-top: 40px;
@@ -280,12 +314,62 @@ transform: scale(0.9);
 	top:400px;
 	left: 180px;
 }
+#destination button
+{
+	position: relative;
+	left: 550px;
+	top:30px;
+	font-size:1.4rem;
+	height: 40px;
+	width: 20%;
+	color:black;
+	background:linear-gradient(163deg, rgba(215,143,17,0.7736344537815126) 32%, rgba(252,171,142,0.8548669467787114) 66%);
+	border:none;
+	cursor:pointer;
+	border-radius: 10px;
+}
+    button:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+
+ 
+      overflow: hidden;
+    }
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+       left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(100%,0);
+background: rgb(252,171,142);
+}
+      button div{
+		  
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }
+
+
 .mySlider {
   display: none;
 }
 
 img {
   vertical-align: middle;
+	cursor: pointer;
 }
 
 .slideshow-container {
@@ -389,10 +473,8 @@ border-radius: 0px 15px 15px 0px;	right: 0;
 .customersay
 {
 position: relative;	
-	
 width: 100%;
 	border-radius: 100px;
-	
 }
 .cusImage
 {
@@ -409,16 +491,14 @@ width: 100%;
 	font-size:1.3rem; 
 }
 .vitri
-{
-	position: absolute;
+{position: absolute;
 	left:780px;
 	top:190px;
 	width: 190px;
 	text-decoration: underline;
 }
 .ha1
-{
-	display: block;
+{display: block;
 }
 .Space
 {
@@ -492,10 +572,11 @@ margin-left:10%;
 #contact h1
 {
 position: absolute;
-	left: 0;
+	left:0px;
 	right: 0;
 	text-align: center;
-	margin-top: -60px;
+	margin-top: -90px;
+/*	top:300px;*/
 }
 #contentcontact
 {
@@ -503,7 +584,7 @@ position: absolute;
 	margin-top: 0px;
 	background-color: var(--Text-color2);
 	position: relative;
-	height: 230px;
+	height: 270px;
 }
 #tieude h2
 {
@@ -561,10 +642,510 @@ margin-top: 25px;
 height: 485px;
 	display: none;
 }
+#contentcontact h2
+{
+	margin-bottom: 30px;
+}
 /*responsive*/
+
 @media (min-width:740px) and (max-width:1023px)
 {
+	#header
+{
+position: absolute;
+	left:0;
+	right:0;
+	z-index: 3;
+}
+#icon-social
+{
+	width:20%; 
+	float: left;
+	padding-top: 20px;
+padding-left: 0px;
+	transform: scale(1.5);
+	padding-right: 30px;
+}
+#nav
+{
+	width: 90%;
+display: inline-block;
+	padding-top: 15px;
+position: absolute;
+	left: 100px;
+	text-align: center;
+}
+#nav li 
+{
+	display: inline-block;
 	
+}
+#nav li a
+{
+	color: var(--Text-color1);
+		text-decoration: none;
+padding-left: 20px;
+	font-size: 2rem;
+	font-style:oblique;
+	font-style: oblique;
+}
+#telephone img
+{
+float: left;
+	position: absolute;
+	transform: scale(4);
+}
+#telephone p
+{
+	float: left;
+	width:100%;
+	position: absolute;
+left:30px;
+	color:burlywood;
+	font-size: 1.8rem;
+	
+}
+#telephone
+{position: relative;
+	left:20px;
+	right: 200px;
+	top:80px;
+background: white;
+	width: 250px;
+	padding-top: 8px;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+	
+	#logo
+	{
+		margin-top: 90px;
+	}
+	#slogan
+	{
+		margin-top: 260px;
+		margin-left: 30px;
+	}
+#search
+{
+	margin-top:500px;
+
+	justify-content: space-between;
+	background-color: rgba(221,221,221,0.5);
+	padding-left:12px;
+	padding-right: 12px;
+	border-radius: 5px;
+	margin-left: 20px;
+	width: 1000px;
+	position: absolute;
+	text-align: center;
+		left:0;
+	right: 0;
+	
+}
+#search h1
+{
+	font-size: 2rem;
+	padding-bottom: 5px;
+	color: var(--Text-color1);
+}
+.where
+{
+		float:left;
+	height: 60px;
+	background-color: white;
+	width: 24%;
+	font-size: 1.4rem;
+/*	border-radius: 5px;*/
+	position: relative;
+/*	margin-left: 35px;*/
+}
+.where input
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline:none;
+	border-radius: 5px;
+	font-size:1.5rem;
+	padding-left: 50px;
+}
+.where i
+{
+	position: absolute;
+/*	margin-right: 12px;*/
+	z-index: 1;
+/*	margin-left: 12px;*/
+}
+.where:last-child
+{
+	width:130px;
+	
+}
+.where:last-child button
+{	font-size:1.2rem;
+	height: 100%;
+	width: 100%;
+	color:var(--Text-color2);
+	background-color: white;
+	border:none;
+	cursor:pointer;
+	border-radius: 10px;
+	padding-left: 20px;
+/*	margin-left: 10px;*/
+
+}
+
+	
+	#service
+{
+	margin-top: 40px;
+	position: relative;text-align: center;
+	left: 30px;
+	
+}
+	#service h1
+	{
+		font-size: 3rem;
+	
+	}
+	#service h2
+	{
+		font-size:2rem;
+	}
+.tittle
+{
+	text-align: center;
+	font-family: var(--Font-title);
+	font-style: italic;
+}
+.ser 
+{ 
+	width: 49%;
+	display: inline-block;
+	padding-left: 40px;
+
+}
+#image
+	{
+		width: 103%;
+	}
+	#logo
+	{
+		width: 50%;
+		
+		position: absolute;
+		left:150;
+		margin-left: 250px;
+		transform: scale(1.5);
+	}
+.titlemini
+{
+
+	color: var(--Text-color2);
+	font-family: var(--Font-title);
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	
+}
+.descript{
+	font-size: 2.2rem;
+	font-family: var(--Font-title);
+	font:italic;
+	width: 450px;
+	margin-left: -50px;
+	padding-left: 0px;
+}
+.imgser
+{
+		height: 300px;
+	
+} 
+#destination h1
+	{
+		font-size: 3rem;
+	}
+	#destination h2
+	{
+		font-size: 2rem;
+	}
+.topdestination
+{	
+	width: 34%;
+			
+}
+	.lo
+	{
+
+		padding-right: 20px;
+	}
+
+	#destination button
+{
+	position: relative;
+	left: 10px;
+	top:250px;
+	font-size:1.8rem;
+}
+
+   
+	
+	.whattheysay
+{
+	left: 320px;
+	width: 60%;
+	top:50px;
+	font-size: 1.9rem;
+}
+	.vitri
+{
+	left:500px;
+	margin-top: 5px;
+	font-size: 2rem;
+	width: 500px;
+}
+#tip
+	{
+		font-size: 1.5rem;
+	margin-left: 50px;
+	}
+	.aboutus
+{
+top:20px;
+	position: relative;
+	text-align: left;
+}
+
+.imgteam
+{
+	
+
+	position: relative;
+	width: 29%;
+	left: 0;
+	margin-left: 0;
+	padding-left: 0;
+	float: left;
+}
+	
+.prev
+	{
+		position: absolute;
+		left: 0;
+	}
+	.aboutus>h1
+{
+	position: absolute;
+	text-align: center;
+	left:0;
+	right: 0;
+	bottom: -50px;
+	margin-bottom: 50px;
+}	
+.contents
+{
+
+	float: left;
+	position: absolute;
+	left:100px;
+}
+.content
+{	padding-top: 0;
+	position: relative;
+	top:50px;
+	margin-top: 0;
+}
+.content img
+{
+	transform: scale(2.5);
+	position: absolute;
+	left:-120px;
+	top:-40px;
+}
+	.imgteam img
+	{display: none;
+		position:absolute;
+		left: 0px;
+	}
+.content h2
+{
+	position: absolute;
+	font-size: 2rem;
+	left: 30px;
+	width: 200px;
+
+}
+.content p
+{
+	position: absolute;
+	width: 650px;
+	top:60px;
+	margin-left:0px;
+	left: 0px;
+	font-size: 2rem;
+}
+body {
+  padding: 2%;
+  text-align: center;
+}
+
+
+#slideshow {
+  overflow: hidden;
+  height: 350px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  80% {margin-left: -1456px;}
+}
+	#phan1{
+		display: none;
+	}
+	#phan2
+	{
+		display: block;
+		
+	}
+	#phan2 h1
+	{
+		font-size: 3rem;
+	}
+#contact
+	{
+		margin-top: 100px;
+	}
+	#contact h1
+	
+	{
+		font-size: 3rem;
+	
+	}
+#contentcontact
+{
+	color: white;
+	margin-top: 0px;
+	background-color: var(--Text-color2);
+	position: relative;
+	height: 900px;
+	width: 107%;
+}
+	iframe
+	{
+		width: 107%;
+	}
+#tieude h2
+{
+	float: left;
+	width: 33.333%;
+text-align: center;
+}
+#tieude h2:first-child
+{
+	text-align: center;
+}
+#lienket
+{
+	text-align: center;
+}
+ #soci
+{
+	float: left;
+width:50%;
+	text-align: left;
+margin-top: 25px;
+	padding-left: 0px;
+	position: absolute;
+	left: 20px;
+	top:30px;
+	}
+#dienthoai
+{float: left;
+	width:49%;
+margin-top: 75px;
+	line-height: 40px;
+	position: relative;
+	left:500px;
+}
+#QuickLink
+{float: left;
+	margin-top: 25px;
+	position: absolute;
+	left:20px;
+	top:450px;
+	text-align: left;
+}
+#dienthoai img
+{ 
+/*	margin-top: 20px;*/
+	
+	padding: 0;
+	position: relative;
+	transform: scale(3);
+	top: 90px;
+}
+	#lienket
+	{
+		font-size: 2rem;
+	}
+#lienket a
+{
+	text-decoration: none;
+	color:papayawhip;
+	cursor:pointer;
+}
+	
+	#dem
+	{
+		display: block;
+		color: white;
+		
+	}
+	body
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	html
+	{
+		font-size: 110%;
+	}
+#header
+	{
+		width: 103%;
+	}
+	#banner
+	{
+		width: 103%;
+	}
+
+}
+
+
+/*telephone samsung*/
+@media (max-width:739px)
+{
 	#header
 {
 position: absolute;
@@ -613,8 +1194,9 @@ float: left;
 	float: left;
 	width:100%;
 	position: absolute;
-left:30px;
+left:25px;
 	color:burlywood;
+	font-size: 1.8rem;
 	
 }
 #telephone
@@ -623,7 +1205,7 @@ left:30px;
 	right: 200px;
 	top:50px;
 background: white;
-	width: 200px;
+	width: 230px;
 	padding-top: 8px;
 	border-radius: 15px;
 	font-size: 1.5rem;
@@ -640,8 +1222,8 @@ background: white;
 	padding-left:0px;
 	padding-right: 17px;
 	border-radius: 5px;
-	margin-left: 150px;
-	width: 700px;
+	margin-left: 100px;
+	width: 850px;
 	position: absolute;
 	text-align: center;
 		left:0;
@@ -660,6 +1242,7 @@ background: white;
 	height: 50px;
 	background-color: white;
 	width: 20%;
+	font-size: 1.4rem;
 /*	border-radius: 5px;*/
 	position: relative;
 /*	margin-left: 35px;*/
@@ -673,6 +1256,7 @@ background: white;
 	outline:none;
 	border-radius: 5px;
 	font-size:1.2rem;
+	padding-left: 40px;
 }
 .where i
 {
@@ -705,22 +1289,23 @@ background: white;
 {
 	margin-top: 40px;
 	position: relative;text-align: center;
-	left: 20px;
+	left: 30px;
 	
 }
+	#service h1
+	{
+		font-size: 3rem;
+	
+	}
+	#service h2
+	{
+		font-size:2rem;
+	}
 .tittle
 {
 	text-align: center;
 	font-family: var(--Font-title);
 	font-style: italic;
-}
-#service h1
-{
-	font-size: 2rem;
-}
-#service h2
-{
-	font-size: 1rem;
 }
 .ser 
 { 
@@ -729,25 +1314,45 @@ background: white;
 	padding-left: 40px;
 
 }
+#image
+	{
+		width: 103%;
+	}
+	#logo
+	{
+		transform: scale(1.1);
+	}
 .titlemini
 {
 
 	color: var(--Text-color2);
 	font-family: var(--Font-title);
+	width: 350px;
+	margin: 0;
+	padding: 0;
 	
 }
 .descript{
-	font-size: 1.3rem;
+	font-size: 2.2rem;
 	font-family: var(--Font-title);
 	font:italic;
-	width: 330px;
+	width: 450px;
+	margin-left: -50px;
+	padding-left: 0px;
 }
 .imgser
 {
 		height: 300px;
 	
 } 
-	
+#destination h1
+	{
+		font-size: 3rem;
+	}
+	#destination h2
+	{
+		font-size: 2rem;
+	}
 .topdestination
 {	
 	width: 34%;
@@ -761,16 +1366,23 @@ background: white;
 
 	.whattheysay
 {
-	left: 330px;
-	width: 56%;
-	top:100px;
+	left: 320px;
+	width: 60%;
+	top:50px;
+	font-size: 1.9rem;
 }
 	.vitri
 {
-	left:540px;
-	margin-top: 20px;
+	left:500px;
+	margin-top: 5px;
+	font-size: 2rem;
+	width: 500px;
 }
-	
+#tip
+	{
+		font-size: 1.5rem;
+	margin-left: 50px;
+	}
 	.aboutus
 {
 top:20px;
@@ -802,14 +1414,14 @@ top:20px;
 	left:0;
 	right: 0;
 	bottom: -50px;
-	
+	margin-bottom: 50px;
 }	
 .contents
 {
 
 	float: left;
 	position: absolute;
-	left:350px;
+	left:100px;
 }
 .content
 {	padding-top: 0;
@@ -819,30 +1431,38 @@ top:20px;
 }
 .content img
 {
+	transform: scale(2.5);
 	position: absolute;
-
 	left:-120px;
 	top:-40px;
 }
+	.imgteam img
+	{display: none;
+		position:absolute;
+		left: 0px;
+	}
 .content h2
 {
 	position: absolute;
-	font-size: 1.3rem;
-	left: -20px;
+	font-size: 2rem;
+	left: 30px;
+	width: 200px;
 
 }
 .content p
 {
 	position: absolute;
-	width: 430px;
+	width: 650px;
 	top:60px;
 	margin-left:0px;
-	left: -50px;
+	left: 0px;
+	font-size: 2rem;
 }
 body {
   padding: 2%;
   text-align: center;
 }
+
 
 #slideshow {
   overflow: hidden;
@@ -876,16 +1496,29 @@ body {
 	#phan2
 	{
 		display: block;
+		
 	}
+	#phan2 h1
+	{
+		font-size: 3rem;
+	}
+#contact
+	{
+		margin-top: 100px;
+	}
+	#contact h1
 	
-
+	{
+		font-size: 3rem;
+	
+	}
 #contentcontact
 {
 	color: white;
 	margin-top: 0px;
 	background-color: var(--Text-color2);
 	position: relative;
-	height: 230px;
+	height: 900px;
 }
 #tieude h2
 {
@@ -904,7 +1537,7 @@ text-align: center;
  #soci
 {
 	float: left;
-	width:50.33333%;
+width:50%;
 	text-align: left;
 margin-top: 25px;
 	padding-left: 0px;
@@ -914,18 +1547,19 @@ margin-top: 25px;
 	}
 #dienthoai
 {float: left;
-	width:200px;
-margin-top: 16px;
-	line-height: 22px;
+	width:49%;
+margin-top: 75px;
+	line-height: 40px;
 	position: relative;
-	left:350px;
+	left:500px;
 }
 #QuickLink
 {float: left;
-	width: 20px;
 	margin-top: 25px;
-	position: relative;
-	left:450px;
+	position: absolute;
+	left:20px;
+	top:450px;
+	text-align: left;
 }
 #dienthoai img
 { 
@@ -933,13 +1567,20 @@ margin-top: 16px;
 	
 	padding: 0;
 	position: relative;
+	transform: scale(3);
+	top: 90px;
 }
+	#lienket
+	{
+		font-size: 2rem;
+	}
 #lienket a
 {
 	text-decoration: none;
 	color:papayawhip;
 	cursor:pointer;
 }
+	
 	#dem
 	{
 		display: block;
@@ -956,398 +1597,12 @@ margin-top: 16px;
 	{
 		font-size: 110%;
 	}
-}
-
-/*telephone samsung*/
-@media (max-width:739px)
-{
 #header
-{
-position: absolute;
-	left:0;
-	right:0;
-	z-index: 3;
-}
-#icon-social
-{
-	width:10%; 
-	float: left;
-	padding-top: 40px;
-	display:grid;
-	position: absolute;
-	left: 0px;
-	padding-left: 0;
-	margin-left: 0;
-}
-	#icon-social i
 	{
-		padding-bottom: 10px;
+		width: 100%;
 	}
-#nav
-{
-	width: 400px;
-display: inline-block;
-	padding-top: 0px;
-position: absolute;
-	left: -23px;
-	text-align: center;
-}
-#nav li 
-{
-	display: inline-block;
-	
-}
-#nav li a
-{
-	color: var(--Text-color1);
-		text-decoration: none;
-	font-size: 1rem;
-	font-style:oblique;
-	font-style: oblique;
-	padding-left: 10px;
-}
-#telephone img
-{
-float: left;
-	position: absolute;
-/*	transform: scale(2);*/
-}
-#telephone p
-{
-	float: left;
-	width:100%;
-	position: absolute;
-	color:burlywood;
-	left: 12px;
-	top:12px;
-}
-#telephone
-{position: relative;
-	left:220px;
-	top:30px;
-background: white;
-	width: 150px;
-	padding-top: 8px;
-	border-radius: 15px;
-	font-size: 1rem;
-	cursor: pointer;
-}
-#image
+	#banner
 	{
-		width: 1000px;
-	}
-	
-#search
-{
-	margin-top:550px;
-
-	justify-content: space-between;
-	background-color: rgba(221,221,221,0.5);
-	padding-left:0px;
-	padding-right: 17px;
-	border-radius: 5px;
-	margin-left: 30px;
-	width: 700px;
-	position: absolute;
-	text-align: center;
-		left:0;
-	right: 0;
-	
-}
-#search h1
-{
-	font-size: 1.5rem;
-	padding-bottom: 5px;
-	color: var(--Text-color1);
-}
-.where
-{
-		float:left;
-	height: 50px;
-	background-color: white;
-	width: 20%;
-/*	border-radius: 5px;*/
-	position: relative;
-/*	margin-left: 35px;*/
-}
-.where input
-{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border: none;
-	outline:none;
-	border-radius: 5px;
-	font-size:1.2rem;
-}
-.where i
-{
-	position: absolute;
-/*	margin-right: 12px;*/
-	z-index: 1;
-/*	margin-left: 12px;*/
-}
-.where:last-child
-{
-	width:130px;
-	
-}
-.where:last-child button
-{	font-size:1.2rem;
-	height: 100%;
-	width: 100%;
-	color:var(--Text-color2);
-	background-color: white;
-	border:none;
-	cursor:pointer;
-	border-radius: 10px;
-	
-/*	margin-left: 10px;*/
-
-}
-
-	
-	#service
-{
-	margin-top: 40px;
-	position: relative;text-align: center;
-	left: 20px;
-	
-}
-.tittle
-{
-	text-align: center;
-	font-family: var(--Font-title);
-	font-style: italic;
-}
-#service h1
-{
-	font-size: 2rem;
-}
-#service h2
-{
-	font-size: 1rem;
-}
-.ser 
-{ 
-	width: 49%;
-	display: inline-block;
-	padding-left: 40px;
-
-}
-.titlemini
-{
-
-	color: var(--Text-color2);
-	font-family: var(--Font-title);
-	
-}
-.descript{
-	font-size: 1.3rem;
-	font-family: var(--Font-title);
-	font:italic;
-	width: 330px;
-}
-.imgser
-{
-		height: 300px;
-	
-} 
-	
-.topdestination
-{	
-	width: 34%;
-			
-}
-	.lo
-	{
-
-		padding-right: 20px;
-	}
-
-	.whattheysay
-{
-	left: 330px;
-	width: 56%;
-	top:100px;
-}
-	.vitri
-{
-	left:540px;
-	margin-top: 20px;
-}
-	
-	.aboutus
-{
-top:20px;
-	position: relative;
-	text-align: left;
-}
-
-.imgteam
-{
-	
-
-	position: relative;
-	width: 29%;
-	left: 0;
-	margin-left: 0;
-	padding-left: 0;
-	float: left;
-}
-	
-
-	.aboutus>h1
-{
-	position: absolute;
-	text-align: center;
-	left:0;
-	right: 0;
-	bottom: -50px;
-	
-}	
-.contents
-{
-
-	float: left;
-	position: absolute;
-	left:350px;
-}
-.content
-{	padding-top: 0;
-	position: relative;
-	top:50px;
-	margin-top: 0;
-}
-.content img
-{
-	position: absolute;
-
-	left:-120px;
-	top:-40px;
-}
-.content h2
-{
-	position: absolute;
-	font-size: 1.3rem;
-	left: -20px;
-
-}
-.content p
-{
-	position: absolute;
-	width: 430px;
-	top:60px;
-	margin-left:0px;
-	left: -50px;
-}
-body {
-  padding: 2%;
-  text-align: center;
-}
-
-#slideshow {
-  overflow: hidden;
-  height: 350px;
-  width: 728px;
-  margin: 0 auto;
-}
-
-.slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 14s ease infinite;
-}
-
-.slide {
-  float: left;
-  height: 510px;
-  width: 728px;
-}
-
-
-@-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  80% {margin-left: -1456px;}
-}
-	#phan1{
-		display: none;
-	}
-	#phan2
-	{
-		display: block;
-	}
-	
-	#contact h1
-{
-position: absolute;
-	left: 0;
-	right: 0;
-	text-align: center;
-
-margin: -70px;
-}
-#contentcontact
-{
-	color: white;
-	margin-top: 0px;
-	background-color: var(--Text-color2);
-	position: relative;
-	height: 230px;
-}
-#tieude h2
-{
-	float: left;
-	width: 33.333%;
-text-align: center;
-}
-#tieude h2:first-child
-{
-	text-align: center;
-}
-#lienket
-{
-	text-align: center;
-}
- #soci
-{
-	float: left;
-	width:50.33333%;
-	text-align: left;
-margin-top: 25px;
-	padding-left: 0px;
-	position: absolute;
-	left: 0;
-	top:30px;
-	}
-#dienthoai
-{float: left;
-	width:200px;
-margin-top: 16px;
-	line-height: 22px;
-}
-#QuickLink
-{float: left;
-	width: 20px;
-	margin-top: 25px;
-}
-#dienthoai img
-{ 
-/*	margin-top: 20px;*/
-	
-	padding: 0;
-	position: relative;
-}
-#lienket a
-{
-	text-decoration: none;
-	color:papayawhip;
-	cursor:pointer;
-}
-	#dem
-	{
-		display: none;
+		width: 110%;
 	}
 }

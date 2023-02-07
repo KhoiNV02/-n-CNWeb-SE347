@@ -1,0 +1,151 @@
+/* CSS Document */
+
+#header
+{background: rgb(252,171,142);
+background: linear-gradient(163deg, rgba(252,171,142,1) 32%, rgba(215,143,17,0.7736344537815126) 65%);
+	height: 60px;
+position: relative;
+}
+#telephone
+{
+	top:5px;
+}
+#Seemore
+{font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	z-index: 5;
+}
+.tour
+{
+	  box-shadow: 0 0 4px black; 
+	position: relative;
+	color: white;
+	float: left;
+/*	chia 3*/
+	width: 30%;
+margin:20px 25px 20px 25px;
+	background: linear-gradient(163deg, rgba(252,241,142,1) 24%, rgba(215,143,17,0.7736344537815126) 71%);
+	
+/*	chia 2*/
+/*
+	width: 30%;
+	margin:20px 150px 20px 150px;
+	background: linear-gradient(163deg, rgba(252,241,142,1) 24%, rgba(215,143,17,0.7736344537815126) 71%);
+*/
+	
+/*	chia 4*/
+/*
+	width: 23%;
+		margin:20px 10px 20px 10px;
+	background: linear-gradient(163deg, rgba(215,143,17,0.7736344537815126) 24%,  rgba(252,241,142,1)71%);
+*/
+}
+.con
+{
+	transform: scale3d(1.3,1.3,2) rotate(-12deg);
+	transition: all .5s ease-in-out;
+}
+.con2
+{
+	transform: scale3d(1.2,1.2,2) rotate(5deg);
+}
+.above .ads
+{ float:left;
+/*	chia 3,2*/
+	width:55%;
+	margin-left: 100px;
+/*	chia 4*/
+/*
+	width: 180%;
+	margin-left: 80px;
+*/
+	margin-bottom: 30px;
+}
+.blew
+{
+	
+	text-align: center;
+	font-size: 1.2rem;
+/*	chia 4*/
+/*	margin-left: 120px;*/
+	
+}
+#Seemore h2
+{ 
+	
+	text-shadow: 0 0 3px black;
+}
+.blew h2
+{
+	text-align: right;
+}
+.above
+{
+	
+	position: relative;
+}
+.above .country
+{ 
+	float: left;
+width:20%; 
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.above h2
+{
+	width: 115px;
+}
+.country h2
+{
+	position: absolute;
+	left:10px;
+	top:13.px;
+}
+.hinh1
+{
+	position: absolute;
+	top:10px;
+	left:-130px;
+
+	display: none;
+		transform: scale(0.36);
+	transition: all .8s ease-in-out;
+}
+#contact
+{
+	position: relative;
+	top:80px;
+	height: 0px;
+}
+@media (min-width:740px) and (max-width:1023px)
+{
+	#telephone
+	{
+		display: none;
+	}
+.tour
+	{
+		width: 44%;
+		margin: 0;
+		margin: 10px 0px 30px 58px;	
+	}
+.blew p
+	{
+		font-size: 2rem;
+		text-align: center;
+		width: 100%;
+		color: white;
+		text-shadow: 0 0 10px black;
+		font-weight: 500;
+	}
+	#header 
+	{
+		width: 107%;
+	}
+	#Seemore h1
+	
+	{
+		font-size: 3rem;
+	}
+}

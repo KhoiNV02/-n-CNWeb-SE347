@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoNotifications } from "react-icons/io5";
@@ -8,6 +9,7 @@ import Menu from "./Menu";
 
 const Header = () => {
   const [toggeMenu, setToggeMenu] = useState(false);
+  const navigate = useNavigate();
   const handleToggeMenu = () => {
     setToggeMenu(!toggeMenu);
     console.log(toggeMenu);
@@ -16,7 +18,10 @@ const Header = () => {
   return (
     <div>
       <div className="fixed top-0 right-0 left-0 z-50 flex items-center justify-between h-[60px] bg-white shadow z-999">
-        <div className="flex items-center justify-center w-[300px] h-full text-[28px] font-semibold text-white bg-[#ff5e14]">
+        <div
+          className="flex items-center justify-center w-[300px] h-full text-[28px] font-semibold text-white bg-[#ff5e14] cursor-pointer"
+          onClick={() => navigate("/")}
+        >
           Dream Holidays
         </div>
         <div className="hidden lg:flex items-center w-[500px] bg-[#f4f4f4] rounded-[10px] hover:bg-[#e4e6e9]">
@@ -36,7 +41,7 @@ const Header = () => {
             <FaUserAlt className="text-[18px] text-[#001659]" />
           </div>
           <div
-            className="flex items-center h-full px-[16px] cursor-pointer bg-[#ff5e14]"
+            className="flex z-[52] items-center h-full px-[16px] cursor-pointer bg-[#ff5e14]"
             onClick={handleToggeMenu}
           >
             <HiBars3BottomRight className="text-[26px]  text-white" />

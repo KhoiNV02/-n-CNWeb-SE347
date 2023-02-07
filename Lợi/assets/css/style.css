@@ -278,7 +278,7 @@ body {
 .header {
   background: var(--viridian-green);
   padding-block: 20px;
-  height: 88px;
+  height: 120px;
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
 }
@@ -326,8 +326,10 @@ body {
   visibility: visible;
 }
 
-.navbar-list { margin-bottom: 15px; }
+.navbar-list { margin-bottom: 15px;
+margin-top: 20px;
 
+}
 .navbar-link {
   color: var(--white-1);
   font-size: var(--fs-5);
@@ -699,7 +701,17 @@ body {
 
 
 
-
+.fix
+{
+	position: absolute;left:0;
+}
+.fix1
+{
+	 color: var(--white-1);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+	position: absolute; left:140px; top:20px;
+}
 
 /*-----------------------------------*\
   #RESPONSIVE
@@ -745,8 +757,15 @@ body {
 
 }
 
-
-
+.fix
+	{
+		top: -20px;
+		margin-bottom: 100px;
+	}
+.fix1
+{
+	top:40px;
+}
 
 
 /**
