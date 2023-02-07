@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý du lịch</title>
-    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
-    <link rel="stylesheet" href="../../styles/home.css">
-    <link rel="stylesheet" href="../../styles/customer.css">
+    <title>Tourism Management</title>
+    <link rel="stylesheet" href="../../styles/home_template.css">
+    <link rel="stylesheet" href="../../styles/avatar_popup.css">
+    <link rel="stylesheet" href="../../styles/travel.css">
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../../js/hometemplate.js"></script>
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <main>
-        <nav class="left-navigation expand">
+        <nav class="left-navigation expand normal">
             <a href="../home.html" class="logo">
                 
             </a>
@@ -35,14 +37,6 @@
                 <i class='bx bx-bus' ></i>
                 <span>Travel Tour</span>
             </a>
-            <a href="news.html" class="nav-item">
-                <i class='bx bx-news' ></i>
-                <span>News</span>
-            </a>
-            <a href="discount.html" class="nav-item">
-                <i class='bx bxs-discount' ></i>
-                <span>Discount</span>
-            </a>
             <div class="category">
                 <p>Report</span>
             </div>
@@ -55,16 +49,13 @@
                 <span>Traffic</span>
             </a>
         </nav>
-        <div class="content-reponsive">
-            Content Reponsive
-        </div>
         <div class="container">
             <div class="top-bar">
                 <div class="topbar-left">
                     <div class="nav-opener">
                         <i class='bx bx-menu'></i>
                     </div>
-                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder="Type something...">
                     <div class="search-box">
                         <i class='bx bx-search'></i>
                     </div>
@@ -73,30 +64,286 @@
                     <div class="messages">
                         <i class='bx bx-envelope' ></i>
                     </div>
-                    <div class="notify">
+                    <div class="notify" id="notify_opener">
                         <i class='bx bx-bell' ></i>
+                        <div class="dropdown-notify expand">
+                            <div class="title">
+                                <p class="header">
+                                    Notifications
+                                </p>
+                                <p class="sub-header">You have <span class="num-unread-msg">9</span> unread messages</p>
+                            </div>
+                            <div class="notify-content">
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Adam</p>
+                                        <p class="msg-content">I want to cooperate with you!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Lily</p>
+                                        <p class="msg-content">Thank for the trip!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">New tour was added</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Borth</p>
+                                        <p class="msg-content">Your website's so great!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Anna</p>
+                                        <p class="msg-content">Looking forward more trips</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">You have an invitation!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>See More</button>
+                        </div>
                     </div>
                     <div class="user-info">
-                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        <img src="../../images/home/profile.png" alt=""
                         class="user-avatar">
                         <div class="info-content">
                             <p class="user-name">Trung</p>
                             <p class="user-position">Admin</p>
                         </div>
+                        <div class="avatar-popup">
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Setting</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-user' ></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span>Manage</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-log-out' ></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <nav class="left-navigation expand reponsive">
+                <a href="../home.html" class="logo">
+                    
+                </a>
+                <a href="../home.html" class="nav-item">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="category">
+                    <p>Manage</p>
+                    <div class="catagory-separator"></div>
+                </div>
+                <a href="customer.html" class="nav-item">
+                    <i class='bx bxs-user'></i>
+                    <span>Customer</span>
+                </a>
+                <a href="travel.html" class="nav-item active">
+                    <i class='bx bx-bus' ></i>
+                    <span>Travel Tour</span>
+                </a>
+                <div class="category">
+                    <p>Report</span>
+                </div>
+                <a href="sales.html" class="nav-item break">
+                    <i class='bx bx-cart-alt' ></i>
+                    <span>Sales</span>
+                </a>
+                <a href="traffic.html" class="nav-item">
+                    <i class='bx bx-traffic-cone' ></i>
+                    <span>Traffic</span>
+                </a>
+            </nav>
             <div class="content">
                 <header>
-                    <h3>Manage > Travel</h3>
-                    <input onclick="openForm()" type="button" value="Add Trip" id="add-user-btn">
-                    <i class='bx bx-trip' ></i>
+                    <h3>Manage > Tour</h3>
                 </header>
+                <div class="row-1">
+                    <div class="new-tour">
+                        <div class="new-tour-1">
+                            <h3>New Tours</h3>
+                            <button id="add-user-btn" onclick="openForm()">
+                                <span>
+                                    <i class='bx bxs-user-plus'></i>
+                                </span>
+                                Add Tour
+                            </button>
+                            
+                        </div>
+                        <div class="new-tour-2">
+                            <div class="new-tour-item">
+                                <div class="new-tour-item-user-info">
+                                    <img src="" alt="" class="new-tour-avatar">
+                                    <span class="user-name">Japan</span>
+                                </div>
+                                <p class="tour-price">$ 50</p>
+                                <p>5 min ago</p>
+                                <div class="new-tour-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-tour-item">
+                                <div class="new-tour-item-user-info">
+                                    <img src="" alt="" class="new-tour-avatar">
+                                    <span class="user-name">Japan</span>
+                                </div>
+                                <p class="tour-price">$ 50</p>
+                                <p>5 min ago</p>
+                                <div class="new-tour-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-tour-item">
+                                <div class="new-tour-item-user-info">
+                                    <img src="" alt="" class="new-tour-avatar">
+                                    <span class="user-name">Japan</span>
+                                </div>
+                                <p class="tour-price">$ 50</p>
+                                <p>5 min ago</p>
+                                <div class="new-tour-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-tour-item">
+                                <div class="new-tour-item-user-info">
+                                    <img src="" alt="" class="new-tour-avatar">
+                                    <span class="user-name">Japan</span>
+                                </div>
+                                <p class="tour-price">$ 50</p>
+                                <p>5 min ago</p>
+                                <div class="new-tour-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-tour-item">
+                                <div class="new-tour-item-user-info">
+                                    <img src="" alt="" class="new-tour-avatar">
+                                    <span class="user-name">Japan</span>
+                                </div>
+                                <p class="tour-price">$ 50</p>
+                                <p>5 min ago</p>
+                                <div class="new-tour-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="invite-user">
+                        <div class="invite-user-1">
+                            <p class="invite-user-header">Hot tours of last week</p>
+                            <i class='bx bx-dots-horizontal-rounded' ></i>
+                        </div>
+                        <!-- <img src="https://demo.dashboardpack.com/user-management-html/img/table.svg" alt="" class="invite-user-img"> -->
+                        <div class="progressbar-container">
+                            <div class="progressbar" role="progressbar" aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100" style="--value:70">
+                            
+                            </div>
+                        
+                        </div>
+                        <div class="sales-sumary-container">
+                            <div class="sales-sumary-item">
+                                <div class="thumb">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/7.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">Top pick</p>
+                                    <p class="sales-sumary-item-content">Tours that be most chosen</p>
+                                </div>
+                        </div>
+                            <div class="sales-sumary-item">
+                                <div class="thumb">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/6.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">Total tours sales</p>
+                                    <p class="sales-sumary-item-content">40% increased from last week</p>
+                                </div>
+                        </div>
+                            <div class="sales-sumary-item">
+                                <div class="thumb">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/5.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">Avarage Best Tours</p>
+                                    <p class="sales-sumary-item-content">Statistics Daily Report</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-user">
+                        <p class="total-user-header">Tour Analytics</p>
+                        <div class="sales-sumary-container">
+                            <div class="sales-sumary-item">
+                                <div class="thumb-ana-1">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/3.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">1283 </p>
+                                    <p class="sales-sumary-item-content">Tours madde today</p>
+                                </div>
+                            </div>
+                            <div class="sales-sumary-item">
+                                <div class="thumb-ana-2">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/1.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">Japan</p>
+                                    <p class="sales-sumary-item-content">Hot tour this month</p>
+                                </div>
+                            </div>
+                            <div class="sales-sumary-item">
+                                <div class="thumb-ana-3">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/4.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">28714</p>
+                                    <p class="sales-sumary-item-content">Avarage tours made a month</p>
+                                </div>
+                            </div>
+                            <div class="sales-sumary-item">
+                                <div class="thumb-ana-4">
+                                    <img src="https://demo.dashboardpack.com/user-management-html/img/icon2/2.svg" alt="">
+                                </div>
+                                <div class="sales-sumary-content-wrapper">
+                                    <p class="sales-sumary-item-header">10294</p>
+                                    <p class="sales-sumary-item-content">Avaiable Tours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
                 <div class="user-list">
                     <div class="title-wrapper">
-                        <h3 class="user-list-title">Trips List</h3>
+                        <h3 class="user-list-title">Tour List</h3>
                         <div class="user-search">
-                            <input type="text" id="search-user-txt" placeholder="Search content here...">
+                            <input type="text" id="search-user-txt" placeholder="Search...">
                             <input type="button" value="Search" id="search-user-btn">
                         </div>
                     </div>
@@ -113,7 +360,7 @@
                             <th>Action</th>
                         </tr>
                         <tr>
-                            <td>trip1</td>
+                            <td>trip001</td>
                             <td>4-days tour in Japan</td>
                             <td>4 days</td>
                             <td>0123456789</td>
@@ -126,9 +373,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
-                            <td>4 days</td>
+                            <td>trip002</td>
+                            <td>Visiting Eiffel Tower</td>
+                            <td>3 days</td>
                             <td>0123456789</td>
                             
                             <td>31/12/2022</td>
@@ -139,8 +386,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
+                            <td>trip003</td>
+                            <td>Singapore - Sentosa Island</td>
                             <td>4 days</td>
                             <td>0123456789</td>
                             
@@ -152,8 +399,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
+                            <td>trip004</td>
+                            <td>BangKok - Thailand </td>
                             <td>4 days</td>
                             <td>0123456789</td>
                             
@@ -165,9 +412,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
-                            <td>4 days</td>
+                            <td>trip005</td>
+                            <td>Korean Weekly Tour</td>
+                            <td>7 days</td>
                             <td>0123456789</td>
                             
                             <td>18/10/2022</td>
@@ -178,9 +425,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
-                            <td>4 days</td>
+                            <td>trip006</td>
+                            <td>Malaysia Beach Tour</td>
+                            <td>5 days</td>
                             <td>0123456789</td>
                             
                             <td>18/10/2022</td>
@@ -191,8 +438,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
+                            <td>trip007</td>
+                            <td>Indonesia Capital</td>
                             <td>4 days</td>
                             <td>0123456789</td>
                             
@@ -204,9 +451,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>trip1</td>
-                            <td>4-days tour in Japan</td>
-                            <td>4 days</td>
+                            <td>trip008</td>
+                            <td>Fansipan Camping</td>
+                            <td>6 days</td>
                             <td>0123456789</td>
                             
                             <td>31/12/2022</td>
@@ -232,19 +479,19 @@
                 </div>
                 <div class="add-new-user-form">
                     <div class="main-form">
-                        <h2 class="form-header">Add New Trip</h2>
+                        <h2 class="form-header">Add New Tour</h2>
                         <div class="form-content">
                             <div class="input-field">
                                 <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Trip Id</span>
+                                <span class="text-input-title" for="meow">Tour Name</span>
                             </div>
                             <div class="input-field">
                                 <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Title</span>
+                                <span class="text-input-title" for="meow">Country</span>
                             </div>
                             <div class="input-field">
                                 <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Start Date</span>
+                                <span class="text-input-title" for="meow">Price</span>
                             </div>
                             <div class="input-field">
                                 <input type="text" name="meow" id="meow" class="text-input" required="required">
@@ -252,9 +499,20 @@
                             </div>
                             <div class="input-field">
                                 <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Contact Number</span>
+                                <span class="text-input-title" for="meow">Contact Phone</span>
                             </div>
-                            <input type="file" id="img" name="img" accept="image/*" class="browse_img">
+                            <div class="input-field">
+                                <input type="password" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Start Date</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Email</span>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="meow" id="meow" class="text-input" required="required">
+                                <span class="text-input-title" for="meow">Note</span>
+                            </div>
                         </div>
                         <div class="control-group">
                             <input onclick="AddUser()" type="button" value="Add" id="add-user-btn" style="width: 100px">
@@ -262,6 +520,115 @@
                         </div>
                     </div>
                 </div>
+            
+                </div>
+                <div class="row-2">
+                    <div class="discount-stats">
+                        <div class="discount-stats-row-1">
+                            <h3 class="discount-stats-header">Discount Statics</h3>
+                            <i class='bx bx-dots-horizontal-rounded' ></i>
+                        </div>
+                        <table>
+                            <tr class="discount-stats-table-header">
+                                <th>Tour</th>
+                                <th>Price</th>
+                                <th>Discount</th>
+                                <th>Booked</th>
+                            </tr>
+                            <tr>
+                                <td>Japan</td>
+                                <td>$50</td>
+                                <td>20%</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>London</td>
+                                <td>$100</td>
+                                <td>30%</td>
+                                <td>234</td>
+                            </tr>
+                            <tr>
+                                <td>Singapore </td>
+                                <td>$20</td>
+                                <td>20%</td>
+                                <td>186</td>
+                            </tr>
+                            <tr>
+                                <td>BangKok</td>
+                                <td>$10</td>
+                                <td>10%</td>
+                                <td>534</td>
+                            </tr>
+                            <tr>
+                                <td>Singapore</td>
+                                <td>$50</td>
+                                <td>40%</td>
+                                <td>345</td>
+                            </tr>
+                            <tr>
+                                <td>Indonesia</td>
+                                <td>$100</td>
+                                <td>20%</td>
+                                <td>234</td>
+                            </tr>
+                            <tr>
+                                <td>Malaysia</td>
+                                <td>$80</td>
+                                <td>40%</td>
+                                <td>423</td>
+                            </tr>
+                            <tr>
+                                <td>Fansipan</td>
+                                <td>$50</td>
+                                <td>80%</td>
+                                <td>1874</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="invite-user add-discount">
+                        <div class="invite-user-1">
+                            <p class="invite-user-header">Create Discount</p>
+                            <i class="bx bx-dots-horizontal-rounded"></i>
+                        </div>
+                        <img src="https://demo.dashboardpack.com/user-management-html/img/table.svg" alt="" class="invite-user-img">
+                        <div class="invite-user-input-field">
+                            <div class="input-name">
+                                <input type="text" name="firstName" id="firstName" placeholder="Tour Name">
+                                <input type="text" name="lastName" id="lastName" placeholder="Tour Id">
+                            </div>
+                            <input type="text" name="email" id="email" placeholder="Discount">
+                            <select name="role" id="role">
+                                <option disabled="" selected="">Discount For</option>
+                                <option>Normal User</option>
+                                <option>VIP User</option>
+                            </select>
+                        </div>
+                        <button class="send-invitation-btn">Create Discount</button>
+                    </div>
+                </div>
+                <div id="chat-circle" class="btn btn-raised">
+                    <div id="chat-overlay"></div>
+                    <i class='bx bx-envelope' ></i>
+            </div>
+            <div class="chat-box">
+            <div class="chat-box-header">
+                Message
+                <span class="chat-box-toggle"><i class='bx bx-x' ></i></span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+            <div class="chat-logs">
+                
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">
+                <form>
+                <input type="text" id="chat-input" placeholder="Send a message..."/>
+                <button type="submit" class="chat-submit" id="chat-submit"><i class='bx bx-send' ></i></button>
+                </form>      
+            </div>
+            </div>
             </div>
         </div>
     </main>
@@ -279,34 +646,91 @@
             form.style.display = "none";
         }
         $(document).ready(function(){
+            $('.dropdown-notify.expand').hide();
+            $('.avatar-popup').hide();
+            $('.left-navigation.reponsive').hide();
+            var isReponsive = false;
             var navExpandState = true;
-            //Expand/Collapse navigation animation
-            $(".nav-opener").click(function(){
-                if(navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
-                    navExpandState = false;
+            var notifyExpand = false;
+            var reponsiveWidth = 768;
+
+            if(window.matchMedia('(max-width: 1300px)').matches){
+                isReponsive = true;
+                $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                $('.left-navigation').show();
+                navExpandState = false;
+                $('.left-navigation-reponsive').hide();
+            }
+            else{
+                if (isReponsive){
+                    isReponsive = false;
+                    $('.left-navigation-reponsive').removeClass('left-navigation-reponsive expand collapse').addClass('left-navigation expand');
+                    navExpandState = true;
+                }
+            }
+
+            $(window).resize(function(){
+                if(window.matchMedia('(max-width: 1300px)').matches){
+                    if(!isReponsive){
+                        isReponsive = true;
+                        $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                        navExpandState = false;
+                        $('.left-navigation-reponsive').hide();
+                    }
                 }
                 else{
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
-                    navExpandState = true;
+                    if (isReponsive){
+                        isReponsive = false;
+                        $('.left-navigation-reponsive').removeClass('left-navigation-reponsive collapse expand').addClass('left-navigation expand');
+                        $('.left-navigation.normal').show();
+                        $('.left-navigation.reponsive').hide();
+                        navExpandState = true;
+                    }
+                }
+              });
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(!isReponsive){
+                    if(navExpandState){
+                        $('.left-navigation.expand.normal').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
+                }
+                else{ //Reponsive
+                    
+                    if(navExpandState){
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.expand').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
                 }
             });
             // Expanding navigation when hover
             $(".left-navigation").hover(function(){
-                if(!navExpandState){
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    }
                 }
             });
             $(".left-navigation").mouseleave(function(){
-                if(!navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    }
                 }
             });
             // Expand Search Box Animation
             $(".search-box").click(function(){
-                $(this).animate({
-                    marginLeft: '4px'
-                }, 300);
                 $('#search-txt-box').animate({
                     marginLeft: '20px',
                     opacity: 1,
@@ -314,11 +738,55 @@
                 }, 300);
                 $('#search-txt-box').focus();
             });
-            $(".messages i, .notify i").click(function (){
+            $("#search-txt-box").focusout(function(){
+                if($(this).val().length == 0){
+                    $('#search-txt-box').animate({
+                        marginLeft: '0px',
+                        opacity: 0,
+                        width: 0,
+                    }, 300);
+                }
+            });
+            $(".messages i").click(function (){
                 $(this).css({
-                    "color": "rgba(174,120,197)",
-                    "background-color": "rgba(0, 0, 0, 0.05)"
+                    //"color": "rgba(174,120,197)",
+                    //"background-color": "rgba(0, 0, 0, 0.05)"
                 });
+            });
+
+            $("i.bx.bx-bell").click(function(){
+                var options = {};
+                if(!notifyExpand){
+                    $(".notify i").css({
+                        "color": "rgba(174,120,197)",
+                        "background-color": "rgba(0, 0, 0, 0.05)"
+                    });
+                    
+                    if($('.avatar-popup').is(":visible")){
+                        $('.avatar-popup').slideToggle(300);
+                    }
+                    if($('.chat-box').is(":visible")){
+                        $('.chat-box').toggle('scale');
+                        $("#chat-circle").toggle('scale');
+                    }
+
+                    $('.dropdown-notify.expand').show( "fade", 300 );
+                    notifyExpand = true;
+                }
+                else{
+                    $(".notify i").css({
+                        "color": "gray",
+                        "background-color": "white"
+                    });
+                    $('.dropdown-notify.expand').hide( "fade", 300 );
+                    notifyExpand = false;
+                }
+            });
+            $(".user-info").click(function(){
+                if(notifyExpand){
+                    $("i.bx.bx-bell").trigger("click");
+                }
+                $('.avatar-popup').slideToggle(300);
             });
         });
     </script>

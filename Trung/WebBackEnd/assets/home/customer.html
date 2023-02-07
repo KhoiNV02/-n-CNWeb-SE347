@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý du lịch</title>
-    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
-    <link rel="stylesheet" href="../../styles/home.css">
-    <link rel="stylesheet" href="../../styles/travel.css">
+    <title>Tourism Management</title>
+    <link rel="stylesheet" href="../../styles/home_template.css">
+    <link rel="stylesheet" href="../../styles/avatar_popup.css">
+    <link rel="stylesheet" href="../../styles/customer.css">
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../../js/hometemplate.js"></script>
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <main>
-        <nav class="left-navigation expand">
+        <nav class="left-navigation expand normal">
             <a href="../home.html" class="logo">
                 
             </a>
@@ -35,14 +37,6 @@
                 <i class='bx bx-bus' ></i>
                 <span>Travel Tour</span>
             </a>
-            <a href="news.html" class="nav-item">
-                <i class='bx bx-news' ></i>
-                <span>News</span>
-            </a>
-            <a href="discount.html" class="nav-item">
-                <i class='bx bxs-discount' ></i>
-                <span>Discount</span>
-            </a>
             <div class="category">
                 <p>Report</span>
             </div>
@@ -55,16 +49,13 @@
                 <span>Traffic</span>
             </a>
         </nav>
-        <div class="content-reponsive">
-            Content Reponsive
-        </div>
         <div class="container">
             <div class="top-bar">
                 <div class="topbar-left">
                     <div class="nav-opener">
                         <i class='bx bx-menu'></i>
                     </div>
-                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder="Type something...">
                     <div class="search-box">
                         <i class='bx bx-search'></i>
                     </div>
@@ -73,30 +64,228 @@
                     <div class="messages">
                         <i class='bx bx-envelope' ></i>
                     </div>
-                    <div class="notify">
+                    <div class="notify" id="notify_opener">
                         <i class='bx bx-bell' ></i>
+                        <div class="dropdown-notify expand">
+                            <div class="title">
+                                <p class="header">
+                                    Notifications
+                                </p>
+                                <p class="sub-header">You have <span class="num-unread-msg">9</span> unread messages</p>
+                            </div>
+                            <div class="notify-content">
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Adam</p>
+                                        <p class="msg-content">I want to cooperate with you!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Lily</p>
+                                        <p class="msg-content">Thank for the trip!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">New tour was added</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Borth</p>
+                                        <p class="msg-content">Your website's so great!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Anna</p>
+                                        <p class="msg-content">Looking forward more trips</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">You have an invitation!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>See More</button>
+                        </div>
                     </div>
                     <div class="user-info">
-                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        <img src="../../images/home/profile.png" alt=""
                         class="user-avatar">
                         <div class="info-content">
                             <p class="user-name">Trung</p>
                             <p class="user-position">Admin</p>
                         </div>
+                        <div class="avatar-popup">
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Setting</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-user' ></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span>Manage</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-log-out' ></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <nav class="left-navigation expand reponsive">
+                <a href="../home.html" class="logo">
+                    
+                </a>
+                <a href="../home.html" class="nav-item">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="category">
+                    <p>Manage</p>
+                    <div class="catagory-separator"></div>
+                </div>
+                <a href="customer.html" class="nav-item active">
+                    <i class='bx bxs-user'></i>
+                    <span>Customer</span>
+                </a>
+                <a href="travel.html" class="nav-item">
+                    <i class='bx bx-bus' ></i>
+                    <span>Travel Tour</span>
+                </a>
+                <div class="category">
+                    <p>Report</span>
+                </div>
+                <a href="sales.html" class="nav-item break">
+                    <i class='bx bx-cart-alt' ></i>
+                    <span>Sales</span>
+                </a>
+                <a href="traffic.html" class="nav-item">
+                    <i class='bx bx-traffic-cone' ></i>
+                    <span>Traffic</span>
+                </a>
+            </nav>
             <div class="content">
                 <header>
                     <h3>Manage > User</h3>
-                    <input onclick="openForm()" type="button" value="Add User" id="add-user-btn">
-                    <i class='bx bxs-user-plus'></i>
                 </header>
+                <div class="row-1">
+                    <div class="new-user">
+                        <div class="new-user-1">
+                            <h3>New Users</h3>
+                            <button id="add-user-btn" onclick="openForm()">
+                                <span>
+                                    <i class='bx bxs-user-plus'></i>
+                                </span>
+                                Add User
+                            </button>
+                            
+                        </div>
+                        <div class="new-user-2">
+                            <div class="new-user-item">
+                                <div class="new-user-item-user-info">
+                                    <img src="" alt="" class="new-user-avatar">
+                                    <span class="user-name">James</span>
+                                </div>
+                                <p class="user-role">Customer</p>
+                                <div class="new-user-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-user-item">
+                                <div class="new-user-item-user-info">
+                                    <img src="" alt="" class="new-user-avatar">
+                                    <span class="user-name">Josephine</span>
+                                </div>
+                                <p class="user-role">Customer</p>
+                                <div class="new-user-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-user-item admin">
+                                <div class="new-user-item-user-info">
+                                    <img src="" alt="" class="new-user-avatar">
+                                    <span class="user-name">Lenna</span>
+                                </div>
+                                <p class="user-role">Admin</p>
+                                <div class="new-user-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-user-item">
+                                <div class="new-user-item-user-info">
+                                    <img src="" alt="" class="new-user-avatar">
+                                    <span class="user-name">Mitsue</span>
+                                </div>
+                                <p class="user-role">Customer</p>
+                                <div class="new-user-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                            <div class="new-user-item admin">
+                                <div class="new-user-item-user-info">
+                                    <img src="" alt="" class="new-user-avatar">
+                                    <span class="user-name">Sage</span>
+                                </div>
+                                <p class="user-role">Admin</p>
+                                <div class="new-user-action-btn">
+                                    <i class='bx bx-show'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invite-user">
+                        <div class="invite-user-1">
+                            <p class="invite-user-header">Member Invite</p>
+                            <i class='bx bx-dots-horizontal-rounded' ></i>
+                        </div>
+                        <img src="https://demo.dashboardpack.com/user-management-html/img/table.svg" alt="" class="invite-user-img">
+                        <div class="invite-user-input-field">
+                            <div class="input-name">
+                                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                            </div>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <select name="role" id="role">
+                                <option disabled selected>Pick a role</option>
+                                <option>Customer</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                        <button class="send-invitation-btn">Send The Invitation Link</button>
+                    </div>
+                    <div class="total-user">
+                        <p class="total-user-header">User Analytics</p>
+                        <div class="progressbar-container">
+                            <div class="progressbar" role="progressbar" aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100" style="--value:60">
+                            
+                            </div>
+                            <div class="progressbar-text">more than last month</div>
+                        
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="user-list">
                     <div class="title-wrapper">
                         <h3 class="user-list-title">User List</h3>
                         <div class="user-search">
-                            <input type="text" id="search-user-txt" placeholder="Search content here...">
+                            <input type="text" id="search-user-txt" placeholder="Search...">
                             <input type="button" value="Search" id="search-user-btn">
                         </div>
                     </div>
@@ -113,11 +302,11 @@
                             <th>Action</th>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
+                            <td>user001</td>
+                            <td>Darakjy</td>
+                            <td>josephine074@gmail.com</td>
+                            <td>907-385-4412</td>
+                            <td>Anchorage</td>
                             <td>22/10/2021</td>
                             <td><span class="active">Active</span></td>
                             <td>
@@ -126,12 +315,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>user002</td>
+                            <td>Venere</td>
+                            <td>artvene123@gmail.com</td>
+                            <td>856-264-4130</td>
+                            <td>Gloucester</td>
+                            <td>12/7/2020</td>
                             <td><span class="active">Active</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -139,12 +328,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
+                            <td>user003</td>
+                            <td>Dilliard</td>
+                            <td>leota@gmail.com</td>
+                            <td>408-813-1105</td>
                             <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>9/5/2021</td>
                             <td><span class="inactive">Inactive</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -152,12 +341,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
+                            <td>user004</td>
+                            <td>Johnas</td>
                             <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>605-414-2147</td>
+                            <td>Indonesia</td>
+                            <td>30/6/2022</td>
                             <td><span class="active">Active</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -165,12 +354,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>user005</td>
+                            <td>Hanna</td>
+                            <td>hanaflower12@gmail.com</td>
+                            <td>513-570-1893</td>
+                            <td>Singapore</td>
+                            <td>25/10/2022</td>
                             <td><span class="inactive">Inactive</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -178,12 +367,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>user006</td>
+                            <td>Yuukino</td>
+                            <td>yuuno123@gmail.com</td>
+                            <td>773-573-6914</td>
+                            <td>Japanese</td>
+                            <td>23/9/2022</td>
                             <td><span class="inactive">Inactive</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -191,12 +380,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>user007</td>
+                            <td>Justin</td>
+                            <td>justinn864@gmail.com</td>
+                            <td>513-570-1893</td>
+                            <td>India</td>
+                            <td>15/3/2022</td>
                             <td><span class="active">Active</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -204,12 +393,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>user1</td>
-                            <td>John</td>
-                            <td>john123@gmail.com</td>
-                            <td>0123456789</td>
-                            <td>America</td>
-                            <td>22/10/2021</td>
+                            <td>user008</td>
+                            <td>Charlie</td>
+                            <td>chair024@gmail.com</td>
+                            <td>856-636-8749</td>
+                            <td>Mianma</td>
+                            <td>19/1/2023</td>
                             <td><span class="active">Active</span></td>
                             <td>
                                 <i class='bx bxs-edit-alt edit'></i>
@@ -235,36 +424,36 @@
                         <h2 class="form-header">Add New User</h2>
                         <div class="form-content">
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Username</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Username</span>
                             </div>
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Firstname</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Firstname</span>
                             </div>
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Lastname</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Lastname</span>
                             </div>
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Address</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Address</span>
                             </div>
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Phone Number</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Phone Number</span>
                             </div>
                             <div class="input-field">
-                                <input type="password" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Password</span>
+                                <input type="password" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Password</span>
                             </div>
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Email</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Email</span>
                             </div>
                             <div class="input-field">
-                                <input type="text" name="meow" id="meow" class="text-input" required="required">
-                                <span class="text-input-title" for="meow">Role</span>
+                                <input type="text" name="" id="" class="text-input" required="required">
+                                <span class="text-input-title" for="">Role</span>
                             </div>
                         </div>
                         <div class="control-group">
@@ -273,6 +462,33 @@
                         </div>
                     </div>
                 </div>
+            </div>
+              
+            <div id="chat-circle" class="btn btn-raised">
+                    <div id="chat-overlay"></div>
+                    <i class='bx bx-envelope' ></i>
+            </div>
+              
+            <div class="chat-box">
+            <div class="chat-box-header">
+                Message
+                <span class="chat-box-toggle"><i class='bx bx-x' ></i></span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">
+                <form>
+                <input type="text" id="chat-input" placeholder="Send a message..."/>
+                <button type="submit" class="chat-submit" id="chat-submit"><i class='bx bx-send' ></i></button>
+                </form>      
+            </div>
+            </div>
+              
             </div>
         </div>
     </main>
@@ -290,34 +506,93 @@
             form.style.display = "none";
         }
         $(document).ready(function(){
+            $('.dropdown-notify.expand').hide();
+            $('.avatar-popup').hide();
+            $('.left-navigation.reponsive').hide();
+            var isReponsive = false;
             var navExpandState = true;
-            //Expand/Collapse navigation animation
-            $(".nav-opener").click(function(){
-                if(navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
-                    navExpandState = false;
+            var notifyExpand = false;
+            var reponsiveWidth = 768;
+
+            
+
+            if(window.matchMedia('(max-width: 1300px)').matches){
+                isReponsive = true;
+                $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                $('.left-navigation').show();
+                navExpandState = false;
+                $('.left-navigation-reponsive').hide();
+            }
+            else{
+                if (isReponsive){
+                    isReponsive = false;
+                    $('.left-navigation-reponsive').removeClass('left-navigation-reponsive expand collapse').addClass('left-navigation expand');
+                    navExpandState = true;
+                }
+            }
+
+            $(window).resize(function(){
+                if(window.matchMedia('(max-width: 1300px)').matches){
+                    if(!isReponsive){
+                        isReponsive = true;
+                        $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                        navExpandState = false;
+                        $('.left-navigation-reponsive').hide();
+                    }
                 }
                 else{
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
-                    navExpandState = true;
+                    if (isReponsive){
+                        isReponsive = false;
+                        $('.left-navigation-reponsive').removeClass('left-navigation-reponsive collapse expand').addClass('left-navigation expand');
+                        $('.left-navigation.normal').show();
+                        $('.left-navigation.reponsive').hide();
+                        navExpandState = true;
+                    }
+                }
+              });
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(!isReponsive){
+                    if(navExpandState){
+                        $('.left-navigation.expand.normal').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
+                }
+                else{ //Reponsive
+                    
+                    if(navExpandState){
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.expand').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
                 }
             });
             // Expanding navigation when hover
             $(".left-navigation").hover(function(){
-                if(!navExpandState){
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    }
                 }
             });
             $(".left-navigation").mouseleave(function(){
-                if(!navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    }
                 }
             });
             // Expand Search Box Animation
             $(".search-box").click(function(){
-                $(this).animate({
-                    marginLeft: '4px'
-                }, 300);
                 $('#search-txt-box').animate({
                     marginLeft: '20px',
                     opacity: 1,
@@ -325,11 +600,55 @@
                 }, 300);
                 $('#search-txt-box').focus();
             });
-            $(".messages i, .notify i").click(function (){
+            $("#search-txt-box").focusout(function(){
+                if($(this).val().length == 0){
+                    $('#search-txt-box').animate({
+                        marginLeft: '0px',
+                        opacity: 0,
+                        width: 0,
+                    }, 300);
+                }
+            });
+            $(".messages i").click(function (){
                 $(this).css({
-                    "color": "rgba(174,120,197)",
-                    "background-color": "rgba(0, 0, 0, 0.05)"
+                    //"color": "rgba(174,120,197)",
+                    //"background-color": "rgba(0, 0, 0, 0.05)"
                 });
+            });
+
+            $("i.bx.bx-bell").click(function(){
+                var options = {};
+                if(!notifyExpand){
+                    $(".notify i").css({
+                        "color": "rgba(174,120,197)",
+                        "background-color": "rgba(0, 0, 0, 0.05)"
+                    });
+                    
+                    if($('.avatar-popup').is(":visible")){
+                        $('.avatar-popup').slideToggle(300);
+                    }
+                    if($('.chat-box').is(":visible")){
+                        $('.chat-box').toggle('scale');
+                        $("#chat-circle").toggle('scale');
+                    }
+
+                    $('.dropdown-notify.expand').show( "fade", 300 );
+                    notifyExpand = true;
+                }
+                else{
+                    $(".notify i").css({
+                        "color": "gray",
+                        "background-color": "white"
+                    });
+                    $('.dropdown-notify.expand').hide( "fade", 300 );
+                    notifyExpand = false;
+                }
+            });
+            $(".user-info").click(function(){
+                if(notifyExpand){
+                    $("i.bx.bx-bell").trigger("click");
+                }
+                $('.avatar-popup').slideToggle(300);
             });
         });
     </script>

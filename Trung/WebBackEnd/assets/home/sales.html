@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý du lịch</title>
-    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
-    <link rel="stylesheet" href="../../styles/home.css">
+    <title>Tourism Management</title>
+    <link rel="stylesheet" href="../../styles/home_template.css">
+    <link rel="stylesheet" href="../../styles/avatar_popup.css">
     <link rel="stylesheet" href="../../styles/sales.css">
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../../js/hometemplate.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
@@ -18,7 +20,7 @@
 </head>
 <body>
     <main>
-        <nav class="left-navigation expand">
+        <nav class="left-navigation expand normal">
             <a href="../home.html" class="logo">
                 
             </a>
@@ -38,14 +40,6 @@
                 <i class='bx bx-bus' ></i>
                 <span>Travel Tour</span>
             </a>
-            <a href="news.html" class="nav-item">
-                <i class='bx bx-news' ></i>
-                <span>News</span>
-            </a>
-            <a href="discount.html" class="nav-item">
-                <i class='bx bxs-discount' ></i>
-                <span>Discount</span>
-            </a>
             <div class="category">
                 <p>Report</span>
             </div>
@@ -58,16 +52,13 @@
                 <span>Traffic</span>
             </a>
         </nav>
-        <div class="content-reponsive">
-            Content Reponsive
-        </div>
         <div class="container">
-            <div class="top-bar">
+            <div class="top-bar" id="top">
                 <div class="topbar-left">
                     <div class="nav-opener">
                         <i class='bx bx-menu'></i>
                     </div>
-                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder="Type something...">
                     <div class="search-box">
                         <i class='bx bx-search'></i>
                     </div>
@@ -76,43 +67,142 @@
                     <div class="messages">
                         <i class='bx bx-envelope' ></i>
                     </div>
-                    <div class="notify">
+                    <div class="notify" id="notify_opener">
                         <i class='bx bx-bell' ></i>
+                        <div class="dropdown-notify expand">
+                            <div class="title">
+                                <p class="header">
+                                    Notifications
+                                </p>
+                                <p class="sub-header">You have <span class="num-unread-msg">9</span> unread messages</p>
+                            </div>
+                            <div class="notify-content">
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Adam</p>
+                                        <p class="msg-content">I want to cooperate with you!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Lily</p>
+                                        <p class="msg-content">Thank for the trip!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">New tour was added</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Borth</p>
+                                        <p class="msg-content">Your website's so great!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Anna</p>
+                                        <p class="msg-content">Looking forward more trips</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">You have an invitation!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>See More</button>
+                        </div>
                     </div>
                     <div class="user-info">
-                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        <img src="../../images/home/profile.png" alt=""
                         class="user-avatar">
                         <div class="info-content">
                             <p class="user-name">Trung</p>
                             <p class="user-position">Admin</p>
                         </div>
+                        <div class="avatar-popup">
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Setting</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-user' ></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span>Manage</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-log-out' ></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <nav class="left-navigation expand reponsive">
+                <a href="../home.html" class="logo">
+                    
+                </a>
+                <a href="../home.html" class="nav-item">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="category">
+                    <p>Manage</p>
+                    <div class="catagory-separator"></div>
+                </div>
+                <a href="customer.html" class="nav-item">
+                    <i class='bx bxs-user'></i>
+                    <span>Customer</span>
+                </a>
+                <a href="travel.html" class="nav-item">
+                    <i class='bx bx-bus' ></i>
+                    <span>Travel Tour</span>
+                </a>
+                <div class="category">
+                    <p>Report</span>
+                </div>
+                <a href="#" class="nav-item break active">
+                    <i class='bx bx-cart-alt' ></i>
+                    <span>Sales</span>
+                </a>
+                <a href="traffic.html" class="nav-item">
+                    <i class='bx bx-traffic-cone' ></i>
+                    <span>Traffic</span>
+                </a>
+            </nav>
             <div class="content">
-                <!-- <header>
-                    <div class="input-field">
-                        <input type="text" name="meow" id="meow" class="text-input" required="required">
-                        <span class="text-input-title" for="meow">Du lịch</span>
-                    </div>
-                </header> -->
-                <h3 class="header-title">Report > Sales</h3>
+                <header>
+                    <h3>Dashboard</h3>
+                </header>
                 <div class="statics">
                     <div class="summarycard">
                         <div class="wrapper">
                             <div class="card-content">
                                 <p class="card-title">
-                                    Sales Today
+                                    Total Sales
                                 </p>
                                 <p class="value">
-                                    523,102 <span><i class='bx bxs-dollar-circle'></i></span>
+                                    120,000 <span><i class='bx bxs-bank'></i></span>
                                 </p>
                             </div>
-                            <img src="https://cdn-icons-png.flaticon.com/512/3271/3271314.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/854/854929.png" alt="">
                         </div>
                         <p class="compare">
                             <span class="color-increase">
-                                3.68%
+                                4.68%
                             </span>
                             Since last month
                         </p>
@@ -121,17 +211,17 @@
                         <div class="wrapper">
                             <div class="card-content">
                                 <p class="card-title">
-                                    Monthly Income
+                                    Total Tours Booked
                                 </p>
                                 <p class="value">
-                                    1,435,938 <span><i class='bx bxs-dollar-circle'></i></span>
+                                    743,568 <span><i class='bx bx-trip' ></i></span>
                                 </p>
                             </div>
                             <img src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="">
                         </div>
                         <p class="compare">
                             <span class="color-decrease">
-                                0.25%
+                                7.53%
                             </span>
                             Since last month
                         </p>
@@ -159,10 +249,10 @@
                         <div class="wrapper">
                             <div class="card-content">
                                 <p class="card-title">
-                                    Total Visits
+                                    Unique Tours
                                 </p>
                                 <p class="value">
-                                    582,436 <span><i class='bx bxs-user'></i></span>
+                                    6,012 <span><i class='bx bx-sitemap'></i></span>
                                 </p>
                             </div>
                             <img src="https://cdn-icons-png.flaticon.com/512/854/854929.png" alt="">
@@ -175,175 +265,317 @@
                         </p>
                     </div>
                 </div>
-                <div class="chart-analyze">
-                    
-                    <div class="chart-line">
-                        <div class="detail">
-                            <h3 class="chart-header">Monthly Income</h3>
-                            <ul class="chart-month">
-                                <li>
-                                    <a href="#" class="active">This month</a>
-                                </li>
-                                <li>
-                                    <a href="#">Last month</a>
-                                </li>
-                            </ul>
+                <div class="content-row-2">
+                    <div class="chart-analyze">
+                        <div class="chart-bar">
+                            <h2 class="chart-header">Tours Made Through Months</h2>
+                            <div class="chart-container">
+                                <canvas id="barChart"></canvas>
+                            </div>
                         </div>
-
-                        <canvas id="lineChart" style="max-width: 600px; min-width:600px; display:block; position:static"></canvas>
+                        <div class="chart-pie">
+                            <canvas id="pieChart"></canvas>
+                            <h2 class="chart-header">Tours Booked By Devices</h2>
+                        </div>
+    
+                        <script>
+                            const labels = ["6/2022", "7/2022", "8/2022", "9/2022", "10/2022", "11/2022", "12/2022", "1/2023"];
+                            const data = {
+                                labels: labels,
+                                datasets: [{
+                                  label: 'Top 8 visit countries',
+                                  data: [65, 100, 80, 72, 56, 55, 70, 85],
+                                  backgroundColor: [
+                                    'rgb(255, 219, 230, 1)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 205, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(201, 203, 207, 0.2)',
+                                    'rgba(255, 203, 207, 0.2)',
+                                  ],
+                                  borderColor: [
+                                    'rgb(255, 104, 151)',
+                                  ],
+                                  borderWidth: 2
+                                }]
+                              };
+                            
+                            new Chart("barChart", {
+                                type: 'line',
+                                data: data,
+                                options: {
+                                    scales: {
+                                        xAxes: [{
+                                            gridLines: {
+                                                display:false
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero: true
+                                            },
+                                            gridLines: {
+                                                display:false
+                                            }
+                                        }]
+                                    }
+                                  },
+                            });
+                        </script>
+                        <script>
+                            const data_pie = {
+                                labels: [
+                                    'Desktops',
+                                    'Laptops',
+                                    'Tablets',
+                                    'Other'
+                                ],
+                                datasets: [{
+                                    label: 'Devices Accessed',
+                                    data: [300, 240, 200, 250],
+                                    backgroundColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(255, 220, 100)'
+                                    ],
+                                    hoverOffset: 4
+                                }]
+                            };
+                            new Chart("pieChart", {
+                                type: 'polarArea',
+                                data: data_pie,
+                            });
+                        </script>
                     </div>
-                    <!-- <div class="chart-bar">
-                        <canvas id="barChart" style="max-width: 600px;"></canvas>
-                        <h3 class="chart-header">Devices Analyze</h3>
-                    </div> -->
-                    <div class="chart-polar">
-                        <h3 class="chart-header">Total Sales</h3>
-                        <canvas id="polarChart" style="max-width: 600px;"></canvas>
+                    <div class="row-2-right">
+                        <div class="sales-by-source">
+                            <h3 class="sales-by-source-header">
+                                Tours Booked From Social Source
+                            </h3>
+                            <div class="sales-by-source-item">
+                                <div class="item-info">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="">
+                                    <p class="item-name">Facebook</p>
+                                </div>
+                                <p class="item-value">800 Tours</p>
+                            </div>
+                            <div class="sales-by-source-item">
+                                <div class="item-info">
+                                    <img src="../../images/home/instagram.png" alt="">
+                                    <p class="item-name">Instagram</p>
+                                </div>
+                                <p class="item-value">200 Tours</p>
+                            </div>
+                            <div class="sales-by-source-item">
+                                <div class="item-info">
+                                    <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="">
+                                    <p class="item-name">Zalo</p>
+                                </div>
+                                <p class="item-value">1200 Tours</p>
+                            </div>
+                            <div class="sales-by-source-item">
+                                <div class="item-info">
+                                    <img src="../../images/home/tik-tok.png" alt="">
+                                    <p class="item-name">Tik Tok</p>
+                                </div>
+                                <p class="item-value">700 Tours</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#top">View Details</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <script>
-                        const labels = [
-                        'January',
-                        'February',
-                        'March',
-                        'April',
-                        'May',
-                        'June',
-                        'July',
-                        'August',
-                        'September',
-                        'October',
-                        'November',
-                        'December'
-                        ];
-                        const data = {
-                        labels: labels,
-                        datasets: [{
-                            label: 'Monthly Imcome',
-                            data: [653464, 597473, 802425, 812525, 567731, 556124, 402345, 729925, 736346, 550725, 689347, 723875],
-                            fill: false,
-                            borderColor: 'rgb(75, 192, 192)',
-                            tension: 0.1
-                        }]
-                        };
-                        
-                        new Chart("lineChart", {
-                            type: 'line',
-                            data: data,
-                            options: {
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero: true
-                                        }
-                                    }]
-                                },
-                                responsive: true,
-                            }
-                        });
-                    </script>
-                    <script>
-                        const polarData = {
-                        labels: [
-                            'Cash',
-                            'ATM',
-                            'Banking',
-                            'Momo',
-                            'Visa'
-                        ],
-                        datasets: [{
-                            label: 'My First Dataset',
-                            data: [11, 16, 7, 3, 14],
-                            backgroundColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(75, 192, 192)',
-                            'rgb(255, 205, 86)',
-                            'rgb(201, 203, 207)',
-                            'rgb(54, 162, 235)'
-                            ]
-                        }]
-                        };
-                        new Chart("polarChart", {
-                            type: 'polarArea',
-                            data: polarData,
-                            options: {}
-                        });
-                    </script>
-                    <script>
-                       const labels_bar = ["Thailand", "Vietnamese", "American", "France", "Philippines", "Japan", "Korean", "Indonesia"];
-                        const data_bar = {
-                        labels: labels_bar,
-                        datasets: [{
-                            indexAxis: 'y',
-                            label: 'My First Dataset',
-                            data: [65, 59, 80, 81, 56, 55, 40],
-                            fill: false,
-                            backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 205, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(201, 203, 207, 0.2)'
-                            ],
-                            borderColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(255, 159, 64)',
-                            'rgb(255, 205, 86)',
-                            'rgb(75, 192, 192)',
-                            'rgb(54, 162, 235)',
-                            'rgb(153, 102, 255)',
-                            'rgb(201, 203, 207)'
-                            ],
-                            borderWidth: 1
-                        }]
-                        };
-                        
-                        new Chart("barChart", {
-                            type: 'bar',
-                            data: data_bar,
-                            options: {
-                                
-                            }
-                        });
-                    </script>
+                    
                 </div>
-                
+                <div class="content-row-3">
+                    <div class="hot-tour">
+                        <h3 class="hot-tour-header">Hot Tours Recent</h3>
+                        <div class="hot-tour-table">
+                            <div class="hot-tour-table-item first-row">
+                                <p>#</p>
+                                <p>Tour Name</p>
+                                <p>Tour ID</p>
+                                <p>Price</p>
+                                <p>Booked</p>
+                            </div>
+                            <div class="hot-tour-table-item">
+                                <p>1</p>
+                                <p>Japan</p>
+                                <p>jp001</p>
+                                <p>$100</p>
+                                <p>300</p>
+                            </div>
+                            <div class="hot-tour-table-item">
+                                <p>2</p>
+                                <p>Korean</p>
+                                <p>kr002</p>
+                                <p>$50</p>
+                                <p>100</p>
+                            </div>
+                            <div class="hot-tour-table-item">
+                                <p>3</p>
+                                <p>Malaysia</p>
+                                <p>ml003</p>
+                                <p>$80</p>
+                                <p>200</p>
+                            </div>
+                            <div class="hot-tour-table-item">
+                                <p>4</p>
+                                <p>Thailand</p>
+                                <p>tl004</p>
+                                <p>$20</p>
+                                <p>230</p>
+                            </div>
+                            <div class="hot-tour-table-item">
+                                <p>5</p>
+                                <p>Indonesia</p>
+                                <p>id005</p>
+                                <p>$30</p>
+                                <p>150</p>
+                            </div>
+                            
+                        </div>
+                        <button><a href="#top">View Details</a></button>
+                    </div>
+                    
+                    <div class="explore-more">
+                        <div class="explore-more-img"></div>
+                        <h3 class="explore-more-header">More Analytics</h3>
+                        <p class="explore-more-content">Watch a full report to help improving tours quality</p>
+                        <button><a href="#top">View Details</a></button>
+                    </div>
+                    
+                    <div class="report-card">
+                        <h3>Create CRM Reports</h3>
+                        <div class="report-card-content">
+                            <p>
+                                Outlines keep you and honest indulging honest.
+                                <div>
+                                    <br>Read more <span><i class='bx bx-right-arrow-alt' ></i></span>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+              
+            <div id="chat-circle" class="btn btn-raised">
+                    <div id="chat-overlay"></div>
+                    <i class='bx bx-envelope' ></i>
+            </div>
+              
+            <div class="chat-box">
+            <div class="chat-box-header">
+                Message
+                <span class="chat-box-toggle"><i class='bx bx-x' ></i></span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">
+                <form>
+                <input type="text" id="chat-input" placeholder="Send a message..."/>
+                <button type="submit" class="chat-submit" id="chat-submit"><i class='bx bx-send' ></i></button>
+                </form>      
+            </div>
+            </div>
+              
             </div>
         </div>
     </main>
     <script>
         $(document).ready(function(){
+            $('.dropdown-notify.expand').hide();
+            $('.avatar-popup').hide();
+            $('.left-navigation.reponsive').hide();
+            var isReponsive = false;
             var navExpandState = true;
-            //Expand/Collapse navigation animation
-            $(".nav-opener").click(function(){
-                if(navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
-                    navExpandState = false;
+            var notifyExpand = false;
+            var reponsiveWidth = 768;
+
+            if(window.matchMedia('(max-width: 1300px)').matches){
+                isReponsive = true;
+                $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                $('.left-navigation').show();
+                navExpandState = false;
+                $('.left-navigation-reponsive').hide();
+            }
+            else{
+                if (isReponsive){
+                    isReponsive = false;
+                    $('.left-navigation-reponsive').removeClass('left-navigation-reponsive expand collapse').addClass('left-navigation expand');
+                    navExpandState = true;
+                }
+            }
+
+            $(window).resize(function(){
+                if(window.matchMedia('(max-width: 1300px)').matches){
+                    if(!isReponsive){
+                        isReponsive = true;
+                        $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                        navExpandState = false;
+                        $('.left-navigation-reponsive').hide();
+                    }
                 }
                 else{
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
-                    navExpandState = true;
+                    if (isReponsive){
+                        isReponsive = false;
+                        $('.left-navigation-reponsive').removeClass('left-navigation-reponsive collapse expand').addClass('left-navigation expand');
+                        $('.left-navigation.normal').show();
+                        $('.left-navigation.reponsive').hide();
+                        navExpandState = true;
+                    }
+                }
+              });
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(!isReponsive){
+                    if(navExpandState){
+                        $('.left-navigation.expand.normal').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
+                }
+                else{ //Reponsive
+                    
+                    if(navExpandState){
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.expand').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
                 }
             });
             // Expanding navigation when hover
             $(".left-navigation").hover(function(){
-                if(!navExpandState){
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    }
                 }
             });
             $(".left-navigation").mouseleave(function(){
-                if(!navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    }
                 }
             });
             // Expand Search Box Animation
             $(".search-box").click(function(){
-                $(this).animate({
-                    marginLeft: '4px'
-                }, 300);
                 $('#search-txt-box').animate({
                     marginLeft: '20px',
                     opacity: 1,
@@ -351,11 +583,55 @@
                 }, 300);
                 $('#search-txt-box').focus();
             });
-            $(".messages i, .notify i").click(function (){
+            $("#search-txt-box").focusout(function(){
+                if($(this).val().length == 0){
+                    $('#search-txt-box').animate({
+                        marginLeft: '0px',
+                        opacity: 0,
+                        width: 0,
+                    }, 300);
+                }
+            });
+            $(".messages i").click(function (){
                 $(this).css({
-                    "color": "rgba(174,120,197)",
-                    "background-color": "rgba(0, 0, 0, 0.05)"
+                    //"color": "rgba(174,120,197)",
+                    //"background-color": "rgba(0, 0, 0, 0.05)"
                 });
+            });
+
+            $("i.bx.bx-bell").click(function(){
+                var options = {};
+                if(!notifyExpand){
+                    $(".notify i").css({
+                        "color": "rgba(174,120,197)",
+                        "background-color": "rgba(0, 0, 0, 0.05)"
+                    });
+                    
+                    if($('.avatar-popup').is(":visible")){
+                        $('.avatar-popup').slideToggle(300);
+                    }
+                    if($('.chat-box').is(":visible")){
+                        $('.chat-box').toggle('scale');
+                        $("#chat-circle").toggle('scale');
+                    }
+
+                    $('.dropdown-notify.expand').show( "fade", 300 );
+                    notifyExpand = true;
+                }
+                else{
+                    $(".notify i").css({
+                        "color": "gray",
+                        "background-color": "white"
+                    });
+                    $('.dropdown-notify.expand').hide( "fade", 300 );
+                    notifyExpand = false;
+                }
+            });
+            $(".user-info").click(function(){
+                if(notifyExpand){
+                    $("i.bx.bx-bell").trigger("click");
+                }
+                $('.avatar-popup').slideToggle(300);
             });
         });
     </script>

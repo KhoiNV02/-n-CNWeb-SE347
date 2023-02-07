@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý du lịch</title>
-    <link rel="icon" type="image/x-icon" href="../images/home/favicon-16x16.png">
-    <link rel="stylesheet" href="../styles/home.css">
+    <title>Tourism Management</title>
+    <link rel="stylesheet" href="../styles/home_template.css">
+    <link rel="stylesheet" href="../styles/avatar_popup.css">
     <link rel="stylesheet" href="../styles/dashboard.css">
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="icon" type="image/x-icon" href="/images/home/favicon-16x16.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/hometemplate.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
@@ -18,11 +20,11 @@
 </head>
 <body>
     <main>
-        <nav class="left-navigation expand">
-            <a href="home.html" class="logo">
+        <nav class="left-navigation expand normal">
+            <a href="#" class="logo">
                 
             </a>
-            <a href="home.html" class="nav-item active">
+            <a href="#" class="nav-item active">
                 <i class='bx bxs-dashboard' ></i>
                 <span>Dashboard</span>
             </a>
@@ -38,14 +40,6 @@
                 <i class='bx bx-bus' ></i>
                 <span>Travel Tour</span>
             </a>
-            <a href="home/news.html" class="nav-item">
-                <i class='bx bx-news' ></i>
-                <span>News</span>
-            </a>
-            <a href="home/discount.html" class="nav-item">
-                <i class='bx bxs-discount' ></i>
-                <span>Discount</span>
-            </a>
             <div class="category">
                 <p>Report</span>
             </div>
@@ -58,16 +52,13 @@
                 <span>Traffic</span>
             </a>
         </nav>
-        <div class="content-reponsive">
-            Content Reponsive
-        </div>
         <div class="container">
             <div class="top-bar">
                 <div class="topbar-left">
                     <div class="nav-opener">
                         <i class='bx bx-menu'></i>
                     </div>
-                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder="Type something...">
                     <div class="search-box">
                         <i class='bx bx-search'></i>
                     </div>
@@ -76,27 +67,126 @@
                     <div class="messages">
                         <i class='bx bx-envelope' ></i>
                     </div>
-                    <div class="notify">
+                    <div class="notify" id="notify_opener">
                         <i class='bx bx-bell' ></i>
+                        <div class="dropdown-notify expand">
+                            <div class="title">
+                                <p class="header">
+                                    Notifications
+                                </p>
+                                <p class="sub-header">You have <span class="num-unread-msg">9</span> unread messages</p>
+                            </div>
+                            <div class="notify-content">
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Adam</p>
+                                        <p class="msg-content">I want to cooperate with you!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Lily</p>
+                                        <p class="msg-content">Thank for the trip!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">New tour was added</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Borth</p>
+                                        <p class="msg-content">Your website's so great!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Anna</p>
+                                        <p class="msg-content">Looking forward more trips</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">You have an invitation!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>See More</button>
+                        </div>
                     </div>
                     <div class="user-info">
-                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        <img src="../images/home/profile.png" alt=""
                         class="user-avatar">
                         <div class="info-content">
                             <p class="user-name">Trung</p>
                             <p class="user-position">Admin</p>
                         </div>
+                        <div class="avatar-popup">
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Setting</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-user' ></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span>Manage</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-log-out' ></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <nav class="left-navigation expand reponsive">
+                <a href="#" class="logo">
+                    
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="category">
+                    <p>Manage</p>
+                    <div class="catagory-separator"></div>
+                </div>
+                <a href="home/customer.html" class="nav-item">
+                    <i class='bx bxs-user'></i>
+                    <span>Customer</span>
+                </a>
+                <a href="home/travel.html" class="nav-item">
+                    <i class='bx bx-bus' ></i>
+                    <span>Travel Tour</span>
+                </a>
+                <div class="category">
+                    <p>Report</span>
+                </div>
+                <a href="home/sales.html" class="nav-item break">
+                    <i class='bx bx-cart-alt' ></i>
+                    <span>Sales</span>
+                </a>
+                <a href="home/traffic.html" class="nav-item">
+                    <i class='bx bx-traffic-cone' ></i>
+                    <span>Traffic</span>
+                </a>
+            </nav>
             <div class="content">
-                <!-- <header>
-                    <h2>Meow</h2>
-                    <div class="input-field">
-                        <input type="text" name="meow" id="meow" class="text-input" required="required">
-                        <span class="text-input-title" for="meow">Du lịch</span>
-                    </div>
-                </header> -->
+                <header>
+                    <h3>Dashboard</h3>
+                </header>
                 <div class="statics">
                     <div class="summarycard">
                         <div class="wrapper">
@@ -175,128 +265,457 @@
                         </p>
                     </div>
                 </div>
-                <div class="chart-analyze">
-                    
-                    <div class="chart-bar">
-                        <h2 class="chart-header">Top 8 visited countries</h2>
-                        <canvas id="barChart" style="max-width: 600px; min-width:600px; display:block; position:static"></canvas>
-                    </div>
-                    <div class="chart-pie">
-                        <canvas id="pieChart" style="max-width: 100%; min-width:300px; height:80%; min-height: 300px; display:block; position:static"></canvas>
-                        <h2 class="chart-header">Visitors by Devices</h2>
-                    </div>
-
-                    <script>
-                        const labels = ["Thailand", "Vietnamese", "American", "France", "Philippines", "Japan", "Korean", "Indonesia"];
-                        const data = {
-                            labels: labels,
-                            datasets: [{
-                              label: 'Top 8 visit countries',
-                              data: [65, 100, 80, 72, 56, 55, 70, 85],
-                              backgroundColor: [
-                                'rgba(255, 99, 132, 0.2)',
-                                'rgba(255, 159, 64, 0.2)',
-                                'rgba(255, 205, 86, 0.2)',
-                                'rgba(75, 192, 192, 0.2)',
-                                'rgba(54, 162, 235, 0.2)',
-                                'rgba(153, 102, 255, 0.2)',
-                                'rgba(201, 203, 207, 0.2)',
-                                'rgba(255, 203, 207, 0.2)',
-                              ],
-                              borderColor: [
-                                'rgb(255, 99, 132)',
-                                'rgb(255, 159, 64)',
-                                'rgb(255, 205, 86)',
-                                'rgb(75, 192, 192)',
-                                'rgb(54, 162, 235)',
-                                'rgb(153, 102, 255)',
-                                'rgb(201, 203, 207)'
-                              ],
-                              borderWidth: 1
-                            }]
-                          };
-                        
-                        new Chart("barChart", {
-                            type: 'bar',
-                            data: data,
-                            options: {
-                                scales: {
-                                    xAxes: [{
-                                        gridLines: {
-                                            display:false
-                                        }
-                                    }],
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero: true
-                                        },
-                                        gridLines: {
-                                            display:false
-                                        }
-                                    }]
-                                }
-                              },
-                        });
-                    </script>
-                    <script>
-                        const data_pie = {
-                            labels: [
-                                'Desktops',
-                                'Laptops',
-                                'Tablets',
-                                'Other'
-                            ],
-                            datasets: [{
-                                label: 'Devices Accessed',
-                                data: [300, 280, 100, 50],
-                                backgroundColor: [
-                                'rgb(255, 99, 132)',
-                                'rgb(54, 162, 235)',
-                                'rgb(255, 205, 86)'
+                <div class="content-row-2">
+                    <div class="chart-analyze">
+                        <div class="chart-bar">
+                            <h2 class="chart-header">Top 8 visited countries</h2>
+                            <div class="chart-container">
+                                <canvas id="barChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-pie">
+                            <canvas id="pieChart"></canvas>
+                            <h2 class="chart-header">Visitors by Devices</h2>
+                        </div>
+    
+                        <script>
+                            const labels = ["Thailand", "Vietnamese", "American", "France", "Philippines", "Japan", "Korean", "Indonesia"];
+                            const data = {
+                                labels: labels,
+                                datasets: [{
+                                  label: 'Top 8 visit countries',
+                                  data: [65, 100, 80, 72, 56, 55, 70, 85],
+                                  backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 205, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(201, 203, 207, 0.2)',
+                                    'rgba(255, 203, 207, 0.2)',
+                                  ],
+                                  borderColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(255, 159, 64)',
+                                    'rgb(255, 205, 86)',
+                                    'rgb(75, 192, 192)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(153, 102, 255)',
+                                    'rgb(201, 203, 207)'
+                                  ],
+                                  borderWidth: 1
+                                }]
+                              };
+                            
+                            new Chart("barChart", {
+                                type: 'bar',
+                                data: data,
+                                options: {
+                                    scales: {
+                                        xAxes: [{
+                                            gridLines: {
+                                                display:false
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero: true
+                                            },
+                                            gridLines: {
+                                                display:false
+                                            }
+                                        }]
+                                    }
+                                  },
+                            });
+                        </script>
+                        <script>
+                            const data_pie = {
+                                labels: [
+                                    'Desktops',
+                                    'Laptops',
+                                    'Tablets',
+                                    'Other'
                                 ],
-                                hoverOffset: 4
-                            }]
-                        };
-                        new Chart("pieChart", {
-                            type: 'doughnut',
-                            data: data_pie,
-                        });
-                    </script>
+                                datasets: [{
+                                    label: 'Devices Accessed',
+                                    data: [300, 280, 100, 50],
+                                    backgroundColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(255, 205, 86)'
+                                    ],
+                                    hoverOffset: 4
+                                }]
+                            };
+                            new Chart("pieChart", {
+                                type: 'doughnut',
+                                data: data_pie,
+                            });
+                        </script>
+                    </div>
+                    <div class="row-2-right">
+                        <div class="report-card">
+                            <h3>Create CRM Reports</h3>
+                            <div class="report-card-content">
+                                <p>
+                                    Outlines keep you and honest indulging honest.
+                                    <div>
+                                        <br>Read more <span><i class='bx bx-right-arrow-alt' ></i></span>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="total-sales">
+                            <div class="row-1">
+                                <header>Total Tours</header>
+                                <div class="time-stamps">
+                                    <div class="time-stamps-item active">Today</div>
+                                    <div class="time-stamps-item">This week</div>
+                                </div>
+                            </div>
+                            <div class="row-2">
+                                <div class="total-tours-value">532</div>
+                                <div class="line-chart-container">
+                                    <canvas id="total-tours-line-chart"></canvas>
+                                </div>
+                            </div>
+                            <script>
+                                const labels_line = [
+                                    'Mon',
+                                    'Tue',
+                                    'Wed',
+                                    'Thu',
+                                    'Fri',
+                                    'Sat',
+                                    'Sun'
+                                ];
+                                const data_line = {
+                                labels: labels_line,
+                                datasets: [{
+                                    data: [204, 345, 532, 308, 435, 345, 330],
+                                    fill: false,
+                                    borderColor: 'rgb(75, 192, 192)',
+                                    tension: 0.1
+                                }]
+                                };
+                                new Chart("total-tours-line-chart", {
+                                    type: 'line',
+                                    data: data_line,
+                                    options: {
+                                        scales: {
+                                            xAxes: [{
+                                                gridLines: {
+                                                    display:false
+                                                }
+                                            }],
+                                            yAxes: [{
+                                                ticks: {
+                                                    display: false
+                                                },
+                                                gridLines: {
+                                                    display:false
+                                                    
+                                                }
+                                            }],
+                                        },
+                                        legend: {
+                                                display: false
+                                            },
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="content-row-3">
+                    <div class="transaction-row-3">
+                        <div class="transaction-row-1">
+                            <header>
+                                Transaction
+                            </header>
+                            <div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="transaction-row-2">
+                            <div class="transaction-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055664.png" alt="Icon here">
+                                <div class="transContent">	
+                                    Bonus From Advertising
+                                </div>
+                                <div class="transValue interest">
+                                    + $ 1000.00
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055664.png" alt="Icon here">
+                                <div class="transContent">	
+                                    Server Maintain
+                                </div>
+                                <div class="transValue">
+                                    - $ 100.00
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055664.png" alt="Icon here">
+                                <div class="transContent">	
+                                    Commission Bonus
+                                </div>
+                                <div class="transValue interest">
+                                    + $ 3000.00
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055664.png" alt="Icon here">
+                                <div class="transContent">	
+                                    Pay Salary
+                                </div>
+                                <div class="transValue">
+                                    - $ 1500.00
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055664.png" alt="Icon here">
+                                <div class="transContent">	
+                                    Donate From Fans
+                                </div>
+                                <div class="transValue interest">
+                                    + $ 1800.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-row-3">
+                        <div class="news-row-3-1">
+                            <header>
+                                News & Update
+                            </header>
+                            <div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="news-row-3-2">
+                            <div class="news-item">
+                                <div class="news-title">
+                                    50% off For Asian Tour
+                                </div>
+                                <div class="news-sum">
+                                    For the new year we have all discount for...
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title">
+                                    Limited time offer: Save up to 50% on hotels!
+                                </div>
+                                <div class="news-sum">
+                                    Exclusive offer: Save big on hotel stays!
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title">
+                                    Experience the world's best theme parks with our exclusive packages
+                                </div>
+                                <div class="news-sum">
+                                    Adventure to world's top theme parks with exclusive packages!
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title">
+                                    Book now and pay later: Flexible payment options available
+                                </div>
+                                <div class="news-sum">
+                                    Book now, pay later with flexible payment options!
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-title">
+                                    50% off For Asian Tour
+                                </div>
+                                <div class="news-sum">
+                                    For the new year we have all discount for...
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="curr-activity-row-3">
+                        <div class="curr-activity-row-3-1">
+                            <header>
+                                Recent activity
+                            </header>
+                            <div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="curr-activity-row-3-2">
+                            <ul>
+                                <li>
+                                    <div class="pink-circle">
+
+                                    </div>
+                                    <p class="curr-activity-timer">Now</p>
+                                    <p class="activity-sum">New tour added 'Eiffel Tower In Da Nang'</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Local Market Experience -River Cruise</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle">
+
+                                    </div>
+                                    <p class="curr-activity-timer">10 min ago</p>
+                                    <p class="activity-sum">Ba Na Hills and Golden Bridge Private Tour</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle-trans">
+
+                                    </div>
+                                    <p class="curr-activity-timer">12 min ago</p>
+                                    <p class="activity-sum">User reviews of our website: Very reliable and trustworthy to use</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle-trans">
+
+                                    </div>
+                                    <p class="curr-activity-timer">1 hour ago</p>
+                                    <p class="activity-sum">Discover places only locals know about</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle-trans">
+
+                                    </div>
+                                    <p class="curr-activity-timer">2 day ago</p>
+                                    <p class="activity-sum">Plan your best trip ever in 2023</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
+            </div>
+              
+            <div id="chat-circle" class="btn btn-raised">
+                    <div id="chat-overlay"></div>
+                    <i class='bx bx-envelope' ></i>
+            </div>
+              
+            <div class="chat-box">
+                <div class="chat-box-header">
+                    Message
+                    <span class="chat-box-toggle"><i class='bx bx-x' ></i></span>
+                </div>
+                <div class="chat-box-body">
+                    <div class="chat-box-overlay">   
+                    </div>
+                    <div class="chat-logs">
+                    
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit"><i class='bx bx-send' ></i></button>
+                    </form>      
+                </div>
+            </div>
+              
             </div>
         </div>
     </main>
     <script>
         $(document).ready(function(){
+            $('.dropdown-notify.expand').hide();
+            $('.avatar-popup').hide();
+            $('.left-navigation.reponsive').hide();
+            var isReponsive = false;
             var navExpandState = true;
-            //Expand/Collapse navigation animation
-            $(".nav-opener").click(function(){
-                if(navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
-                    navExpandState = false;
+            var notifyExpand = false;
+            var reponsiveWidth = 768;
+
+            if(window.matchMedia('(max-width: 1300px)').matches){
+                isReponsive = true;
+                $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                $('.left-navigation').show();
+                navExpandState = false;
+                $('.left-navigation-reponsive').hide();
+            }
+            else{
+                if (isReponsive){
+                    isReponsive = false;
+                    $('.left-navigation-reponsive').removeClass('left-navigation-reponsive expand collapse').addClass('left-navigation expand');
+                    navExpandState = true;
+                }
+            }
+
+            $(window).resize(function(){
+                if(window.matchMedia('(max-width: 1300px)').matches){
+                    if(!isReponsive){
+                        isReponsive = true;
+                        $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                        navExpandState = false;
+                        $('.left-navigation-reponsive').hide();
+                    }
                 }
                 else{
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
-                    navExpandState = true;
+                    if (isReponsive){
+                        isReponsive = false;
+                        $('.left-navigation-reponsive').removeClass('left-navigation-reponsive collapse expand').addClass('left-navigation expand');
+                        $('.left-navigation.normal').show();
+                        $('.left-navigation.reponsive').hide();
+                        navExpandState = true;
+                    }
+                }
+              });
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(!isReponsive){
+                    if(navExpandState){
+                        $('.left-navigation.expand.normal').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
+                }
+                else{ //Reponsive
+                    
+                    if(navExpandState){
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.expand').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
                 }
             });
             // Expanding navigation when hover
             $(".left-navigation").hover(function(){
-                if(!navExpandState){
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    }
                 }
             });
             $(".left-navigation").mouseleave(function(){
-                if(!navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    }
                 }
             });
             // Expand Search Box Animation
             $(".search-box").click(function(){
-                $(this).animate({
-                    marginLeft: '4px'
-                }, 300);
                 $('#search-txt-box').animate({
                     marginLeft: '20px',
                     opacity: 1,
@@ -304,13 +723,56 @@
                 }, 300);
                 $('#search-txt-box').focus();
             });
-            $(".messages i, .notify i").click(function (){
+            $("#search-txt-box").focusout(function(){
+                if($(this).val().length == 0){
+                    $('#search-txt-box').animate({
+                        marginLeft: '0px',
+                        opacity: 0,
+                        width: 0,
+                    }, 300);
+                }
+            });
+            $(".messages i").click(function (){
                 $(this).css({
-                    "color": "rgba(174,120,197)",
-                    "background-color": "rgba(0, 0, 0, 0.05)"
+                    //"color": "rgba(174,120,197)",
+                    //"background-color": "rgba(0, 0, 0, 0.05)"
                 });
             });
-            $(".content-reponsive")[0].innerHTML = $(".content")[0].innerHTML;
+
+            $("i.bx.bx-bell").click(function(){
+                var options = {};
+                if(!notifyExpand){
+                    $(".notify i").css({
+                        "color": "rgba(174,120,197)",
+                        "background-color": "rgba(0, 0, 0, 0.05)"
+                    });
+                    
+                    if($('.avatar-popup').is(":visible")){
+                        $('.avatar-popup').slideToggle(300);
+                    }
+                    if($('.chat-box').is(":visible")){
+                        $('.chat-box').toggle('scale');
+                        $("#chat-circle").toggle('scale');
+                    }
+
+                    $('.dropdown-notify.expand').show( "fade", 300 );
+                    notifyExpand = true;
+                }
+                else{
+                    $(".notify i").css({
+                        "color": "gray",
+                        "background-color": "white"
+                    });
+                    $('.dropdown-notify.expand').hide( "fade", 300 );
+                    notifyExpand = false;
+                }
+            });
+            $(".user-info").click(function(){
+                if(notifyExpand){
+                    $("i.bx.bx-bell").trigger("click");
+                }
+                $('.avatar-popup').slideToggle(300);
+            });
         });
     </script>
 </body>

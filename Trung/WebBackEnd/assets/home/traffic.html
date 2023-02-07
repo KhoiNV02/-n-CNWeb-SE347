@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý du lịch</title>
-    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
-    <link rel="stylesheet" href="../../styles/home.css">
+    <title>Tourism Management</title>
+    <link rel="stylesheet" href="../../styles/home_template.css">
+    <link rel="stylesheet" href="../../styles/avatar_popup.css">
+    <link rel="stylesheet" href="../../styles/traffic.css">
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="icon" type="image/x-icon" href="../../images/home/favicon-16x16.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../../js/hometemplate.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <main>
-        <nav class="left-navigation expand">
+        <nav class="left-navigation expand normal">
             <a href="../home.html" class="logo">
                 
             </a>
@@ -34,14 +40,6 @@
                 <i class='bx bx-bus' ></i>
                 <span>Travel Tour</span>
             </a>
-            <a href="news.html" class="nav-item">
-                <i class='bx bx-news' ></i>
-                <span>News</span>
-            </a>
-            <a href="discount.html" class="nav-item">
-                <i class='bx bxs-discount' ></i>
-                <span>Discount</span>
-            </a>
             <div class="category">
                 <p>Report</span>
             </div>
@@ -54,16 +52,13 @@
                 <span>Traffic</span>
             </a>
         </nav>
-        <div class="content-reponsive">
-            Content Reponsive
-        </div>
         <div class="container">
             <div class="top-bar">
                 <div class="topbar-left">
                     <div class="nav-opener">
                         <i class='bx bx-menu'></i>
                     </div>
-                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder=" ">
+                    <input type="text" name="search-txt-box" id="search-txt-box" class="search-txt-box" placeholder="Type something...">
                     <div class="search-box">
                         <i class='bx bx-search'></i>
                     </div>
@@ -72,60 +67,530 @@
                     <div class="messages">
                         <i class='bx bx-envelope' ></i>
                     </div>
-                    <div class="notify">
+                    <div class="notify" id="notify_opener">
                         <i class='bx bx-bell' ></i>
+                        <div class="dropdown-notify expand">
+                            <div class="title">
+                                <p class="header">
+                                    Notifications
+                                </p>
+                                <p class="sub-header">You have <span class="num-unread-msg">9</span> unread messages</p>
+                            </div>
+                            <div class="notify-content">
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Adam</p>
+                                        <p class="msg-content">I want to cooperate with you!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Lily</p>
+                                        <p class="msg-content">Thank for the trip!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">New tour was added</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Borth</p>
+                                        <p class="msg-content">Your website's so great!</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">Anna</p>
+                                        <p class="msg-content">Looking forward more trips</p>
+                                    </div>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/9445/9445849.png" alt="" class="sender-avatar">
+                                    <div class="item-content">
+                                        <p class="sender-name">System</p>
+                                        <p class="msg-content">You have an invitation!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>See More</button>
+                        </div>
                     </div>
                     <div class="user-info">
-                        <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.6435-9/126026719_102585028354979_3101447414743617268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d5dOQ67nqSQAX_LLra7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCuwcCCDjQhhwU4Cjgc0TPmHxR0gfEkoj__DmdYS1M8HQ&oe=63BAC1EF" alt=""
+                        <img src="../../images/home/profile.png" alt=""
                         class="user-avatar">
                         <div class="info-content">
                             <p class="user-name">Trung</p>
                             <p class="user-position">Admin</p>
                         </div>
+                        <div class="avatar-popup">
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Setting</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-user' ></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span>Manage</span>
+                            </a>
+                            <a href="" class="avatar-popup-item">
+                                <i class='bx bx-log-out' ></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <nav class="left-navigation expand reponsive">
+                <a href="../home.html" class="logo">
+                    
+                </a>
+                <a href="../home.html" class="nav-item">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="category">
+                    <p>Manage</p>
+                    <div class="catagory-separator"></div>
+                </div>
+                <a href="customer.html" class="nav-item">
+                    <i class='bx bxs-user'></i>
+                    <span>Customer</span>
+                </a>
+                <a href="travel.html" class="nav-item">
+                    <i class='bx bx-bus' ></i>
+                    <span>Travel Tour</span>
+                </a>
+                <div class="category">
+                    <p>Report</span>
+                </div>
+                <a href="sales.html" class="nav-item break">
+                    <i class='bx bx-cart-alt' ></i>
+                    <span>Sales</span>
+                </a>
+                <a href="traffic.html" class="nav-item active">
+                    <i class='bx bx-traffic-cone' ></i>
+                    <span>Traffic</span>
+                </a>
+            </nav>
             <div class="content">
                 <header>
-                    <!-- <div class="input-field">
-                        <input type="text" name="meow" id="meow" class="text-input" required="required">
-                        <span class="text-input-title" for="meow">Du lịch</span>
-                    </div> -->
+                    <h3>Report > Traffic</h3>
                 </header>
+                <div class="traffic-ana-card">
+                    <div class="traffic-ana-card-item">
+                        <div class="header-icon header-1">
+                            <i class='bx bxs-user-circle'></i>
+                            <i class="bx bx-dots-horizontal-rounded"></i>
+                        </div>
+                        <p class="card-value">3000</p>
+                        <p class="card-sumary">Accesses today</p>
+                    </div>
+                    <div class="traffic-ana-card-item">
+                        <div class="header-icon header-2">
+                            <i class='bx bxs-user-circle'></i>
+                            <i class="bx bx-dots-horizontal-rounded"></i>
+                        </div>
+                        <p class="card-value">12367</p>
+                        <p class="card-sumary">User Registrations</p>
+                    </div>
+                    <div class="traffic-ana-card-item">
+                        <div class="header-icon header-3">
+                            <i class='bx bxs-user-circle'></i>
+                            <i class="bx bx-dots-horizontal-rounded"></i>
+                        </div>
+                        <p class="card-value">634</p>
+                        <p class="card-sumary">Unique View Today</p>
+                    </div>
+                    <div class="traffic-ana-card-item">
+                        <div class="header-icon header-4">
+                            <i class='bx bxs-user-circle'></i>
+                            <i class="bx bx-dots-horizontal-rounded"></i>
+                        </div>
+                        <p class="card-value">123 GB</p>
+                        <p class="card-sumary">Bandwidth Used</p>
+                    </div>
+                </div>
+                <div class="content-row-2">
+                    <div class="chart-analyze">
+                        <div class="chart-pie">
+                            <canvas id="pieChart"></canvas>
+                            <h2 class="chart-header">Visitors by Devices</h2>
+                        </div>
+                        <script>
+                            const data_pie = {
+                                labels: [
+                                    'Desktops',
+                                    'Laptops',
+                                    'Tablets',
+                                    'Other'
+                                ],
+                                datasets: [{
+                                    label: 'Devices Accessed',
+                                    data: [300, 280, 100, 50],
+                                    backgroundColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(255, 205, 86)'
+                                    ],
+                                    hoverOffset: 4
+                                }]
+                            };
+                            new Chart("pieChart", {
+                                type: 'doughnut',
+                                data: data_pie,
+                            });
+                        </script>
+                    </div>
+                    <div class="row-2-right">
+                        <div class="report-traffic-card">
+                            <div class="report-traffic-card-info">
+                                <h3>Download your report</h3>
+                                <p>Watch a full report and summary of your pages</p>
+                            </div>
+                            <button>Download</button>
+                        </div>
+                        
+                        <div class="total-sales">
+                            <div class="row-1">
+                                <header>Total statistics</header>
+                                <div class="time-stamps">
+                                    <div class="time-stamps-item active">Today</div>
+                                    <div class="time-stamps-item">This week</div>
+                                </div>
+                            </div>
+                            <div class="row-2">
+                                <div class="container-progressbar">
+                                    <div class="skills">
+                                       <!-- skill -->
+                                       <div class="skill">
+                                          <!-- title -->
+                                          <div class="skill-title">
+                                                Ram Usage
+                                          </div>
+                                          <!-- bar -->
+                                          <div class="skill-bar" data-bar="90"><span></span></div>
+                                       </div>
+                                       <!-- #skill -->
+                                       <!-- skill -->
+                                       <div class="skill">
+                                          <!-- title -->
+                                          <div class="skill-title">
+                                                CPU Usage
+                                          </div>
+                                          <!-- bar -->
+                                          <div class="skill-bar" data-bar="70"><span></span></div>
+                                       </div>
+                                       <!-- #skill -->
+                                       <!-- skill -->
+                                       <div class="skill">
+                                          <!-- title -->
+                                          <div class="skill-title">
+                                                Storage Usage
+                                          </div>
+                                          <!-- bar -->
+                                          <div class="skill-bar" data-bar="60"><span></span></div>
+                                       </div>
+                                       <!-- #skill -->
+                                    </div>
+                                </div>
+                                <script>
+                                    $(".skills").addClass("active")
+                                    $(".skills .skill .skill-bar span").each(function() {
+                                    $(this).animate({
+                                        "width": $(this).parent().attr("data-bar") + "%"
+                                    }, 1000);
+                                    $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+                                    });
+                                    setTimeout(function() {
+                                    $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
+                                    }, 2000);
+                                </script>
+                            </div>
+                            <script>
+                                const labels_line = [
+                                    'Mon',
+                                    'Tue',
+                                    'Wed',
+                                    'Thu',
+                                    'Fri',
+                                    'Sat',
+                                    'Sun'
+                                ];
+                                const data_line = {
+                                labels: labels_line,
+                                datasets: [{
+                                    data: [204, 345, 532, 308, 435, 345, 330],
+                                    fill: false,
+                                    borderColor: 'rgb(75, 192, 192)',
+                                    tension: 0.1
+                                }]
+                                };
+                                new Chart("total-tours-line-chart", {
+                                    type: 'line',
+                                    data: data_line,
+                                    options: {
+                                        scales: {
+                                            xAxes: [{
+                                                gridLines: {
+                                                    display:false
+                                                }
+                                            }],
+                                            yAxes: [{
+                                                ticks: {
+                                                    display: false
+                                                },
+                                                gridLines: {
+                                                    display:false
+                                                    
+                                                }
+                                            }],
+                                        },
+                                        legend: {
+                                                display: false
+                                            },
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="content-row-3">
+                    <div class="sales-by-source">
+                        <h3 class="sales-by-source-header">
+                            Browser Analytic
+                        </h3>
+                        <div class="sales-by-source-item">
+                            <div class="item-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/888/888846.png" alt="">
+                                <p class="item-name">Google Chrome</p>
+                            </div>
+                            <p class="item-value">2078 Times</p>
+                        </div>
+                        <div class="sales-by-source-item">
+                            <div class="item-info">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/C%E1%BB%91c_C%E1%BB%91c_logo.svg" alt="">
+                                <p class="item-name">Cốc Cốc</p>
+                            </div>
+                            <p class="item-value">1827 Times</p>
+                        </div>
+                        <div class="sales-by-source-item">
+                            <div class="item-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968827.png" alt="">
+                                <p class="item-name">Mozilla FireFox</p>
+                            </div>
+                            <p class="item-value">821 Times</p>
+                        </div>
+                        <div class="sales-by-source-item">
+                            <div class="item-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/6124/6124994.png" alt="">
+                                <p class="item-name">Opera</p>
+                            </div>
+                            <p class="item-value">932 Times</p>
+                        </div>
+                        <div class="sales-by-source-item">
+                            <div class="item-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968890.png" alt="">
+                                <p class="item-name">Microsoft Edge</p>
+                            </div>
+                            <p class="item-value">482 Times</p>
+                        </div>
+                        <div class="btn-container">
+                            <a href="#top">View Details</a>
+                        </div>
+                    </div>
+                    <div class="explore-more"> 
+                        <div class="explore-more-img"></div>
+                        <h2 class="explore-more-header">Your Page Is Working Good</h2>
+                        <p class="explore-more-content">View how to manage your page better and more efficient</p>
+                        <button><a href="#top">View Details</a></button>
+                    </div>
+                    <div class="curr-activity-row-3">
+                        <div class="curr-activity-row-3-1">
+                            <header>
+                                Recent activity
+                            </header>
+                            <div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="curr-activity-row-3-2">
+                            <ul>
+                                <li>
+                                    <div class="pink-circle">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle-trans">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle-trans">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                                </li>
+                                <li>
+                                    <div class="pink-circle-trans">
+
+                                    </div>
+                                    <p class="curr-activity-timer">5 min ago</p>
+                                    <p class="activity-sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 
+            </div>
+              
+            <div id="chat-circle" class="btn btn-raised">
+                    <div id="chat-overlay"></div>
+                    <i class='bx bx-envelope' ></i>
+            </div>
+              
+            <div class="chat-box">
+            <div class="chat-box-header">
+                Message
+                <span class="chat-box-toggle"><i class='bx bx-x' ></i></span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">
+                <form>
+                <input type="text" id="chat-input" placeholder="Send a message..."/>
+                <button type="submit" class="chat-submit" id="chat-submit"><i class='bx bx-send' ></i></button>
+                </form>      
+            </div>
+            </div>
+              
             </div>
         </div>
     </main>
     <script>
         $(document).ready(function(){
+            $('.dropdown-notify.expand').hide();
+            $('.avatar-popup').hide();
+            $('.left-navigation.reponsive').hide();
+            var isReponsive = false;
             var navExpandState = true;
-            //Expand/Collapse navigation animation
-            $(".nav-opener").click(function(){
-                if(navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
-                    navExpandState = false;
+            var notifyExpand = false;
+            var reponsiveWidth = 768;
+
+            if(window.matchMedia('(max-width: 1300px)').matches){
+                isReponsive = true;
+                $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                $('.left-navigation').show();
+                navExpandState = false;
+                $('.left-navigation-reponsive').hide();
+            }
+            else{
+                if (isReponsive){
+                    isReponsive = false;
+                    $('.left-navigation-reponsive').removeClass('left-navigation-reponsive expand collapse').addClass('left-navigation expand');
+                    navExpandState = true;
+                }
+            }
+
+            $(window).resize(function(){
+                if(window.matchMedia('(max-width: 1300px)').matches){
+                    if(!isReponsive){
+                        isReponsive = true;
+                        $('.left-navigation').removeClass('left-navigation expand collapse').addClass('left-navigation-reponsive collapse');
+                        navExpandState = false;
+                        $('.left-navigation-reponsive').hide();
+                    }
                 }
                 else{
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
-                    navExpandState = true;
+                    if (isReponsive){
+                        isReponsive = false;
+                        $('.left-navigation-reponsive').removeClass('left-navigation-reponsive collapse expand').addClass('left-navigation expand');
+                        $('.left-navigation.normal').show();
+                        $('.left-navigation.reponsive').hide();
+                        navExpandState = true;
+                    }
+                }
+              });
+            //Expand/Collapse navigation animation
+            $(".nav-opener").click(function(){
+                if(!isReponsive){
+                    if(navExpandState){
+                        $('.left-navigation.expand.normal').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
+                }
+                else{ //Reponsive
+                    
+                    if(navExpandState){
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.expand').removeClass('expand').addClass('collapse');
+                        navExpandState = false;
+                    }
+                    else{
+                        $('.left-navigation-reponsive.reponsive').slideToggle();
+                        //$('.left-navigation-reponsive.collapse').removeClass('collapse').addClass('expand');
+                        navExpandState = true;
+                    }
                 }
             });
             // Expanding navigation when hover
             $(".left-navigation").hover(function(){
-                if(!navExpandState){
-                    $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.collapse').removeClass('collapse').addClass('expand');
+                    }
                 }
             });
             $(".left-navigation").mouseleave(function(){
-                if(!navExpandState){
-                    $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                if(!isReponsive){
+                    if(!navExpandState){
+                        $('.left-navigation.expand').removeClass('expand').addClass('collapse');
+                    }
                 }
             });
             // Expand Search Box Animation
             $(".search-box").click(function(){
-                $(this).animate({
-                    marginLeft: '4px'
-                }, 300);
                 $('#search-txt-box').animate({
                     marginLeft: '20px',
                     opacity: 1,
@@ -133,11 +598,55 @@
                 }, 300);
                 $('#search-txt-box').focus();
             });
-            $(".messages i, .notify i").click(function (){
+            $("#search-txt-box").focusout(function(){
+                if($(this).val().length == 0){
+                    $('#search-txt-box').animate({
+                        marginLeft: '0px',
+                        opacity: 0,
+                        width: 0,
+                    }, 300);
+                }
+            });
+            $(".messages i").click(function (){
                 $(this).css({
-                    "color": "rgba(174,120,197)",
-                    "background-color": "rgba(0, 0, 0, 0.05)"
+                    //"color": "rgba(174,120,197)",
+                    //"background-color": "rgba(0, 0, 0, 0.05)"
                 });
+            });
+
+            $("i.bx.bx-bell").click(function(){
+                var options = {};
+                if(!notifyExpand){
+                    $(".notify i").css({
+                        "color": "rgba(174,120,197)",
+                        "background-color": "rgba(0, 0, 0, 0.05)"
+                    });
+                    
+                    if($('.avatar-popup').is(":visible")){
+                        $('.avatar-popup').slideToggle(300);
+                    }
+                    if($('.chat-box').is(":visible")){
+                        $('.chat-box').toggle('scale');
+                        $("#chat-circle").toggle('scale');
+                    }
+
+                    $('.dropdown-notify.expand').show( "fade", 300 );
+                    notifyExpand = true;
+                }
+                else{
+                    $(".notify i").css({
+                        "color": "gray",
+                        "background-color": "white"
+                    });
+                    $('.dropdown-notify.expand').hide( "fade", 300 );
+                    notifyExpand = false;
+                }
+            });
+            $(".user-info").click(function(){
+                if(notifyExpand){
+                    $("i.bx.bx-bell").trigger("click");
+                }
+                $('.avatar-popup').slideToggle(300);
             });
         });
     </script>
