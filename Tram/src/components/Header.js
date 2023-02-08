@@ -23,7 +23,7 @@ const Header = () => {
           className="flex items-center justify-center w-[300px] h-full text-[28px] font-semibold text-white bg-[#ff5e14] cursor-pointer"
           onClick={() => navigate("/")}
         >
-          <img alt="logo" src={logoImg} className="h-[60px]" />
+          <img alt="logo" src={logoImg} className="h-[60px] hidden sm:block" />
           Dream Holidays
         </div>
         <div className="hidden lg:flex items-center w-[500px] bg-[#f4f4f4] rounded-[10px] hover:bg-[#e4e6e9]">

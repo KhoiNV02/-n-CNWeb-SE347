@@ -5,8 +5,8 @@ import letgoImg from "../../assets/Contact/let-go.png";
 export const Contact = () => {
   return (
     <MainLayout>
-      <div className="w-11/12 lg:w-5/6 m-auto pb-[40px] pt-[100px] flex items-center">
-        <div className="flex flex-col gap-4 w-2/5">
+      <div className="w-11/12 lg:w-5/6 m-auto pb-[40px] pt-[100px] flex flex-col sm:flex-row items-center">
+        <div className="flex flex-col gap-4 w-full sm:w-2/5">
           <div>
             <label className="block">Name</label>
             <input
@@ -36,7 +36,7 @@ export const Contact = () => {
             Submit
           </button>
         </div>
-        <div className="w-3/5">
+        <div className="w-full sm:w-3/5">
           <img alt="" src={letgoImg} />
         </div>
       </div>
